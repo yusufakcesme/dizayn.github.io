@@ -143,4 +143,4 @@ $('.owl-carousel').owlCarousel({
 	autoWidth:true,
 	items:4,
 	center: true
-})
+}):
