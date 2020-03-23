@@ -1,0 +1,487 @@
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+section.hero-image .image-overlay {
+	position: absolute;
+	width: 100%;
+	height: 260px;
+	background-color: rgba(0,0,0,.6);
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.image-overlay p {
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	font-weight: var(--light);
+}
+
+
+
+
+section.yarisma-ekle {
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+
+
+section.yarisma-ekle .form-nav {
+	width: 425px;
+	height: 100vh;
+	position: fixed;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	border-right: 1px solid #eee;
+}
+
+section.yarisma-ekle .form-nav nav {
+	display: flex;
+	flex-direction: column;
+}
+
+section.yarisma-ekle .form-nav nav a {
+	margin-bottom: 20px;
+	color: #8d8d8d;
+	font-family: 'nunito-bold';
+	padding: 5px 30px 5px 0;
+	border-right: 4px solid #fff;
+}
+
+section.yarisma-ekle .form-nav nav a:hover {
+	border-right: 4px solid #D19E2C;
+	color: #2d2d2d;
+	transition: .3s;
+}
+
+section.yarisma-ekle .form-nav nav a.active-nav	{
+	border-right: 4px solid #D19E2C;
+	color: #2d2d2d;
+}
+
+section.yarisma-ekle .form-nav nav.mobile-nav {
+	display: none;
+}
+
+
+
+
+section.yarisma-ekle form {
+	width: 700px;
+	height: 1000px;
+	margin-left: 485px;
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+}
+
+section.yarisma-ekle form > h1 {
+	font-size: 28px;
+	color: #2d2d2d;
+	font-family: 'coco-bold';
+}
+
+section.yarisma-ekle form > p {
+	font-size: 16px;
+	color: #2d2d2d;
+	margin-top: 10px;
+	font-family: 'coco-light';
+	margin-bottom: 30px;
+}
+
+
+section.yarisma-ekle form .form-box {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	border: 1px solid #eee;
+	border-radius: 2px;
+	padding: 30px;
+	margin-top: 15px;
+}
+
+section.yarisma-ekle form .form-box .form-section {
+
+}
+
+section.yarisma-ekle form .form-box .form-section h3 {
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 500;
+	font-family: 'nunito-bold';
+	color: #8d8d8d;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+section.yarisma-ekle form .form-box .form-section .el {
+	margin-bottom: 25px;
+}
+
+section.yarisma-ekle form .form-box .form-section .el p {
+	font-size: 15px;
+	font-weight: 500;
+	color: #2a2a2a;
+	margin-bottom: 8px;
+	font-family: 'nunito-bold';	
+}
+
+section.yarisma-ekle form .form-box .form-section .el input[type="text"], input[type="main"] {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	order: 1;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	outline: 0;
+	border-bottom: 2px solid #2d2d2d;
+	font-style: normal;
+	padding: 0 0 6px;
+	width: 100%;
+	box-shadow: inherit;
+	background-image: initial;
+}
+
+section.yarisma-ekle form .form-box .form-section .el textarea {
+	width: 100%;
+	height: 190px;
+	resize: none;
+	outline: 0;
+	font-style: normal;
+	padding: 15px;
+	border: 1.5px solid #2d2d2d;
+	border-radius: 3px;	
+	box-shadow: inherit;
+	background-image: initial;
+}
+
+section.yarisma-ekle form .form-box .form-section .el input {
+	font-family: 'nunito-regular';
+	font-size: 15px;
+}
+
+
+section.yarisma-ekle form .form-box .form-section .el textarea::placeholder {
+	font-family: 'nunito-regular';
+	font-size: 15px;
+}
+
+
+
+section.yarisma-ekle form .form-box .form-section .el .select-box {
+	position: relative;
+}
+
+section.yarisma-ekle form .form-box .form-section .el .select-box .down{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
+	color: #8d8d8d;
+}
+
+section.yarisma-ekle form .form-box .form-section .el .select-box select {
+
+	-webkit-appearance: none;  
+	-moz-appearance: none; 
+
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	order: 1;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	outline: 0;
+	border-bottom: 2px solid #2d2d2d;
+	font-style: normal;
+	padding: 0 0 6px;
+	width: 100%;
+	box-shadow: inherit;
+	background-image: initial;
+
+}
+
+.hl-checkboxes {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+.hl-container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 18px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: 25%;
+}
+
+/* Hide the browser's default checkbox */
+.hl-container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.hl-checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	background-color: #eee;
+	border-radius: 3px;
+}
+
+/* On mouse-over, add a grey background color */
+.hl-container:hover input ~ .hl-checkmark {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.hl-container input:checked ~ .hl-checkmark {
+	background-color: #2d2d2d;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.hl-checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.hl-container input:checked ~ .hl-checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.hl-container .hl-checkmark:after {
+	left: 5px;
+	top: 1px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+
+
+section.yarisma-ekle form .form-box .form-section .multiple-inputs {
+	display: flex;
+	justify-content: space-between;
+}
+
+section.yarisma-ekle form .form-box .form-section .multiple-inputs .el {
+	flex: 1;
+}
+
+section.yarisma-ekle form .form-box .form-section .multiple-inputs .el:first-child {
+	margin-right: 20px;
+}
+
+.mapouter {
+	position:relative;
+	text-align:right;
+	width:100%;
+}
+.gmap_canvas {
+	overflow:hidden;
+	background:none!important;
+	width:100%;
+}
+
+
+/* custom file input */
+
+
+.custom-file-input {
+	color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+	visibility: hidden;
+}
+.custom-file-input::before {
+	content: 'Dosyaları seçmek için tıklayın';
+	width: 150px;
+	height: 150px;
+	border: 1px solid #8d8d8d;
+	border-style: dashed;
+	background-color: #f9f9f9;
+	color: black;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: pre-wrap;
+	-webkit-user-select: none;
+	cursor: pointer;
+}
+.custom-file-input:hover::before {
+	border-color: black;
+}
+.custom-file-input:active {
+	outline: 0;
+}
+.custom-file-input:active::before {
+	background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+
+
+.big-media {
+	width: 100%;
+	height: 150px;
+	border: 1px solid #8d8d8d;
+	border-style: dashed;
+	background-color: #f9f9f9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.big-media > p {
+	font-size: 24px !important;
+}
+.custom-input {
+	color: transparent;
+	margin-left: 170px;
+}
+.custom-input::-webkit-file-upload-button {
+	visibility: hidden;
+}
+
+
+.custom-input::before {
+	content: 'Resim Seç';
+	width: 120px;
+	height: 34px;
+	border: 2px solid #222222;
+	background: none;
+	color: black;
+	border-radius: 30px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: pre-wrap;
+	-webkit-user-select: none;
+	cursor: pointer;
+	font-size: 15px;
+}
+.custom-input:hover::before {
+	border-color: black;
+}
+.custom-input:active {
+	outline: 0;
+}
+.custom-input:active::before {
+	background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+
+form .submit-btn {
+	width: 100%;
+	margin-top: 20px;
+}
+
+form .submit-btn button {
+	width: 100px;
+	height: 36px;
+	border-radius: 18px;
+	background-color: #D19E2C;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+form .submit-btn button:hover {
+	border: 2px solid #D19E2C;
+	background: none;
+	color: #D19E2C;
+	transition: .3s ease;
+}
+
+
+
+@media only screen and (max-width: 1250px) {
+
+	section.yarisma-ekle .form-nav {
+		width: 300px;
+		height: 100vh;
+		position: fixed;
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		border-right: 1px solid #eee;
+	}
+
+	section.yarisma-ekle form {
+		width: 700px;
+		height: 1000px;
+		margin-left: 170px;
+		margin-right: 20px;
+	}
+
+
+
+}
+
+@media only screen and (max-width: 720px) {
+	section.yarisma-ekle .form-nav {
+		width: 70px;
+		height: 100%;
+		position: fixed;
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		border-right: 1px solid #eee;
+	}
+
+	section.yarisma-ekle .form-nav nav#desktop-nav {
+		display: none;
+	}
+
+	section.yarisma-ekle .form-nav nav.mobile-nav {
+		display: flex;
+	}
+
+	section.yarisma-ekle form {
+		width: 325px;
+		height: auto;
+		margin-left: 80px;
+	}
+
+	.hl-container {
+		margin: 5px;
+	}
+
+
+}

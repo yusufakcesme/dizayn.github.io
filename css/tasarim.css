@@ -1,0 +1,286 @@
+
+.tabs .dropdown-tab p {
+	font-family: 'nunito-light';
+}
+
+section.design-competition-tasarim {
+	width: 100%;
+	height: auto;
+}
+
+
+section.design-competition-tasarim .card-container-tasarim {
+	width: 90%;
+	height: auto;
+	margin: 30px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+section.design-competition-tasarim .card-container-tasarim .card-tasarim {
+	width: 320px;
+	margin: 10px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim {
+	width: 320px;
+	height: auto;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	background: none;
+}
+
+section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim img.main-img {
+	width: 320px;
+	height: 250px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.16);
+	border-radius: 5px;
+}
+
+section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-bottom {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	margin: 3px 0;
+	background: none;
+}
+
+section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-bottom img {
+	border-radius: 50%;
+}
+
+section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-bottom > a {
+	font-size: 14px;
+	font-family: 'nunito-bold';
+	color: #363732;
+	margin-left: 10px;
+}
+
+section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-bottom .card-buttons {
+	margin-left: auto;
+}
+
+section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-bottom .card-buttons button {
+	background: none;
+	border: none;
+	color: #555;
+	font-size: 12px;
+	font-family: 'nunito-bold';
+}
+
+section.design-competition-tasarim .card-container-tasarim .card-tasarim > a {
+	width: 110px;
+	height: 40px;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #AA7C13;
+	font-weight: var(--bold);
+	font-size: 17px;
+	border: 2px solid #AA7C13;
+	margin-top: 20px;
+}
+
+section.design-competition-tasarim .card-container-tasarim .card-tasarim > a:hover {
+	transition: .3s;
+	background-color: #AA7C13;
+	color: #fff;
+}
+
+
+section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim {
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	bottom: 35px;
+	background: -moz-linear-gradient(bottom,  rgba(0,0,0,0.76) 0%, rgba(125,185,232,0) 100%);
+	background: -webkit-linear-gradient(bottom,  rgba(0,0,0,0.76) 0%,rgba(125,185,232,0) 100%);
+	background: linear-gradient(to top,  rgba(0,0,0,0.76) 0%,rgba(125,185,232,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db000000', endColorstr='#007db9e8',GradientType=0 );
+	display: none;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 10px;
+	border-radius: 0 0 5px 5px;
+}
+
+section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim:hover .card-img-overlay-tasarim {
+	display: flex;
+	padding-left: 26px;
+	padding-bottom: 16px;
+}
+
+
+section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim span {
+	font-size: 12px;
+	font-family: 'coco-regular';
+	color: #FFD982;
+}
+
+section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim p {
+	font-size: 16px;
+	font-family: 'nunito-regular';
+	color: #fff;
+}
+
+section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim p > b {
+	font-size: 16px;
+	font-weight: var(--medium);
+	color: #FFD982;
+}
+
+
+
+
+
+
+
+.filters {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;	
+	margin-top: 20px;
+	height: 80px;
+	margin-bottom: -20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.filters::-webkit-scrollbar {
+	display: none;
+}
+
+.filters button {
+	width: 110px;
+	height: 36px;
+	border: 1px solid #FFD982;
+	border-radius: 5px;
+	background: none;
+	margin-right: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 10px;
+	font-family: 'nunito-regular';
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.filter-pop {
+	width: 420px;
+	height: auto;
+	border-radius: 5px;
+	background-color: #fff;
+	position: absolute;
+	z-index: 9995;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+	margin-top: 10px;
+	padding: 20px;
+	display: none;
+}
+
+.filter-tools .filter-pop input {
+	width: 100%;
+	height: 34px;
+	border: 1px solid #e8e8e8;
+	border-radius: 5px;
+	text-indent: 10px;
+}
+
+.filter-tools .filter-pop p {
+	color: #767676;
+	font-size: 11px;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-top: 10px;
+	width: 100%;
+	font-family: 'nunito-bold';
+}
+
+.filter-tools .filter-pop .results {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+}
+
+.filter-tools .filter-pop .results a {
+	padding-top: 5px;
+	font-size: 14px;
+	font-family: 'nunito-regular';
+	color: #222;
+}
+
+.filter-tools .filter-pop .results a:hover {
+	text-decoration: underline;
+}
+
+.active-filter {
+	display: block !important;
+
+}
+
+.filter-tools-konum .filter-pop form {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid #e8e8e8;
+	padding-bottom: 20px;
+}
+
+
+.filter-tools-konum .filter-pop form label {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.filter-tools-konum .filter-pop form select {
+	flex: 1;
+	margin-left: 20px;
+	height: 35px;
+	border: 1px solid #e8e8e8;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.filter-tools-konum .filter-pop form label input {
+	flex: 1;
+	margin-left: 73px;
+	border: 1px solid #e8e8e8;
+	border-radius: 5px;
+	text-indent: 10px;
+	height: 35px;
+}
+
+.konum-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 10px;
+}
+
+.konum-buttons a {
+	color: #888;
+	margin-right: 15px;
+}
+
+.konum-buttons button {
+	background-color: #AA7C13;
+	border-radius: 22px;
+	color: #fff;
+}

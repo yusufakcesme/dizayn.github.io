@@ -1,0 +1,567 @@
+
+
+section.profile-container {
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: -200px;
+	z-index: 99;
+	display: flex;
+	margin-bottom: 200px;
+}
+
+
+section.profile-container .profile-card {
+	width: 350px;
+	height: 1200px;
+	background-color: #3A3A39;
+	border-radius: 10px;
+	box-shadow: 0px 3px 5px rgba(0,0,0,.16);
+	padding: 25px 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section.profile-container .profile-card .img-box {
+	width: 200px;
+	height: 200px;
+	border: 3px solid #FFD982;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+section.profile-container .profile-card .img-box img {
+	width: 200px;
+	height: 200px;
+}
+
+section.profile-container .profile-card span.title {
+	margin-top: 10px;
+	font-family: 'nunito-light';
+	color: #FFD982;
+	font-size: 20px;
+}
+
+section.profile-container .profile-card a.website {
+	margin-top: 10px;
+	font-family: 'nunito-light';
+	color: #fff;
+	font-size: 15px;
+	text-decoration: underline;
+}
+
+section.profile-container .profile-card .profile-buttons {
+	margin-top: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+section.profile-container .profile-card .profile-buttons a {
+	width: 110px;
+	height: 36px;
+	border-radius: 40px;
+	display: flex;
+	line-height: 36px;
+	justify-content: center;
+	font-family: 'nunito-regular';
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+section.profile-container .profile-card .profile-buttons a:first-child {
+	background-color: #FFD982;
+	color: #3A3A39;
+	border: 2px solid #FFD982;
+}
+
+section.profile-container .profile-card .profile-buttons a:last-child {
+	background: none;
+	border: 2px solid #FFD982;
+	color: #fff;
+}
+
+section.profile-container .profile-card .profile-stats {
+	margin-top: 25px;
+	width: 100%;
+}
+
+section.profile-container .profile-card .profile-stats .stat {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 16px;
+	color: #f6f6f6;
+	font-family: 'nunito-regular';
+	font-size: 15px;
+}
+
+
+section.profile-container .profile-card .award {
+	width: 100%;
+	height: 45px;
+	margin-top: 38px;
+	display: flex;
+	align-items: center;
+}
+
+section.profile-container .profile-card .award > span {
+	width: 45px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 42px;
+	color: #FFD982;
+}
+
+section.profile-container .profile-card .award .award-details {
+	flex: 1;
+	height: 45px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 5px;
+}
+
+section.profile-container .profile-card .award .award-details p {
+	font-family: 'nunito-regular';
+	font-size: 12px;
+	color: #B4B4B4;
+}
+
+
+section.profile-container .profile-card .award .award-details span {
+	font-family: 'nunito-light';
+	font-size: 12px;
+	color: #B4B4B4;
+}
+
+section.profile-container .profile-card .social-icons {
+	width: 100%;
+	height: 30px;
+	margin-top: 58px;
+	display: flex;
+}
+
+section.profile-container .profile-card .social-icons a {
+	font-size: 28px;
+	margin-right: 15px;
+	color: #FFD982;
+}
+
+section.profile-container .profile-card .contact-info {
+	width: 100%;
+	margin-top: 5px;
+}
+
+section.profile-container .profile-card .contact-info .info {
+	margin-top: 15px;
+}
+
+section.profile-container .profile-card .contact-info .info p {
+	font-family: 'nunito-regular';
+	font-size: 15px;
+	color: #B4B4B4;
+}
+
+section.profile-container .profile-card .contact-info .info span {
+	font-family: 'nunito-light';
+	font-size: 14px;
+	color: #B4B4B4;
+}
+
+
+/* profile content */
+
+section.profile-container .profile-content {
+	flex: 1;
+}
+
+section.profile-container .profile-content .profile-name {
+	width: 100%;
+	padding: 0 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 120px;
+}
+
+section.profile-container .profile-content .profile-name .title h3 {
+	font-family: 'nunito-regular';
+	color: #fff;
+	font-size: 24px;
+}
+
+section.profile-container .profile-content .profile-name .title span {
+	font-family: 'coco-light';
+	color: #fff;
+	font-size: 16px;
+}
+
+section.profile-container .profile-content .profile-name a.premium-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 170px;
+	height: 40px;
+	border-radius: 40px;
+	border: 2px solid #FFD982;
+	font-family: 'coco-small-regular';
+	font-size: 15px;
+	color: #FFD982;
+}
+
+section.profile-container .profile-content .profile-tabs {
+	width: 100%;
+	height: 60px;
+	background-color: #fff;
+	box-shadow: 0px 2px 4px rgba(0,0,0,.16);
+	margin-top: 28px;
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+}
+
+section.profile-container .profile-content .profile-tabs a {
+	padding: 0 30px;
+	font-family: 'nunito-bold';
+	font-size: 18px;
+	color: #363732;
+}
+
+section.profile-container .profile-content .profile-tabs a.active-profile-tab {
+	color: #AA7C13;
+}
+
+section.profile-container .profile-content .user-info {
+	margin-top: 20px;
+	margin-left: 35px;
+	flex: 1;
+	height: 200px;
+	background-color: #fff;
+	box-shadow: 0px 3px 4px rgba(0,0,0,.16);
+	border-radius: 5px;
+	padding: 20px 25px;
+	overflow: hidden;
+}
+
+section.profile-container .profile-content .user-info p {
+	font-family: 'nunito-light';
+	font-size: 17px;
+	line-height: 1.625;
+	height: 140px;
+	overflow: hidden;
+}
+
+section.profile-container .profile-content .user-info span {
+	text-decoration: underline;
+	font-family: 'nunito-light';
+	font-size: 17px;
+	color: #AA7C13;
+	cursor: pointer;
+}
+
+
+
+/* profile card section */
+section.profile-container .profile-content .card-container-tasarim {
+	flex: 1;
+	height: auto;
+	margin: 30px 0 10px 35px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+section.profile-container .profile-content .card-container-tasarim .card-tasarim {
+	width: 300px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+section.profile-container .profile-content .card-container-tasarim .card-tasarim .card-img-tasarim {
+	width: 300px;
+	height: 240px;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.16);
+}
+
+section.profile-container .profile-content .card-container-tasarim .card-tasarim .card-img-tasarim img {
+	width: 300px;
+	height: 240px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.16);
+	border-radius: 5px;
+}
+
+section.profile-container .profile-content .card-container-tasarim .card-tasarim a {
+	width: 110px;
+	height: 40px;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #AA7C13;
+	font-weight: var(--bold);
+	font-size: 17px;
+	border: 2px solid #AA7C13;
+	margin-top: 20px;
+}
+
+section.profile-container .profile-content .card-container-tasarim .card-tasarim a:hover {
+	transition: .3s;
+	background-color: #AA7C13;
+	color: #fff;
+}
+
+
+section.profile-container .profile-content .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim {
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	bottom: 0;
+	background: -moz-linear-gradient(bottom,  rgba(0,0,0,0.76) 0%, rgba(125,185,232,0) 100%);
+	background: -webkit-linear-gradient(bottom,  rgba(0,0,0,0.76) 0%,rgba(125,185,232,0) 100%);
+	background: linear-gradient(to top,  rgba(0,0,0,0.76) 0%,rgba(125,185,232,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db000000', endColorstr='#007db9e8',GradientType=0 );
+	display: none;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 10px;
+}
+
+section.profile-container .profile-content .card-container-tasarim .card-tasarim .card-img-tasarim:hover .card-img-overlay-tasarim {
+	display: flex;
+	padding-left: 26px;
+	padding-bottom: 16px;
+}
+
+
+section.profile-container .profile-content .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim span {
+	font-size: 12px;
+	font-family: 'coco-regular';
+	color: #FFD982;
+}
+
+section.profile-container .profile-content .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim p {
+	font-size: 16px;
+	font-family: 'nunito-regular';
+	color: #fff;
+}
+
+section.profile-container .profile-content .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim p > b {
+	font-size: 16px;
+	font-weight: var(--medium);
+	color: #FFD982;
+}
+
+
+
+
+
+
+/* profile comment section */
+
+
+
+
+.comment-section {
+	flex: 1;
+	height: 650px;
+	background-color: #fff;
+	box-shadow: 0px 3px 4px rgba(0,0,0,.16);
+	border-radius: 5px;
+	margin-left: 35px;
+	padding: 50px 30px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.comment-section .make-comment {
+	display: flex;
+	margin-bottom: 30px;
+	flex-direction: column;
+}
+
+.comment-section .make-comment button {
+	margin-left: auto;
+	width: 90px;
+	height: 30px;
+	margin-top: 20px;
+	border-radius: 30px;
+	border: 1.5px solid #AA7C13;
+	color: #AA7C13;
+	background: none;
+}
+
+.comment-section .make-comment .comment-input {
+	display: flex;
+	align-items: center;
+}
+
+.comment-section .make-comment .comment-input input {
+	flex: 1;
+	height: 30px;
+	line-height: 30px;
+	order: 1;
+	margin-left: 20px;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	outline: 0;
+	border-bottom: 2px solid #AA7C13;
+	font-style: normal;
+	padding: 0 0 6px;
+	width: 100%;
+	box-shadow: inherit;
+	background-image: initial;
+}
+
+.comment-section .last-comments {
+
+}
+
+
+.comment-section .last-comments > p {
+	font-family: 'nunito-regular';
+	font-size: 17px;
+	color: #363732;
+}
+
+
+
+.comment-section .last-comments .comment {
+	width: 100%;
+	height: auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border-bottom: 1px solid #BBBCB7;
+}
+
+.comment-section .last-comments .comment:last-child {
+	border-bottom: none;
+}
+
+.comment-section .last-comments .comment .comment-profile {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.comment-section .last-comments .comment .comment-profile .comment-name {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+.comment-section .last-comments .comment .comment-profile .comment-name p {
+	font-family: 'nunito-regular';
+	font-size: 15px;
+	color: #363732;
+}
+
+.comment-section .last-comments .comment .comment-profile .comment-name span {
+	font-family: 'nunito-light';
+	font-size: 12px;
+	color: #797B70;
+}
+
+.comment-section .last-comments .comment .comment-content {
+	height: 44px;
+	overflow: hidden;
+}
+
+.comment-section .last-comments .comment .comment-content p {
+	font-family: 'nunito-light';
+	font-size: 15px;
+	color: #363732;
+}
+
+.read-more {
+	font-family: 'nunito-regular';
+	font-size: 15px;
+	color: #AA7C13;
+	margin-top: 5px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+span.like-comment {
+	font-family: 'nunito-light';
+	font-size: 14px;
+	color: #363732;
+	cursor: pointer;
+}
+
+
+span.like-comment > i {
+	color: #AA7C13 !important;
+}
+
+
+.more-comment {
+	background: none;
+	border: none;
+	font-size: 24px;
+	color: #AA7C13;
+	width: 100%;
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 50px;
+	background-color: #fff;
+	border-radius: 0px 0px 5px 5px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+	section.profile-container {
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: -200px;
+		z-index: 99;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 200px;
+		align-items: center;
+	}
+
+	section.profile-container .profile-content {
+		flex: 1;
+		margin-top: -250px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.comment-section {
+		margin-left: 0px;
+		width: 95%;
+	}
+
+	section.profile-container .profile-content .card-container-tasarim {
+		margin: 30px 0 10px 0px;
+		align-items: center;
+		justify-content: center;
+	}
+	section.profile-container .profile-content .user-info {
+		margin-left: 0px;
+		width: 95%;
+	}
+
+
+}
