@@ -138,9 +138,9 @@ $(document).ready(function(){
 });
 
 $('.owl-carousel').owlCarousel({
-	margin:20,
+	margin:10,
 	loop:false,
 	autoWidth:true,
 	items:4,
 	center: true
-}):
+});

@@ -111,6 +111,10 @@ header {
 	justify-content: space-between;
 }
 
+header .logo {
+	margin-left: -70px;
+}
+
 
 header .logo h1 a {
 	font-size: 32px;
@@ -124,12 +128,11 @@ header .logo h1 a > span {
 }
 
 header .search-bar {
-	width: 400px;
+	width: 500px;
 	height: 36px;
 	position: relative;
 	border-radius: 25px;
 	border: none;
-	margin-left: -20px;
 }
 
 header .search-bar input {
@@ -1479,6 +1482,10 @@ label.login-container {
 
 @media only screen and (max-width: 1250px) {
 
+	header .logo {
+		margin-left: 0;
+	}
+
 	.blog-articles {
 		justify-content: center;
 	}
@@ -1742,6 +1749,9 @@ label.login-container {
 		display: block !important;
 		margin-top: 20px;
 		margin-bottom: -40px;
+	}
+	.display .profile-box {
+		margin: 0 auto;
 	}
 	section.crew .profiles {
 		display: none;
