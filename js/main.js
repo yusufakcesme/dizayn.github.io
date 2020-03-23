@@ -1,4 +1,45 @@
 
+
+
+
+/* yarisma detay sayfası tab nav */
+
+var tab_btn = document.querySelectorAll('.tab-btn');
+var projeler = document.getElementById('projeler');
+var aciklama = document.getElementById('aciklama');
+var kaynaklar = document.getElementById('kaynaklar');
+function activeTab() {
+	removeTab();
+	this.classList.add('active-detay-tab');
+	
+	if (this.innerText == "Projeler") {
+		projeler.style.display = "flex";
+		aciklama.style.display = "none";
+		kaynaklar.style.display = "none";
+	} else if (this.innerText == "Açıklama") {
+		projeler.style.display = "none";
+		aciklama.style.display = "block";
+		kaynaklar.style.display = "none";
+	} else if (this.innerText == "Kaynaklar") {
+		projeler.style.display = "none";
+		aciklama.style.display = "none";
+		kaynaklar.style.display = "flex";
+	}
+
+}
+function removeTab() {
+	tab_btn.forEach(item => item.classList.remove('active-detay-tab'));
+}
+tab_btn.forEach(item => item.addEventListener('click', activeTab));
+
+
+
+
+
+
+
+
+
 var filter_btn = document.querySelectorAll('.filter-button');
 var filter_modal_all = document.querySelectorAll('.filter-pop');
 

@@ -38,6 +38,8 @@ BLOG DETAY
 	outline: none;
 	text-decoration: none;
 	list-style: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 :root {
