@@ -332,3 +332,155 @@ section.tab-details {
 	margin-bottom: 25px;
 	margin: 20px 0 10px 22px;
 }
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+	section.yarisma-info {
+		width: 100%;
+		min-height: 230px;
+		background-color: #f9f9f9;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 2%;
+	}
+
+	section.yarisma-info .yarisma-introduce {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 10px 0;
+	}
+
+
+
+	section.yarisma-info .yarisma-introduce h1 {
+		font-size: 28px;
+		color: #2d2d2d;
+		font-family: 'nunito-bold';
+		margin-bottom: 25px;
+	}
+
+	section.yarisma-info .yarisma-introduce p {
+		font-size: 16px;
+		color: #5d5d5d;
+		font-family: 'nunito-light';
+		line-height: 1.6;
+		max-width: 100% !important;
+	}
+
+	section.yarisma-info .yarisma-stats {
+		width: 100%;
+		height: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 10px 0;
+	}
+
+	section.yarisma-info .yarisma-stats .stat-box {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 10px 0;
+		border-right: 1px solid #ddd;
+	}
+	/* tab 3 responsive */
+	.yarisma-sources {
+		display: flex;
+		flex-direction: column;
+		display: none;
+	}
+
+
+	.yarisma-sources .source-plans {
+		height: auto;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
+	}
+
+
+
+}
+
+
+@media only screen and (max-width: 550px) {
+
+
+	section.yarisma-info .yarisma-introduce {
+		width: 96%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 10px 0;
+	}
+
+	section.yarisma-info .yarisma-stats {
+		width: 96%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin: 10px 0;
+	}
+
+	section.yarisma-info .yarisma-stats .stat-box {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		padding: 10px 0;
+		border: none;
+		text-align: left;
+		align-items: flex-start;
+	}
+	section.yarisma-detay-img .yarisma-detay-overlay h2 {
+		font-size: 26px;
+		font-family: 'nunito-bold';
+	}
+
+
+
+	/* tab 1 */
+
+	.gallery {
+		max-width: 100%;
+		height: auto;
+		margin: 40px auto 0px auto;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/* tab 3 responsive */
+	.yarisma-sources {
+		display: flex;
+		flex-direction: column;
+		display: none;
+	}
+
+
+	.yarisma-sources .source-plans {
+		height: auto;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
+	}
+
+
+
+}
