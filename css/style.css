@@ -1482,6 +1482,17 @@ label.login-container {
 
 @media only screen and (max-width: 1250px) {
 
+	section.design-competition .card-container {
+		width: 90%;
+		height: auto;
+		margin: 30px auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+
 	header .logo {
 		margin-left: 0;
 	}
@@ -1756,7 +1767,7 @@ label.login-container {
 	section.crew .profiles {
 		display: none;
 	}
-	 img.mobile-stars {
+	img.mobile-stars {
 		margin-bottom: 20px;
 		width: 134px !important;
 		height: 20px !important;
