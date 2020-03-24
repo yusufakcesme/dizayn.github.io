@@ -163,65 +163,48 @@ section.tab-details {
 	justify-content: space-between;
 }
 
-.gallery .gallery-img {
-	position: relative;
+.gallery-img {
+	width: 320px;
 	height: auto;
 	display: flex;
 	flex-direction: column;
+	margin: 10px 0;
 }
 
-
-.gallery .gallery-img:hover .gallery-img-overlay {
-	display: flex;
-	padding-left: 26px;
-	padding-bottom: 16px;
-}
-
-.gallery .gallery-img .gallery-img-overlay {
+.gallery-img-box {
 	width: 100%;
-	height: 50%;
-	position: absolute;
-	bottom: 32px;
-	background: -moz-linear-gradient(bottom,  rgba(0,0,0,0.76) 0%, rgba(125,185,232,0) 100%);
-	background: -webkit-linear-gradient(bottom,  rgba(0,0,0,0.76) 0%,rgba(125,185,232,0) 100%);
-	background: linear-gradient(to top,  rgba(0,0,0,0.76) 0%,rgba(125,185,232,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db000000', endColorstr='#007db9e8',GradientType=0 );
-	display: none;
-	flex-direction: column;
-	justify-content: flex-end;
-	padding: 10px;
-	border-radius: 0px 0px 5px 5px;
-}
-
-.gallery .gallery-img > img {
-	width: 320px;
-	height: 230px;
-	margin-top: 30px;
+	height: auto;
 	border-radius: 5px;
-	box-shadow: 0px 0px 15px rgba(0,0,0,.16);
+	overflow: hidden;
+	position: relative;
 }
 
-
-.gallery .gallery-img .gallery-img-overlay span {
-	font-size: 12px;
-	font-family: 'coco-regular';
-	color: #FFD982;
+.gallery-img-box img {
+	width: 100%;
+	border-radius: 5px;
 }
 
-.gallery .gallery-img .gallery-img-overlay p {
-	font-size: 16px;
-	font-family: 'nunito-regular';
-	color: #fff;
+.gallery-img-box img:hover {
+	transform: scale(1.1);
+	transition: .3s;
 }
 
-.gallery .gallery-img .gallery-img-overlay p > b {
-	font-size: 16px;
-	font-weight: var(--medium);
-	color: #FFD982;
+.number {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'nunito-bold';	
+	color: #363237;
+	background-color: #FFD982;
+	border: 1.5px solid #fff;
 }
-
-
-
 
 .index-gallery-bottom {
 	width: 100%;
@@ -236,11 +219,12 @@ section.tab-details {
 	border-radius: 50%;
 }
 
-.index-gallery-bottom> a {
-	font-size: 14px;
+.index-gallery-bottom > a {
+	font-size: 16px;
 	font-family: 'nunito-bold';
 	color: #363732;
 	margin-left: 10px;
+	margin-top: 2px;
 }
 
 .index-gallery-bottom .index-gallery-buttons {

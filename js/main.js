@@ -12,7 +12,7 @@ function activeTab() {
 	removeTab();
 	this.classList.add('active-detay-tab');
 	
-	if (this.innerText == "Projeler") {
+	if (this.innerText == "Teslimler") {
 		projeler.style.display = "flex";
 		aciklama.style.display = "none";
 		kaynaklar.style.display = "none";
