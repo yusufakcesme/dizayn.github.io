@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dogan Hazar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/resimler.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+
+
+</head>
+<body>
+
+	<header>
+		<div onclick="openMobileMenu()" class="hamburger-menu">
+			<button><i class="fa fa-bars"></i></button>
+		</div>
+		<div class="logo">
+			<h1><a href="index.html">dizay<span>n</span>et</a></h1>
+		</div>
+
+		<div onclick="openSearch()" class="mobile-search">
+			<button><i class="fa fa-search"></i></button>
+		</div>
+		<div class="search-bar">
+			<button><i class="fa fa-search"></i></button>
+			<input type="text" name="" placeholder="Eviniz için tasarım fikirleri bulun...">
+		</div>
+		<nav>
+			<a href="tasarim.html">DİZAYN</a>
+			<a href="profesyoneller.html">PROFESYONELLER</a>
+			<a href="yarisma.html">YARIŞMALAR</a>
+			<a href="blog.html">BLOG</a>
+		</nav>
+		<div class="login-btn">
+			<div class="user-rounded">
+				<i class="fa fa-user"></i>
+			</div>
+			<a onclick="openLogin()">GİRİŞ YAP</a>
+		</div>
+
+	</header>
+
+
+
+
+	<section class="resimler">
+
+		<div class="resimler-slider">
+
+			<div class="slider">
+
+				<div class="slider-img">
+					<img id="slider-img" src="images/sliderimg.jpg">
+				</div>
+			</div>
+
+			<div class="slider-nav-buttons">
+				<button onclick="prevSlide(-1)"><i class="fa fa-chevron-left"></i></button>
+				<button onclick="nextSlide(1)"><i class="fa fa-chevron-right"></i></button>
+			</div>
+
+			<div class="slider-bottom">
+
+				<div class="left-buttons">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+				</div>
+
+				<div class="thumb-images">
+					<div class="thumb active-thumb" id="1">
+						<img src="images/sliderimg.jpg">
+					</div>
+					<div class="thumb" id="2">
+						<img src="images/11.jpg">
+					</div>
+					<div class="thumb" id="3">
+						<img src="images/22.jpg">
+					</div>
+					<div class="thumb" id="4">
+						<img src="images/33.jpg">
+					</div>
+					<div class="thumb" id="5">
+						<img src="images/44.jpg">
+					</div>
+				</div>
+
+			</div>
+
+
+
+
+		</div>
+
+
+
+		<div class="resimler-content">
+			<div class="user-info">
+				<img src="images/person2.jpg">
+				<div class="user-name">
+					<a href="#">Doğan Hazar</a>
+					<span>Mimar</span>
+				</div>
+			</div>
+
+			<div class="job-info">
+				<h3>Kuzu Effect</h3>
+				<span>Ankara</span>
+				<p>Oturma Odası, İç Mekan, Modern Tasarım</p>
+			</div>
+
+			<div class="other-projects-title">
+				Profesyonele Ait Diğer Projeler
+			</div>
+
+			<div class="other-projects">
+				<a href="#" class="other-p">
+					<img src="images/44.jpg">
+				</a>
+				<a href="#" class="other-p">
+					<img src="images/33.jpg">
+				</a>
+				<a href="#" class="other-p">
+					<img src="images/22.jpg">
+				</a>
+			</div>
+
+			<div class="other-projects-title">
+				Benzer Fikirler
+			</div>
+
+			<div class="benzer-fikirler">
+				<a href="#" class="benzer-fikir">
+					<img src="images/44.jpg">
+				</a>
+				<a href="#" class="benzer-fikir">
+					<img src="images/11.jpg">
+				</a>
+				<a href="#" class="benzer-fikir">
+					<img src="images/22.jpg">
+				</a>
+				<a href="#" class="benzer-fikir">
+					<img src="images/33.jpg">
+				</a>
+				<a href="#" class="benzer-fikir">
+					<img src="images/55.jpg">
+				</a>
+				<a href="#" class="benzer-fikir">
+					<img src="images/66.jpg">
+				</a>
+				<a href="#" class="benzer-fikir">
+					<img src="images/11.jpg">
+				</a>
+				<a href="#" class="benzer-fikir">
+					<img src="images/22.jpg">
+				</a>
+				<a href="#" class="benzer-fikir">
+					<img src="images/33.jpg">
+				</a>
+				<a href="#" class="benzer-fikir">
+					<img src="images/44.jpg">
+				</a>
+			</div>
+
+
+			<div class="comment-section" id="comment-section">
+				<div class="make-comment">
+					<div class="comment-input">
+						<img src="images/comment.svg">
+						<input type="text" name="" placeholder="Bir yorum bırakın">
+					</div>
+					<button>Gönder</button>
+				</div>
+
+				<div class="last-comments">
+
+					<div class="comment">
+						<div class="comment-profile">
+							<img src="images/comment.svg">
+							<div class="comment-name">
+								<p>Yusuf Akcesme</p>
+								<span>16 Mart, 2020</span>
+							</div>
+						</div>
+						<div class="comment-content" id="comment-p">
+							<p>Crisp Architects did a wonderful job designing and managing our project. Jimmy and Arthur were instrumental in understanding our needs and applying that to the overall design of the house.</p>
+						</div>
+					</div>
+
+
+					<div class="comment">
+						<div class="comment-profile">
+							<img src="images/comment.svg">
+							<div class="comment-name">
+								<p>Yusuf Akcesme</p>
+								<span>16 Mart, 2020</span>
+							</div>
+						</div>
+						<div class="comment-content" id="comment-p">
+							<p>Crisp Architects did a wonderful job designing and managing our project. Jimmy and Arthur were instrumental in understanding our needs and applying that to the overall design of the house.</p>
+					</div>
+
+
+					<div class="comment">
+						<div class="comment-profile">
+							<img src="images/comment.svg">
+							<div class="comment-name">
+								<p>Yusuf Akcesme</p>
+								<span>16 Mart, 2020</span>
+							</div>
+						</div>
+						<div class="comment-content" id="comment-p">
+							<p>Crisp Architects did a wonderful job designing and managing our project. Jimmy and Arthur were instrumental in understanding our needs and applying that to the overall design of the house.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+		</div>
+
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+	<!------------ modal popups ------------>
+
+
+	<div id="id03" class="mobile-search-modal">
+		<form class="search-modal">
+			<input type="text" name="" placeholder="Tasarım fikir bulun..">
+			<button><i class="fa fa-search"></i></button>
+		</form>
+	</div>
+
+
+
+
+	<div class="mobile-menu-cont" id="mobile-menu-cont">
+		<div class="mobil-login">
+			<a onclick="openLogin()">Giriş Yap</a>
+			<button onclick="closeMobileMenu()"><i class="fa fa-times"></i></button>
+		</div>
+		<div class="mobile-menu-nav">
+			<a href="tasarim.html"><i class="fa fa-chevron-right"></i> DİZAYN</a>
+			<a href="profesyoneller"><i class="fa fa-chevron-right"></i> PROFESYONELLER</a>
+			<a href="yarisma.html"><i class="fa fa-chevron-right"></i> YARIŞMALAR</a>
+			<a href="blog.html"><i class="fa fa-chevron-right"></i> BLOG</a>
+		</div>
+	</div>
+
+
+
+
+
+
+	<!-- giriş yap formu -->
+	<div id="id01" class="modal">
+		<form class="modal-content animate" action="" method="post">
+			<div class="container">
+				<h3>Hoşgeldiniz</h3>
+				<p>Devam etmek için lütfen giriş yapın.</p>
+				<input type="mail" name="" placeholder="E-posta">
+				<input type="password" name="" placeholder="Şifre">
+				<a class="forget-pass" href="#!">Şifremi unuttum</a>
+				<p class="or">Veya</p>
+
+				<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
+				<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
+				<button type="submit">Giriş Yap</button>
+
+				<p class="dont-have-acc">Hesabınız yok mu? <a onclick="openRegister()">Kayıt Ol</a></p>
+			</div>
+		</form>
+	</div>
+
+	<!-- kayıt ol formu -->
+	<div id="id02" class="modal2">
+		<form class="modal-content animate modal-kayit" action="" method="post">
+			<div class="container">
+				<h3>Kayıt Ol</h3>
+				<p>Devam etmek için lütfen bilgilerinizi girin.</p>
+				<input type="mail" name="" placeholder="E-posta">
+				<input type="password" name="" placeholder="Şifre">
+				<label class="login-container">
+					Haber bülteni ve yenilikler ile ilgili mail almak istiyorum. 
+					<input type="checkbox" checked="checked">
+					<span class="login-checkmark"></span>
+				</label>
+				<label class="login-container">
+					Hüküm&Koşullar ve Gizlilik Politikasını kabul ediyorum.
+					<input type="checkbox">
+					<span class="login-checkmark"></span>
+				</label>
+
+				<p class="or">Veya</p>
+
+				<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
+				<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
+				<button type="submit">Kayıt Ol</button>
+
+				<p class="dont-have-acc">Hesabınız var mı? <a onclick="openLogin()">Giriş Yap</a></p>
+			</div>
+		</form>
+	</div>
+
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+
+	<script>
+		/*
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("demo");
+			var captionText = document.getElementById("caption");
+			if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";
+					dots[slideIndex-1].className += " active";
+					captionText.innerHTML = dots[slideIndex-1].alt;
+				}
+				*/
+			</script>
+
+
+		</body>
+		</html>

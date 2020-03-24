@@ -1,0 +1,375 @@
+
+section.resimler {
+	width: 100%;
+	height: calc(100vh - 60px);
+	margin-top: 60px;
+	display: flex;
+}
+
+
+.resimler-slider {
+	flex: 2.8;
+	height: 100%;
+	position: relative;
+}
+
+
+.resimler-content {
+	flex: 1;
+	height: 100%;
+	background-color: #272726;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+
+.user-info {
+	display: flex;
+	width: 80%;
+	margin: 30px auto 10px auto;
+	align-items: center;
+}
+
+.user-info img {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.user-info .user-name a {
+	font-size: 14px;
+	display: block;
+	font-family: 'nunito-regular';
+	color: #fff;
+}
+
+.user-info .user-name span {
+	font-size: 12px;
+	font-family: 'nunito-light';
+	color: #CFCFCF;
+}
+
+
+.job-info {
+	width: 80%;
+	margin: 20px auto 10px auto;
+	border-bottom: 1px solid #FFD982;
+}
+
+.job-info h3 {
+	font-size: 28px;
+	font-family: 'nunito-regular';
+	color: #fff;
+}
+
+.job-info span {
+	font-size: 13px;
+	font-family: 'nunito-light';
+	color: #CFCFCF;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.job-info p {
+	font-size: 13px;
+	font-family: 'nunito-light';
+	color: #FFD982;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.other-projects-title {
+	margin-top: 10px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	font-size: 14px;
+	font-family: 'nunito-light';
+	color: #fff;
+}
+
+.other-projects {
+	width: 80%;
+	min-height: 120px;
+	border-bottom: 1px solid #6B6A6A;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.other-projects a.other-p {
+	width: 95px;
+	height: 100px;
+}
+
+.other-projects a.other-p img {
+	width: 95px;
+	height: 100px;
+}
+
+.benzer-fikirler {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.benzer-fikirler .benzer-fikir {
+	width: 56px;
+	height: 55px;
+	border: 1px solid red;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.benzer-fikirler .benzer-fikir img {
+	width: 56px;
+	height: 55px;
+}
+
+
+
+
+
+
+.slider {
+	widows: 100%;
+	height: 100%;
+}
+
+.slider-img {
+	widows: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.slider-img img {
+	width: 100%;
+	height: auto;
+}
+
+
+.slider-bottom {
+	width: 100%;
+	height: 250px;
+	position: absolute;
+	bottom: 0px;
+	background: -moz-linear-gradient(bottom,  rgba(0,0,0,0.96) 0%, rgba(125,185,232,0) 100%);
+	background: -webkit-linear-gradient(bottom,  rgba(0,0,0,0.96) 0%,rgba(125,185,232,0) 100%);
+	background: linear-gradient(to top,  rgba(0,0,0,0.96) 0%,rgba(125,185,232,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db000000', endColorstr='#007db9e8',GradientType=0 );
+	display: flex;
+	align-items: flex-end;
+	padding: 30px 50px;
+	justify-content: center;
+}
+
+.slider-bottom .left-buttons {
+	display: flex;
+	margin-right: auto;
+}
+
+
+.slider-bottom .left-buttons button {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	color: #363237;
+	background-color: #fff;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 28px;
+	cursor: pointer;
+	margin-right: 15px;
+}
+
+.slider-bottom .thumb-images {
+	width: auto;
+	height: 100px;
+	margin-right: auto;
+	margin-left: -100px;
+	display: flex;
+}
+
+.slider-bottom .thumb-images .thumb {
+	width: 100px;
+	height: 100px;
+	margin-right: 20px;
+	opacity: .6;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1px;
+}
+
+.slider-bottom .thumb-images .thumb img {
+	width: 100px;
+	height: 100px;
+	border-radius: 1px;
+}
+
+.active-thumb {
+	opacity: 1 !important;
+}
+.active-thumb img {
+	border: 2px solid #FFD982;
+}
+
+.slider-bottom .thumb-images .thumb:hover {
+	transition: .3s;
+	opacity: 1 !important;
+}
+
+
+.slider-nav-buttons {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15px;
+}
+
+.slider-nav-buttons button {
+	width: 50px;
+	height: 50px;
+	font-size: 35px;
+	color: #fff;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.comment-section {
+	width: 90%;
+	height: auto;
+	border-radius: 5px;
+	margin: 0 auto;
+	padding: 50px 30px;
+	position: relative;
+}
+
+
+.comment-section .make-comment {
+	display: flex;
+	margin-bottom: 30px;
+	flex-direction: column;
+}
+
+.comment-section .make-comment button {
+	margin-left: auto;	
+	width: 90px;
+	height: 30px;
+	margin-top: 20px;
+	border-radius: 30px;
+	border: 1.5px solid #FFD982;
+	color: #FFD982;
+	background: none;
+	cursor: pointer;
+}
+
+.comment-section .make-comment .comment-input {
+	display: flex;
+	align-items: center;
+}
+
+.comment-section .make-comment .comment-input input {
+	flex: 1;
+	height: 30px;
+	line-height: 30px;
+	order: 1;
+	margin-left: 20px;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	outline: 0;
+	border-bottom: 2px solid #FFD982;
+	font-style: normal;
+	padding: 0 0 6px;
+	width: 100%;
+	box-shadow: inherit;
+	background-image: initial;
+	background: none;
+	color: #fff;
+}
+
+
+.comment-section .last-comments > p {
+	font-family: 'nunito-regular';
+	font-size: 17px;
+	color: #fff;
+}
+
+
+
+.comment-section .last-comments .comment {
+	width: 100%;
+	height: auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.comment-section .last-comments .comment:last-child {
+	border-bottom: none;
+}
+
+.comment-section .last-comments .comment .comment-profile {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.comment-section .last-comments .comment .comment-profile .comment-name {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+.comment-section .last-comments .comment .comment-profile .comment-name p {
+	font-family: 'nunito-regular';
+	font-size: 15px;
+	color: #fbfbfb;
+}
+
+.comment-section .last-comments .comment .comment-profile .comment-name span {
+	font-family: 'nunito-light';
+	font-size: 12px;
+	color: #999;
+}
+
+.comment-section .last-comments .comment .comment-content {
+	height: 44px;
+	overflow: hidden;
+}
+
+.comment-section .last-comments .comment .comment-content p {
+	font-family: 'nunito-light';
+	font-size: 15px;
+	color: #fbfbfb;
+}

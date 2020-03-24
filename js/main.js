@@ -173,6 +173,64 @@ function likeBlogPost() {
 }
 
 
+/* 	resimler.html sayfası slider kodları */
+var thumb = document.querySelectorAll('.thumb');
+var thumbLength = thumb.length;
+
+
+slideNo = 0;
+
+var sliderImg = document.getElementById('slider-img');
+function activeThumb() {
+	removeThumb();
+	this.classList.add('active-thumb');
+	var thumbImg = this.childNodes[1].src;
+	document.getElementById('slider-img').src = thumbImg;
+	slideNo = this.id - 1;
+
+}
+function removeThumb() {
+	thumb.forEach(item => item.classList.remove('active-thumb'));
+}
+thumb.forEach(item => item.addEventListener('click', activeThumb));
+
+
+
+
+/* slider button navigators */
+
+function nextSlide(arti) {
+	slideNo += arti;
+	if (slideNo < thumbLength) {
+		document.getElementById('slider-img').src = thumb[slideNo].childNodes[1].src;
+		thumb.forEach(item => item.classList.remove('active-thumb'));
+		thumb[slideNo].classList.add('active-thumb');
+	} else {
+		slideNo = -1;
+	}
+}
+
+function prevSlide(eksi) {
+	slideNo += eksi;
+	if (slideNo < thumbLength && slideNo > -1) {
+		document.getElementById('slider-img').src = thumb[slideNo].childNodes[1].src;
+		thumb.forEach(item => item.classList.remove('active-thumb'));
+		thumb[slideNo].classList.add('active-thumb');
+	} else {
+		slideNo = 5;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 /* mobile crew section */
 $(document).ready(function(){
 	$(".owl-carousel").owlCarousel();
@@ -185,3 +243,7 @@ $('.owl-carousel').owlCarousel({
 	items:4,
 	center: true
 });
+
+
+
+
