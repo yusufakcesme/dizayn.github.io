@@ -224,6 +224,21 @@ function prevSlide(eksi) {
 
 
 
+/* resimler mobile user info açılır kapanır text */
+
+var userInfoResimler = document.getElementById('user-info-resimler');
+var chevronDown = document.getElementById('chevron-down');
+
+function openMobileText() {
+	if (userInfoResimler.style.height === "auto") {
+		userInfoResimler.style.height = "100px";
+		chevronDown.style.transform = "rotate(0deg)";
+	} else {
+		userInfoResimler.style.height = "auto";
+		chevronDown.style.transform = "rotate(180deg)";
+	}
+}
+
 
 
 
