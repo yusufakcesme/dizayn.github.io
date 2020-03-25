@@ -1505,12 +1505,13 @@ label.login-container {
 
 
 	header .hamburger-menu button {
-		font-size: 30px;
+		font-size: 25px;
 		color: #fff;
 		background: none;
 		border: none;
 		display: inline-block;
 		margin-right: 20px;
+		margin-top: 7px;
 	}
 
 	header {

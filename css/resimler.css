@@ -1,4 +1,9 @@
 
+body {
+	background-color: #f4f4f4 !important;
+}
+
+
 section.resimler {
 	width: 100%;
 	height: calc(100vh - 60px);
@@ -24,8 +29,9 @@ section.resimler {
 .user-info {
 	display: flex;
 	width: 80%;
-	margin: 30px auto 10px auto;
+	margin: 30px auto 5px auto;
 	align-items: center;
+	border-bottom: 2px solid #ebebeb;
 }
 
 .user-info img {
@@ -86,15 +92,17 @@ section.resimler {
 	font-size: 14px;
 	font-family: 'nunito-light';
 	color: #fff;
+	border-top: 2px solid #ebebeb;
 }
 
 .other-projects {
 	width: 80%;
 	min-height: 120px;
-	border-bottom: 1px solid #6B6A6A;
 	margin: 0 auto;
 	display: flex;
+	border-bottom: #999;
 	justify-content: space-between;
+	border-bottom: 2px solid #ebebeb;
 }
 
 .other-projects a.other-p {
@@ -498,6 +506,29 @@ section.resimler {
 		display: block;
 	}
 
+
+	.mobile-user-text .job-info-mobile h3 {
+		font-size: 28px;
+		font-family: 'nunito-regular';
+		color: #fff;
+	}
+
+	.mobile-user-text .job-info-mobile span {
+		font-size: 13px;
+		font-family: 'nunito-light';
+		color: #CFCFCF;
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.mobile-user-text .job-info-mobile p {
+		font-size: 13px;
+		font-family: 'nunito-light';
+		color: #FFD982;
+		display: block;
+		margin-bottom: 20px;
+	}
+
 	.mobile-save-like {
 		display: flex !important;
 		margin-left: 30px;
@@ -534,55 +565,135 @@ section.resimler {
 
 
 	.job-info {
-		background-color: #272726;
-		width: 100%;
-		padding: 20px 5%;
-		margin-top: -12px;
+		display: none;
 	}
 
 	.other-projects-title {
-		background-color: #272726;
+		background-color: #fff;
 		width: 100%;
-		padding: 10px 5%;	
+		padding: 10px 5%;
+		color: #272726;
+		font-size: 16px;
+		font-family: 'nunito-regular';
 	}
 
 	.other-projects {
-		background-color: #272726;
+		background-color: #fff;
 		width: 100%;
-		height: auto;
-		padding: 10px 5% 30px 5%;
+		padding: 10px 5% 10px 5%;
 		margin-top: -17px;
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto !important;
+		-webkit-overflow-scrolling: touch;
+		justify-content:flex-start;
+	}
+
+	.other-projects::-webkit-scrollbar {
+		display: none;
+	}
+
+	.other-projects a.other-p {
+		width: 150px;
+		height: 150px;
+		margin-left: 14px;
+	}
+
+	.other-projects a.other-p img {
+		width: 150px;
+		height: 150px;
 	}
 
 	.benzer-fikirler {
-		background-color: #272726;
+		background-color: #fff;
 		width: 100%;
 		height: auto;
 		padding: 10px 5% 30px 5%;
 		margin-top: -17px;
+		justify-content: space-around;
 	}
 	.benzer-fikirler .benzer-fikir {
-		width: 64px;
-		height: 64px;
 		margin-bottom: 10px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		width: 160px;
+		height: 160px;
+		margin-top: 10px;
 	}
 
 	.benzer-fikirler .benzer-fikir img {
-		width: 64px;
-		height: 64px;
+		width: 100%;
+		height: 100%;
 	}
 
 	.comment-section {
 		width: 100%;
-		background-color: #272726;
+		background-color: #fff;
 		height: auto;
 		border-radius: 0px;
 		margin: 10px auto 0 auto;
 		padding: 50px 30px;
 		position: relative;
+		border-top: 2px solid #ebebeb;
+		border-bottom: 2px solid #ebebeb;
+	}
+
+
+	.comment-section .last-comments .comment .comment-content p {
+		font-family: 'nunito-light';
+		font-size: 15px;
+		color: #272726;
+	}
+	.comment-section .last-comments .comment .comment-profile .comment-name p {
+		font-family: 'nunito-regular';
+		font-size: 15px;
+		color: #272726;
+	}
+
+
+	.comment-section .make-comment .comment-input input {
+		flex: 1;
+		height: 30px;
+		line-height: 30px;
+		order: 1;
+		margin-left: 20px;
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+		outline: 0;
+		border-bottom: 2px solid #AA7C13;
+		font-style: normal;
+		padding: 0 0 6px;
+		width: 100%;
+		box-shadow: inherit;
+		background-image: initial;
+		background: none;
+		color: #272726;
+	}
+
+	.comment-section .make-comment button {
+		margin-left: auto;	
+		width: 90px;
+		height: 30px;
+		margin-top: 20px;
+		border-radius: 30px;
+		border: 1.5px solid #AA7C13;
+		color: #AA7C13;
+		background: none;
+		cursor: pointer;
+	}
+
+
+	.comment-section .last-comments .comment {
+		width: 100%;
+		height: auto;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+
+	.comment-section .last-comments .comment .comment-content {
+		height: auto;
 	}
 
 }
