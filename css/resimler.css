@@ -12,8 +12,6 @@ section.resimler {
 	height: 100%;
 	position: relative;
 }
-
-
 .resimler-content {
 	flex: 1;
 	height: 100%;
@@ -248,18 +246,6 @@ section.resimler {
 	border: none;
 	cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
