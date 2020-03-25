@@ -376,7 +376,6 @@ section.resimler {
 		margin-top: 60px;
 		display: flex;
 		flex-direction: column;
-		display: none;
 	}
 
 
@@ -390,7 +389,7 @@ section.resimler {
 	.resimler-content {
 		width: 100%;
 		height: auto;
-		background-color: #272726;
+		background-color: #272726 !important;
 		display: flex;
 		flex-direction: column;
 		overflow: visible;
