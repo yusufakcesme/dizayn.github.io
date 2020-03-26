@@ -384,7 +384,7 @@ header .login-btn a {
 .notif-line {
 	width: 3px;
 	height: 75px;
-	background-color: #999;
+	background-color: #ebebeb;
 	margin-left: 20px;
 	position: relative;
 }
@@ -395,7 +395,7 @@ header .login-btn a {
 	left: -4px;
 	width: 11px;
 	height: 11px;
-	background-color: #777;
+	background-color: #999;
 	border-radius: 50%;
 }
 
@@ -1225,18 +1225,20 @@ header .mobile-search button {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .blog-articles .blog-box {
-	width: 290px;
-	height: 320px;
+	width: 320px;
+	height: auto;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 30px;
 }
 
 .blog-articles .blog-box > img {
 	width: 100%;
+	height: auto;
 	border-radius: 5px;
 }
 
@@ -1733,7 +1735,8 @@ label.login-container {
 	}
 
 	.blog-articles {
-		justify-content: center;
+		justify-content: space-around;
+		width: 100%;
 	}
 
 	.login-user {
@@ -2038,6 +2041,10 @@ label.login-container {
 @media only screen and (max-width: 600px) {
 	.tabs {
 		display: none;
+	}
+
+	.blog-box {
+		width: 100% !important;
 	}
 }
 
