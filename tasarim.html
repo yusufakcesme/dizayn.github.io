@@ -32,11 +32,25 @@
 			<a href="yarisma.html">YARIŞMALAR</a>
 			<a href="blog.html">BLOG</a>
 		</nav>
-		<div class="login-btn">
+		<div style="display:none;" class="login-btn">
 			<div class="user-rounded">
 				<i class="fa fa-user"></i>
 			</div>
 			<a onclick="openLogin()">GİRİŞ YAP</a>
+		</div>
+
+		<div onclick="openUserOptions()" class="login-user">
+			<div class="user-rounded">
+				<i class="fa fa-user"></i>
+			</div>
+			<p>Doğan Hazar</p>
+		</div>
+		<div class="login-user-popup" id="login-user-popup">
+			<a href="#"><i class="fa fa-user"></i> Profil</a>
+			<a href="#"><i class="fa fa-cog"></i> Ayarlar</a>
+			<a href="#"><i class="fa fa-file-medical"></i> Proje Oluştur</a>
+			<a href="#"><i class="fa fa-crown"></i> Premium Üyelik</a>
+			<a href="#"><i class="fa fa-sign-out-alt"></i> Çıkış</a>
 		</div>
 
 	</header>
