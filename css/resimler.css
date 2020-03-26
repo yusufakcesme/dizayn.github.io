@@ -20,7 +20,7 @@ section.resimler {
 .resimler-content {
 	flex: 1;
 	height: 100%;
-	background-color: #272726;
+	background-color: #272726	;
 	display: flex;
 	flex-direction: column;
 	overflow: auto;
@@ -31,7 +31,6 @@ section.resimler {
 	width: 80%;
 	margin: 30px auto 5px auto;
 	align-items: center;
-	border-bottom: 2px solid #ebebeb;
 }
 
 .user-info img {
@@ -92,22 +91,22 @@ section.resimler {
 	font-size: 14px;
 	font-family: 'nunito-light';
 	color: #fff;
-	border-top: 2px solid #ebebeb;
 }
 
 .other-projects {
 	width: 80%;
-	min-height: 120px;
+	height: auto;
 	margin: 0 auto;
 	display: flex;
+	flex-wrap: wrap;
 	border-bottom: #999;
-	justify-content: space-between;
-	border-bottom: 2px solid #ebebeb;
+	justify-content: space-between;	
 }
 
 .other-projects a.other-p {
 	width: 95px;
 	height: 100px;
+	margin-bottom: 10px;
 }
 
 .other-projects a.other-p img {
@@ -385,9 +384,44 @@ section.resimler {
 	display: none;
 }
 
+.owl-theme {
+	display: none !important;
+}
+
 
 
 @media only screen and (max-width: 1250px) {
+
+	.slider {
+		display: none !important;
+	}
+
+
+	.owl-theme {
+		display: block !important;
+	}
+
+	.item-owl {
+		width: 100%;
+		height: 570px;
+	}
+
+	.item-owl img {
+		width: 100%;
+		height: 570px;
+	}
+
+
+	.owl-pagination {
+		margin-top: -40px;
+	}
+
+	.owl-pagination span {
+		background: #fff !important;
+		opacity: .7 !important;
+		box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+	}
+
 	
 
 	section.resimler {
@@ -413,7 +447,7 @@ section.resimler {
 		display: flex;
 		flex-direction: column;
 		overflow: visible;
-		margin-top: -5px;
+		/*margin-top: -5px;*/
 	}
 
 	.slider-bottom .left-buttons {
@@ -466,7 +500,7 @@ section.resimler {
 		height: 100%;
 		top: 50%;
 		transform: translateY(-50%);
-		display: flex;
+		display: none;
 		align-items: center;
 		justify-content: space-between;
 		padding: 0 10px;
@@ -501,6 +535,20 @@ section.resimler {
 		margin-bottom: 30px;
 	}
 
+	.user-info-top img {
+		width: 40px;
+		height: 40px;
+	}
+
+
+	.user-info-top .user-name a {
+		font-size: 20px;
+	}
+
+	.user-info-top .user-name span {
+		font-size: 15px;
+	}
+
 	.mobile-user-text {
 		color: #fff;
 		font-family: 'nunito-light';
@@ -532,7 +580,9 @@ section.resimler {
 
 	.mobile-save-like {
 		display: flex !important;
-		margin-left: 30px;
+		margin-left: auto;
+		flex: 1;
+		justify-content: flex-end;
 	}
 
 	.mobile-save-like button {
