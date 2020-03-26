@@ -257,41 +257,15 @@ function openUserOptions() {
 
 
 
-/* proje ekleme sayfası kategoriler */
-var proje_tur = document.getElementById('proje-tur');
-var icmimar_altbaslik = document.getElementById('ic-mimari');
-var mimari_altbaslik = document.getElementById('mimari');
-var peyzaj_altbaslik = document.getElementById('peyzaj');
-var endustriyel_altbaslik = document.getElementById('endustriyel');
+var notif_popup = document.getElementById('notif-popup');
 
-proje_tur.addEventListener("change", function () {
-	if (this.selectedIndex == 1) {
-		icmimar_altbaslik.style.display = "block";
-		mimari.style.display = "none";
-		peyzaj_altbaslik.style.display = "none";
-		endustriyel_altbaslik.style.display = "none";
-	} else if (this.selectedIndex == 0) {
-		peyzaj_altbaslik.style.display = "none";
-		endustriyel_altbaslik.style.display = "none";
-		icmimar_altbaslik.style.display = "none";
-		mimari.style.display = "block";
-	} else if (this.selectedIndex == 2) {
-		peyzaj_altbaslik.style.display = "block";
-		endustriyel_altbaslik.style.display = "none";
-		icmimar_altbaslik.style.display = "none";
-		mimari.style.display = "none";
-	} else if (this.selectedIndex == 3) {
-		peyzaj_altbaslik.style.display = "none";
-		endustriyel_altbaslik.style.display = "block";
-		icmimar_altbaslik.style.display = "none";
-		mimari.style.display = "none";
-	} 
-
-
-});
-
-
-
+function openNotifPopup() {
+	if (notif_popup.style.display === "flex") {
+		notif_popup.style.display = "none";
+	} else {
+		notif_popup.style.display = "flex";
+	}
+} 
 
 
 
