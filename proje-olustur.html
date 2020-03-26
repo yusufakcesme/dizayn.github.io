@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/yarisma-ekleme.css">
+	<link rel="stylesheet" type="text/css" href="css/proje-olustur.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
 </head>
 <body>
@@ -55,11 +56,8 @@
 <section class="yarisma-ekle">
 	<div class="form-nav">
 		<nav id="desktop-nav">
-			<a href="#general" class="active-nav nav_btn">General</a>
-			<a href="#highlights" class="nav_btn">Hightlights</a>
-			<a href="#location" class="nav_btn">Location</a>
-			<a href="#contact" class="nav_btn">Contact info</a>
-			<a href="#media" class="nav_btn">Media</a>
+			<a href="#general" class="active-nav nav_btn">Genel Bilgiler</a>	
+			<a href="#contact" class="nav_btn">Proje Detayları</a>
 		</nav>
 		<nav class="mobile-nav">
 			<a href="#general" class="active-nav nav_btn"><i class="fa fa-cog"></i></a>
@@ -72,32 +70,30 @@
 
 
 	<form method="POST" action="">
-		<h1>Bize İhtiyacınızdan Bahsedin.</h1>
-		<p>Profesyonellerle hemen iletişime geçin. Profilleri, yorumları ve portföyleri <br> görüntüleyin. Teklifleri beğendiğiniz takdirde satın alın
-		</p>
+		<h1>Proje Oluşturun</h1>
+		<p></p>
 
 		<div class="form-box" id="general">
 			<div class="form-section">
 				<h3>GENERAL</h3>
 				<div class="el">
-					<p>Proje İsmi</p>
+					<p>Proje Adı</p>
 					<input type="text" name="" placeholder="Projenin adı">
 				</div>
 				<div class="el">
-					<p>Proje Bedeli</p>w
-					<input type="text" name="" placeholder="Proje bedeli">
-				</div>
-				<div class="el">
 					<p>Proje Tanımı</p>
-					<textarea placeholder="Hayalinizdeki projeyi burada anlatın."></textarea>
+					<input type="text" name="" placeholder="Projenin Tanımı">
 				</div>
+				
 				<div class="el">
-					<p>Kategori</p>
+					<p>Proje Türü</p>
 					<div class="select-box">
 						<select class="first">
-							<option>option1</option>
-							<option>option2</option>
-							<option>option3</option>
+							<option>Tür Seçin</option>
+							<option>Mimari</option>
+							<option>İç Mimari</option>
+							<option>Peyzaj</option>
+							<option>Endüstriyel Tasarım</option>
 						</select>
 						<div class="down">
 							<i class="fa fa-chevron-down"></i>
@@ -105,119 +101,114 @@
 					</div>
 				</div>
 
-			</div>
-		</div>
-
-		<div class="form-box" id="highlights">	
-			<div class="form-section">
-				<h3>HIGHLIGHTS</h3>
-				<div class="hl-checkboxes">
-					
-					
-					<label class="hl-container">One
-						<input type="checkbox" checked="checked">
-						<span class="hl-checkmark"></span>
-					</label>
-					<label class="hl-container">Two
-						<input type="checkbox">
-						<span class="hl-checkmark"></span>
-					</label>
-					<label class="hl-container">Three
-						<input type="checkbox">
-						<span class="hl-checkmark"></span>
-					</label>
-					<label class="hl-container">Four
-						<input type="checkbox">
-						<span class="hl-checkmark"></span>
-					</label>
-
-					<label class="hl-container">One
-						<input type="checkbox">
-						<span class="hl-checkmark"></span>
-					</label>
-					<label class="hl-container">Two
-						<input type="checkbox">
-						<span class="hl-checkmark"></span>
-					</label>
-					<label class="hl-container">Three
-						<input type="checkbox">
-						<span class="hl-checkmark"></span>
-					</label>
-					<label class="hl-container">Four
-						<input type="checkbox">
-						<span class="hl-checkmark"></span>
-					</label>
-
-
-
-
-				</div>
-
-			</div>
-		</div>
-
-		<div class="form-box" id="location">	
-			<div class="form-section">
-				<h3>LOCATIOn</h3>
-				<div class="multiple-inputs">
-					<div class="el">
-						<p>Şehir</p>
-						<input type="text" name="" placeholder="Projenin adı">
-					</div>
-					<div class="el">
-						<p>Posta Kodu</p>
-						<input type="text" name="" placeholder="Proje bedeli">
-					</div>
-				</div>
 				<div class="el">
-					<p>Posta Kodu</p>
-					<input type="text" name="" placeholder="Proje bedeli">
+					<p>Lokasyon (şehir)</p>
+					<input type="text" name="" placeholder="Yalnızca şehir adı giriniz">
 				</div>
 
-				<div class="mapouter">
-					<div class="gmap_canvas">
-						<iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=turkey&t=&z=7&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-						</iframe>
-					</div>
+				<div class="el">
+					<p>Alan (m2)</p>
+					<input type="text" name="" placeholder="m2 biriminde proje alanı">
 				</div>
+
+				<div class="el">
+					<p>Emeği Geçenler</p>
+					<input type="text" name="" placeholder="Projede emeği geçenler">
+				</div>
+
+				<div class="el">
+					<p>Link</p>
+					<input type="text" name="" placeholder="https://">
+				</div>
+
+
 			</div>
 		</div>
+
 
 
 		<div class="form-box" id="contact">	
 			<div class="form-section">
-				<h3>CONTACT INFO</h3>
-
+				<h3>PROJE DETAYLARI</h3>
 				<div class="el">
-					<p>Email</p>
-					<input type="text" name="" placeholder="Email adresiniz">
+					<p>Proje Resimleri</p>
+					<input type="file" class="custom-file-input" multiple>
 				</div>
 				<div class="el">
-					<p>Telefon</p>
-					<input type="text" name="" placeholder="Telefon numaranız">
-				</div>
-
-			</div>
-		</div>
-
-
-		<div class="form-box" id="media">	
-			<div class="form-section">
-				<h3>MEDIA</h3>
-
-				<div class="el">
-					<p>Dosya Ekleme</p>
-					<input type="file" class="custom-file-input">
-				</div>
-				<div class="el big-media">
-					<p><i class="fa fa-upload"></i> Çoklu Dosya Yükleyin</p>
-					<input type="file" class="custom-input" multiple>
+					<p>Anahtar Kelimeler</p>
+					<input type="text" name="" placeholder="Anahtar kelimeleri girin">
 				</div>
 
 				<div class="el">
-					<p>Video(opsiyonel)</p>
-					<input type="text" name="" placeholder="Video URL">
+					<p>Tür</p>
+					<div class="select-box">
+						<select class="first" id="proje-tur">
+							<option>Mimari</option>
+							<option>İç Mimari</option>
+							<option>Peyzaj</option>
+							<option>Endüstriyel Tasarım</option>
+						</select>
+						<div class="down">
+							<i class="fa fa-chevron-down"></i>
+						</div>
+					</div>
 				</div>
+
+				<div class="el">
+					<p>Alt Başlık</p>
+
+					<div class="select-box" id="mimari">
+						<select class="first">
+							<option>mimari</option>
+							<option>mimari</option>
+						</select>
+						<div class="down">
+							<i class="fa fa-chevron-down"></i>
+						</div>
+					</div>
+
+
+					<div class="select-box ic-mimari" id="ic-mimari">
+						<select class="first">
+							<option>Mutfak</option>
+							<option>Oturma Odası</option>
+							<option>Salon</option>
+							<option>Yatak Odası</option>
+						</select>
+						<div class="down">
+							<i class="fa fa-chevron-down"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="el">
+					<p>Stil</p>
+					<div class="select-box">
+						<select class="first">
+							<option>Modern</option>
+							<option>Geleneksel</option>
+						</select>
+						<div class="down">
+							<i class="fa fa-chevron-down"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="el">
+					<p>Malzeme</p>
+					<div class="select-box">
+						<select class="first">
+							<option>Ahşap</option>
+							<option>Metal</option>
+						</select>
+						<div class="down">
+							<i class="fa fa-chevron-down"></i>
+						</div>
+					</div>
+				</div>
+
+
+
 
 			</div>
 		</div>

@@ -257,6 +257,24 @@ function openUserOptions() {
 
 
 
+/* proje ekleme sayfası kategoriler */
+var proje_tur = document.getElementById('proje-tur');
+var icmimar_altbaslik = document.getElementById('ic-mimari');
+var mimari_altbaslik = document.getElementById('mimari');
+
+document.getElementById('proje-tur').addEventListener("change", function () {
+	if (this.selectedIndex == 1) {
+
+		icmimar_altbaslik.style.display = "block";
+		mimari.style.display = "none";
+	} else if (this.selectedIndex == 0) {
+		icmimar_altbaslik.style.display = "none";
+		mimari.style.display = "block";
+	}
+
+
+});
+
 
 
 
