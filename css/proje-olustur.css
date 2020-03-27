@@ -3,3 +3,13 @@
 .ic-mimari {
 	display: none;
 }
+
+
+.yeni-resim {
+	padding: 10px 15px;
+	background-color: #ebebeb;
+	border: 1px solid #aeaeae;
+	cursor: pointer;
+	font-family: 'nunito-bold';
+	border-radius: 2px;
+}
