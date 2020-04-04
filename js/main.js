@@ -38,6 +38,20 @@ tab_btn.forEach(item => item.addEventListener('click', activeTab));
 
 
 
+var notif_popup = document.getElementById('notif-popup');
+/*
+function openNotifPopup() {
+	if (notif_popup.style.display === "flex") {
+		notif_popup.style.display = "none";
+	} else {
+		notif_popup.style.display = "flex";
+	}
+} 
+
+*/
+
+
+
 
 
 var filter_btn = document.querySelectorAll('.filter-button');
@@ -45,13 +59,54 @@ var filter_modal_all = document.querySelectorAll('.filter-pop');
 
 function activeFilter() {
 	removeFilter();
-	var filter_modal = this.parentNode.childNodes[3];
-	filter_modal.style.display = "block";
 }
 function removeFilter() {
-	filter_modal_all.forEach(item => item.style.display = "none");
+	filter_modal_all.forEach(item => item.classList.remove('filter-open'));
 }
 filter_btn.forEach(item => item.addEventListener('click', activeFilter));
+
+
+
+$(document).ready(function(){
+        // Show hide popover
+        $(".filter-tools").click(function(){
+        	$(this).find(".filter-pop").addClass('filter-open');
+        });
+
+        $(".user-pop-main").click(function() {
+        	$(this).find(".login-user-popup").css("display", "flex");
+        });
+        $(".notif-pop-main").click(function() {
+        	$(this).find(".notification-popup").css("display", "flex");
+        });
+
+
+    });
+
+$(document).on("click", function(event){
+
+
+	var $trigger = $(".filter-tools");
+	if($trigger !== event.target && !$trigger.has(event.target).length){
+		$(".filter-pop").removeClass('filter-open');
+	}      
+
+
+	var $profile_trigger = $(".user-pop-main");
+	if($profile_trigger !== event.target && !$profile_trigger.has(event.target).length){
+		$(".login-user-popup").css("display", "none");
+	}
+
+
+	var $notif_trigger = $(".notif-pop-main");
+	if($notif_trigger !== event.target && !$notif_trigger.has(event.target).length){
+		$(".notification-popup").css("display", "none");
+	}    
+
+
+
+});
+
 
 
 
@@ -239,33 +294,6 @@ function openMobileText() {
 	}
 }
 
-
-
-
-
-// login user popup 
-
-var login_user_popup = document.getElementById('login-user-popup');
-
-function openUserOptions() {
-	if (login_user_popup.style.display === "flex") {
-		login_user_popup.style.display = "none";
-	} else {
-		login_user_popup.style.display = "flex";
-	}
-} 
-
-
-
-var notif_popup = document.getElementById('notif-popup');
-
-function openNotifPopup() {
-	if (notif_popup.style.display === "flex") {
-		notif_popup.style.display = "none";
-	} else {
-		notif_popup.style.display = "flex";
-	}
-} 
 
 
 

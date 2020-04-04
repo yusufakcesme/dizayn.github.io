@@ -193,6 +193,10 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	display: none;
 }
 
+.filter-open {
+	display: block;
+}
+
 .filter-tools .filter-pop input {
 	width: 100%;
 	height: 34px;
@@ -235,7 +239,7 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 
 }
 
-.filter-tools-konum .filter-pop form {
+.konum .filter-pop form {
 	display: flex;
 	flex-direction: column;
 	border-bottom: 1px solid #e8e8e8;
@@ -243,13 +247,13 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 }
 
 
-.filter-tools-konum .filter-pop form label {
+.konum .filter-pop form label {
 	display: flex;
 	align-items: center;
 	margin-bottom: 20px;
 }
 
-.filter-tools-konum .filter-pop form select {
+.konum .filter-pop form select {
 	flex: 1;
 	margin-left: 20px;
 	height: 35px;
@@ -258,7 +262,7 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	cursor: pointer;
 }
 
-.filter-tools-konum .filter-pop form label input {
+.konum .filter-pop form label input {
 	flex: 1;
 	margin-left: 73px;
 	border: 1px solid #e8e8e8;

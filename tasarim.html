@@ -8,6 +8,11 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/tasarim.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 </head>
 <body>
 
@@ -42,121 +47,116 @@
 
 
 		<!-- kullanıcı giriş yaptığında bu kısım gözükecek -->
-		
-		<div class="notification-popup" id="notif-popup">
-			<p class="title">BİLDİRİMLERİNİZ</p>
+		<div class="notif-pop-main">
+			<span class="bell-btn" onclick="openNotifPopup()"><i class="fa fa-bell"></i></span>
+			<div class="notification-popup" id="notif-popup">
 
-			<div class="notif-cont">
-				<div class="notif">
-					<div class="notif-line"><span></span></div>
-					<div class="notif-user">
-						<img src="images/person1.jpg">
-						<div class="notif-text">
-							<p><a href="#">Doğan Hazar</a> sizi takip etti.</p>
-							<i>1 hafta önce</i>
+				<p class="title">BİLDİRİMLERİNİZ</p>
+
+				<div class="notif-cont">
+					<div class="notif">
+						<div class="notif-line"><span></span></div>
+						<div class="notif-user">
+							<img src="images/person1.jpg">
+							<div class="notif-text">
+								<p><a href="#">Doğan Hazar</a> sizi takip etti.</p>
+								<i>1 hafta önce</i>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="notif">
-					<div class="notif-line"><span></span></div>
-					<div class="notif-user">
-						<img src="images/person1.jpg">
-						<div class="notif-text">
-							<p><a href="#">Yusuf Akcesme</a> projenizi beğendi.</p>
-							<i>1 hafta önce</i>
+					<div class="notif">
+						<div class="notif-line"><span></span></div>
+						<div class="notif-user">
+							<img src="images/person1.jpg">
+							<div class="notif-text">
+								<p><a href="#">Yusuf Akcesme</a> projenizi beğendi.</p>
+								<i>1 hafta önce</i>
+							</div>
 						</div>
 					</div>
-				</div>
 
 
-				<div class="notif">
-					<div class="notif-line"><span></span></div>
-					<div class="notif-user">
-						<img src="images/person1.jpg">
-						<div class="notif-text">
-							<p><a href="#">Doğan Hazar</a> sizi takip etti.</p>
-							<i>1 hafta önce</i>
+					<div class="notif">
+						<div class="notif-line"><span></span></div>
+						<div class="notif-user">
+							<img src="images/person1.jpg">
+							<div class="notif-text">
+								<p><a href="#">Doğan Hazar</a> sizi takip etti.</p>
+								<i>1 hafta önce</i>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="notif">
-					<div class="notif-line"><span></span></div>
-					<div class="notif-user">
-						<img src="images/person1.jpg">
-						<div class="notif-text">
-							<p><a href="#">Yusuf Akcesme</a> projenizi beğendi.</p>
-							<i>1 hafta önce</i>
+					<div class="notif">
+						<div class="notif-line"><span></span></div>
+						<div class="notif-user">
+							<img src="images/person1.jpg">
+							<div class="notif-text">
+								<p><a href="#">Yusuf Akcesme</a> projenizi beğendi.</p>
+								<i>1 hafta önce</i>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="notif">
-					<div class="notif-line"><span></span></div>
-					<div class="notif-user">
-						<img src="images/person1.jpg">
-						<div class="notif-text">
-							<p><a href="#">Doğan Hazar</a> sizi takip etti.</p>
-							<i>1 hafta önce</i>
+					<div class="notif">
+						<div class="notif-line"><span></span></div>
+						<div class="notif-user">
+							<img src="images/person1.jpg">
+							<div class="notif-text">
+								<p><a href="#">Doğan Hazar</a> sizi takip etti.</p>
+								<i>1 hafta önce</i>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="notif">
-					<div class="notif-line"><span></span></div>
-					<div class="notif-user">
-						<img src="images/person1.jpg">
-						<div class="notif-text">
-							<p><a href="#">Yusuf Akcesme</a> projenizi beğendi.</p>
-							<i>1 hafta önce</i>
+					<div class="notif">
+						<div class="notif-line"><span></span></div>
+						<div class="notif-user">
+							<img src="images/person1.jpg">
+							<div class="notif-text">
+								<p><a href="#">Yusuf Akcesme</a> projenizi beğendi.</p>
+								<i>1 hafta önce</i>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="notif">
-					<div class="notif-line"><span></span></div>
-					<div class="notif-user">
-						<img src="images/person1.jpg">
-						<div class="notif-text">
-							<p><a href="#">Doğan Hazar</a> sizi takip etti.</p>
-							<i>1 hafta önce</i>
+					<div class="notif">
+						<div class="notif-line"><span></span></div>
+						<div class="notif-user">
+							<img src="images/person1.jpg">
+							<div class="notif-text">
+								<p><a href="#">Doğan Hazar</a> sizi takip etti.</p>
+								<i>1 hafta önce</i>
+							</div>
 						</div>
 					</div>
-				</div>
 
-
-
-			</div>
-
-
-
-
-
-
-		</div>
-		<!--
-		<div class="notification-btn">
-		</div>-->
-
-		<div class="login-user">
-			<span class="notification-btn" onclick="openNotifPopup()"><i class="fa fa-bell"></i></span>
-			<span onclick="openUserOptions()"><img src="images/person2.jpg"></span>
-		</div>
-		<div class="login-user-popup" id="login-user-popup">
-			<div class="popup-top">
-				<img src="images/person2.jpg">
-				<div class="popup-top-name">
-					<a href="#">Doğan Hazar</a>
-					<span>Mimar</span>
 				</div>
 			</div>
 
-			<a href="#">Profil</a>
-			<a href="#">Ayarlar</a>
-			<a href="#">Proje Oluştur</a>
-			<a href="#">Premium Üyelik</a>
-			<a href="#" style="border-top: 1px solid #ebebeb;">Çıkış</a>
 		</div>
 
+
+		<div class="user-pop-main">
+			<div class="login-user">
+				<span><img src="images/person2.jpg"></span>
+			</div>
+			<div class="login-user-popup" id="login-user-popup">
+				<div class="popup-top">
+					<img src="images/person2.jpg">
+					<div class="popup-top-name">
+						<a href="#">Doğan Hazar</a>
+						<span>Mimar</span>
+					</div>
+				</div>
+
+				<a href="#">Profil</a>
+				<a href="#">Ayarlar</a>
+				<a href="#">Proje Oluştur</a>
+				<a href="#">Premium Üyelik</a>
+				<a href="#" style="border-top: 1px solid #ebebeb;">Çıkış</a>
+			</div>
+
+		</div>
 	</header>
 
 
@@ -217,7 +217,7 @@
 				</form>
 			</div>
 		</div>
-		<div class="filter-tools-konum">
+		<div class="filter-tools konum">
 			<button class="filter-button"><i class="fa fa-map-marker-alt"></i> Konum <i class="fa fa-sort-down" style="margin-top:-5px;"></i></button>
 			<div class="filter-pop">
 				<form>
