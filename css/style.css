@@ -4,27 +4,9 @@ email: yusufakcesme0[at]gmail.com
 website: https://yusufakcesme.com
 
 
-1) profesyoneller behance kişiler, foto 3 olabilir   XXXXXXXXXXXXXXXXXXXXXXXX
-2) prof. çerçeve açık sarı ve ince        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-3) araçlar ekle							  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-4) takip et ve ad soyad, title küçült     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-TASARIM
-3) https://www.behance.net/galleries tasarim sayfası böyle olacak  XXXXXXXXXX
-4) button çerçeve açık sarı, altına <hr>  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-5) mimari üste çıkacak tasarim sayfasında XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-BLOG
-1)blog yazı karakter sınırla 1 satır      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-2) comment yanına beğeni ekle             XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-3)pagination font küçült 1 px ok sağa doğru sadece  XXXXXXXXXXXXXXXXXXXXXXXXX
-4) fotolar ve margin tasarim sayfasıyla aynı        XXXXXXXXXXXXXXXXXXXXXXXXX
-
-BLOG DETAY 
-1) içerik uzat biraz                      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-2) yazının altında beğen olacak           XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-3) kevin yanına profil foto               XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
+- blog içerik ortala, margin düzelt.
+- blog mobil hero image
+- 
 
 
 
@@ -453,6 +435,9 @@ section.hero-image {
 	margin-top: 60px;
 	overflow: hidden;
 	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 section.hero-image .image-overlay {
