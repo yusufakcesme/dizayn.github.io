@@ -656,4 +656,21 @@ span.like-comment > i {
 		display: block;
 	}
 
+	section.profile-container .profile-card .img-box {
+		width: 170px;
+		height: 170px;
+		border: 3px solid #FFD982;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	section.profile-container .profile-card .img-box img {
+		width: 170px;
+		height: 170px;
+	}
+
+
 }
