@@ -39,7 +39,7 @@ section.professionals .prof-box .prof-detail {
 	flex-direction: column;
 }
 
-section.professionals .prof-box .prof-detail h3 {
+section.professionals .prof-box .prof-detail a {
 	font-size: 20px;
 	font-family: 'coco-regular';
 	color: #272726;
@@ -215,7 +215,7 @@ section.professionals .prof-box .prof-work-img .work-img-box img {
 		margin-left: 15px;
 	}
 
-	.mobile-prof-detail .mobile-detail p {
+	.mobile-prof-detail .mobile-detail a {
 		font-size: 16px;
 		font-family: 'coco-bold';
 		color: #272726;

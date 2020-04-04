@@ -526,6 +526,14 @@ span.like-comment > i {
 }
 
 
+.mobile-name {
+	display: none;
+}
+
+.mobile-location {
+	display: none;
+}
+
 
 @media only screen and (max-width: 900px) {
 	section.profile-container {
