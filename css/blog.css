@@ -227,7 +227,7 @@
 
 	@media only screen and (max-width: 600px) {
 		.blog-articles {
-			max-width: 96%;
+			max-width: 90%;
 			height: auto;
 			margin: 50px auto;
 			display: flex;
