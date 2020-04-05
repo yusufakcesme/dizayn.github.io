@@ -1582,7 +1582,7 @@ label.login-container {
 	border-radius: 6px;
 }
 
-.modal-content .container button {
+.modal-content .container > button {
 	width: 160px;
 	height: 40px;
 	border-radius: 40px;
@@ -2105,7 +2105,7 @@ label.login-container {
 		display: flex;
 		flex-direction: column;
 	}
-	.modal-content .container button {
+	.modal-content .container > button {
 		width: 160px;
 		height: 40px;
 		border-radius: 40px;

@@ -130,6 +130,7 @@ nav_btn.forEach(item => item.addEventListener('click', activeButton));
 var modal = document.getElementById('id01');
 var modal2 = document.getElementById('id02');
 var modal_search = document.getElementById('id03');
+var modal_save_photo = document.getElementById('id05');
 
 window.onclick = function(event) {
 	if (event.target == modal) {
@@ -139,11 +140,13 @@ window.onclick = function(event) {
 	} else if (event.target == modal2) {
 		modal2.style.display = "none";
 		modal.style.display = "none";
-	}
-	else if (event.target == modal_search) {
+	} else if (event.target == modal_search) {
 		modal_search.style.display = "none";
 		modal2.style.display = "none";
 		modal.style.display = "none";
+	} else if (event.target == modal_save_photo) {
+		console.log("asfasfasfa");
+		modal_save_photo.style.display = "none";
 	}
 }
 
@@ -159,6 +162,10 @@ function openRegister() {
 
 function openSearch() {
 	document.getElementById('id03').style.display='flex';
+}
+
+function savePhoto() {
+	document.getElementById('id05').style.display='flex';
 }
 
 
