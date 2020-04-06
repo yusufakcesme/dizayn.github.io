@@ -591,11 +591,22 @@ span.like-comment > i {
 }
 
 @media only screen and (max-width: 550px) {
-		section.profile-container {
+
+	.hero-image {
+		height: 350px !important;
+		justify-content: center !important;
+		display: flex !important;
+		align-items: center !important;
+	}
+	.hero-image .image-overlay {
+		height: 350px !important;
+	}
+
+	section.profile-container {
 		width: 100%;
 		height: auto;
 		margin: 0 auto;
-		margin-top: -260px;
+		margin-top: -300px;
 		z-index: 99;
 		display: flex;
 		flex-direction: column;
@@ -654,10 +665,15 @@ span.like-comment > i {
 
 	section.profile-container .profile-card .profile-buttons {
 		margin-top: 10px;
-		width: 100%;
+		width: 120%;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+
+	section.profile-container .profile-card .profile-buttons a {
+		flex: 1;
+		margin: 0 10px;
 	}
 
 	.mobile-location {
@@ -669,19 +685,21 @@ span.like-comment > i {
 	}
 
 	section.profile-container .profile-card .img-box {
-		width: 100px;
-		height: 100px;
+		width: 130px;
+		height: 130px;
 		border: 3px solid #FFD982;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		border-radius: 50%;
 		overflow: hidden;
+		margin-top: -20px;
+		margin-bottom: 20px;
 	}
 
 	section.profile-container .profile-card .img-box img {
-		width: 100px;
-		height: 100px;
+		width: 130px;
+		height: 130px;
 	}
 	.comment-section {
 		width: 90%;
@@ -713,7 +731,7 @@ span.like-comment > i {
 		height: 60px;
 		background-color: #fff;
 		box-shadow: 0px 2px 4px rgba(0,0,0,.16);
-		margin-top: -10px;
+		margin-top: 0px;
 		display: flex;
 		align-items: center;
 		padding-left: 10px;
