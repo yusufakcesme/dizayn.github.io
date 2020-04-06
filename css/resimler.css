@@ -389,7 +389,7 @@ section.resimler {
 }
 
 .modal5 {
-	display: none;
+	display: flex;
 	position: fixed; 
 	left: 0;
 	top: 0;
@@ -432,7 +432,8 @@ section.resimler {
 
 
 .save-photo .content-main {
-	width: 100%;
+	width: 96%;
+	margin: 0 auto;
 	height: 339px;
 	border-radius: 0 0 10px 10px;
 	display: flex;
@@ -473,7 +474,7 @@ section.resimler {
 
 .save-photo .content-main .form-area textarea {
 	width: 95%;
-	height: 250px;
+	height: 205px;
 	border-radius: 4px;
 	border: 1px solid #aeaeae;
 	padding: 15px;
@@ -499,7 +500,7 @@ section.resimler {
 	background: none;
 	border: 1px solid #999;
 	margin-right: 10px;
-	border-radius: 3px;
+	border-radius: 15px;
 	cursor: pointer;
 	font-family: 'nunito-regular';
 }
@@ -510,6 +511,40 @@ section.resimler {
 	color: #fbfbfb;
 }
 
+
+.yeni-fikir {
+	width: 95%;
+	height: 35px;
+	border-radius: 4px;
+	border: 1px solid #aeaeae;
+	padding: 15px;
+	margin: 0px 2.5% 10px 2.5%;
+	background: none;
+	font-family: 'nunito-regular';
+	resize: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between !important;
+}
+
+.yeni-fikir > input {
+	margin: 0 !important;
+	max-height: 35px !important;
+	flex: 1;
+	border: none !important;
+	padding: 0 !important;
+	background: none;
+}
+
+.yeni-fikir > button {
+	padding: 4px 10px;
+	border-radius: 15px;
+	cursor: pointer;
+	font-family: 'nunito-regular';
+	background-color: #AA7C13;
+	border: none;
+	color: #fbfbfb;
+}
 
 .save-photo .content-main .form-area .custom-select {
 	position: relative;
@@ -956,6 +991,7 @@ section.resimler {
 
 
 
+
 	.save-photo {
 		background-color: #f6f6f6;
 		position: absolute;
@@ -965,7 +1001,7 @@ section.resimler {
 		border: 1px solid #eee;
 		width: 80%;
 		min-height: 510px;
-		border-radius: 10px;
+		border-radius: 10px 10px 0 0;
 		box-shadow: 0px 0px 10px rgba(0,0,0,.30);
 		display: flex;
 		flex-direction: column;
@@ -986,9 +1022,9 @@ section.resimler {
 
 
 	.save-photo .content-main {
-		width: 100%;
+		width: 94%;
 		height: auto !important;
-		border-radius: 0 0 10px 10px;
+		border-radius: 0;
 		display: flex;
 		flex-direction: column;
 	}
@@ -1009,7 +1045,7 @@ section.resimler {
 	}
 
 	.save-photo .content-main .form-area {
-		flex: 3;
+		border-radius: 0 !important;
 	}
 
 
@@ -1027,13 +1063,15 @@ section.resimler {
 	}
 
 	.buttons-bottom {
-		width: 100% !important;
+		width: calc(100% + 2px) !important;
 		height: 50px !important;
 		background-color: #eaeaea !important;
 		border-radius: 0 0 10px 10px !important;
 		display: flex !important;
 		align-items: center !important;
 		justify-content: flex-end !important;
+		margin-left: -1px;
+		margin-top: 8px;
 	}
 
 	.buttons-bottom button {
@@ -1041,7 +1079,7 @@ section.resimler {
 		background: none !important;
 		border: 1px solid #999 !important;
 		margin-right: 10px !important;
-		border-radius: 3px !important;
+		border-radius: 15px !important;
 		cursor: pointer !important;
 		font-family: 'nunito-regular' !important;
 	}

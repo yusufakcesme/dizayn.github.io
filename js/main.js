@@ -205,6 +205,11 @@ function moreComments() {
 
 
 
+function optionFunc() {
+	alert("aaaaaaaa");
+}
+
+
 
 /* open user info in profile page */
 
