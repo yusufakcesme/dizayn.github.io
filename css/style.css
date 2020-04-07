@@ -468,7 +468,9 @@ section.hero-image .image-overlay {
 
 section.hero-image .image-overlay h1 {
 	font-size: 40px;
-	font-weight: var(--light);
+	/*font-weight: var(--light);*/
+	font-family: 'sofiapro-light';
+	font-weight: lighter;
 	text-align: center;
 	color: #fff;
 	margin-top: 15px;
