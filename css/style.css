@@ -448,6 +448,11 @@ section.hero-image {
 	justify-content: center;
 }
 
+section.hero-image img {
+	width: 100%;
+	height: auto;
+}
+
 section.hero-image .image-overlay {
 	position: absolute;
 	width: 100%;
@@ -1744,6 +1749,12 @@ label.login-container {
 
 
 @media only screen and (max-width: 1250px) {
+
+	section.hero-image img {
+		width: auto;
+		height: auto;
+	}
+
 
 	.section-text {
 		width: 90%;
