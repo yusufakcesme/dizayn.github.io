@@ -8,32 +8,39 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/yarisma-ekleme.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 </head>
 <body>
-
 	<header>
+		<div onclick="openMobileMenu()" class="hamburger-menu">
+			<button><i class="fa fa-bars"></i></button>
+		</div>
 		<div class="logo">
 			<h1><a href="index.html">dizay<span>n</span>et</a></h1>
 		</div>
 
-		<div class="hamburger-menu">
-			<button><i class="fa fa-bars"></i></button>
+		<div onclick="openSearch()" class="mobile-search">
+			<button><i class="fa fa-search"></i></button>
 		</div>
 		<div class="search-bar">
 			<button><i class="fa fa-search"></i></button>
 			<input type="text" name="" placeholder="Eviniz için tasarım fikirleri bulun...">
 		</div>
 		<nav>
-			<a href="">DİZAYN</a>
-			<a href="">PROFESYONELLER</a>
-			<a href="">YARIŞMALAR</a>
-			<a href="">BLOG</a>
+			<a href="tasarim.html">DİZAYN</a>
+			<a href="profesyoneller.html">PROFESYONELLER</a>
+			<a href="yarisma.html">YARIŞMALAR</a>
+			<a href="blog.html">BLOG</a>
 		</nav>
 		<div class="login-btn">
 			<div class="user-rounded">
 				<i class="fa fa-user"></i>
 			</div>
-			<a href="#">GİRİŞ YAP</a>
+			<a onclick="openLogin()">GİRİŞ YAP</a>
 		</div>
 
 	</header>
@@ -84,7 +91,7 @@
 					<input type="text" name="" placeholder="Projenin adı">
 				</div>
 				<div class="el">
-					<p>Proje Bedeli</p>w
+					<p>Proje Bedeli</p>
 					<input type="text" name="" placeholder="Proje bedeli">
 				</div>
 				<div class="el">

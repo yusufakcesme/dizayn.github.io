@@ -620,16 +620,16 @@ section.design-competition {
 		background: -webkit-linear-gradient(bottom,  rgba(0,0,0,0.76) 0%,rgba(125,185,232,0) 100%);
 		background: linear-gradient(to top,  rgba(0,0,0,0.76) 0%,rgba(125,185,232,0) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db000000', endColorstr='#007db9e8',GradientType=0 );
-		display: none;
+		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 		padding: 10px;
 	}
-
+/*
 	.card .card-img:hover .card-img-overlay {
 		display: flex;
 	}
-
+*/
 
 	.card .card-img .card-img-overlay span {
 		font-size: 12px;
@@ -1753,7 +1753,7 @@ label.login-container {
 @media only screen and (max-width: 1250px) {
 
 	section.hero-image img {
-		width: auto;
+		width: 100%;
 		height: auto;
 	}
 
