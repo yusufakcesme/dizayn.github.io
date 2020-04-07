@@ -142,7 +142,8 @@ header .search-bar button {
 	background: none;
 	top: 50%;
 	left: 15px;
-	font-size: 18px;
+	font-size: 15px;
+	font-weight: lighter;
 	color: #D9D9D9;
 	transform: translateY(-50%);
 }
@@ -185,9 +186,11 @@ header .login-btn a {
 	font-size: 13px;
 	text-transform: uppercase;
 	color: #fbfbfb;
-	font-family: 'coco-regular';
+	font-family: 'coco-small-regular';
 	margin-left: 10px;
+	margin-top: 3px;
 	cursor: pointer;
+	letter-spacing: 1px;
 }
 
 
