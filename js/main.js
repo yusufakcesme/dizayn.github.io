@@ -109,6 +109,18 @@ $(document).on("click", function(event){
 
 
 
+/* mobile -kesfedin */
+var mobile_kesfedin = document.getElementById('mobile-kesfedin');
+function openKesfedin() {
+
+	if (mobile_kesfedin.style.height === "auto") {
+		mobile_kesfedin.style.height = "70px";
+	} else {
+		mobile_kesfedin.style.height = "auto";
+	}
+}
+
+
 
 
 
@@ -167,7 +179,6 @@ function openSearch() {
 function savePhoto() {
 	document.getElementById('id05').style.display='flex';
 }
-
 
 function openMobileMenu() {
 	var mobile_menu_cont = document.getElementById('mobile-menu-cont');

@@ -122,13 +122,15 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 
 section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim span {
 	font-size: 12px;
-	font-family: 'coco-regular';
+	font-family: 'sofiapro-light';
+	font-weight: lighter;
 	color: #FFD982;
+	margin-left: 5px;
 }
 
 section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim p {
 	font-size: 16px;
-	font-family: 'nunito-regular';
+	font-family: 'sofiapro-light';
 	color: #fff;
 }
 
@@ -136,6 +138,15 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	font-size: 16px;
 	font-weight: var(--medium);
 	color: #FFD982;
+	margin-left: 7px;
+	display: inline-flex;
+	align-items: center;
+}
+
+section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim p > b > img {
+	width: 15px;
+	height: 14px;
+	margin-right: 2px;
 }
 
 
