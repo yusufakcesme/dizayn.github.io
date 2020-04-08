@@ -143,6 +143,8 @@ var modal = document.getElementById('id01');
 var modal2 = document.getElementById('id02');
 var modal_search = document.getElementById('id03');
 var modal_save_photo = document.getElementById('id05');
+var mobile_cont_filter = document.getElementById('mobile-cont-filter');
+var mobile_menu_cont = document.getElementById('mobile-menu-cont');
 
 window.onclick = function(event) {
 	if (event.target == modal) {
@@ -157,8 +159,12 @@ window.onclick = function(event) {
 		modal2.style.display = "none";
 		modal.style.display = "none";
 	} else if (event.target == modal_save_photo) {
-		console.log("asfasfasfa");
 		modal_save_photo.style.display = "none";
+	} else if (event.target == mobile_cont_filter) {
+		//mobile_menu_cont.style.transorm = "translateX(-100%)";
+		console.log(event.target);
+		mobile_menu_cont.style.transform = "translateX(-100%)";
+		mobile_cont_filter.style.transform = "translateX(-100%)";
 	}
 }
 
@@ -182,11 +188,15 @@ function savePhoto() {
 
 function openMobileMenu() {
 	var mobile_menu_cont = document.getElementById('mobile-menu-cont');
+	var mobile_cont_filter = document.getElementById('mobile-cont-filter');
 	mobile_menu_cont.style.transform = "translateX(0%)";
+	mobile_cont_filter.style.transform = "translateX(0%)";
 }
 function closeMobileMenu() {
 	var mobile_menu_cont = document.getElementById('mobile-menu-cont');
+	var mobile_cont_filter = document.getElementById('mobile-cont-filter');
 	mobile_menu_cont.style.transform = "translateX(-100%)";
+	mobile_cont_filter.style.transform = "translateX(-100%)";
 }
 
 /* read more comment */ 
