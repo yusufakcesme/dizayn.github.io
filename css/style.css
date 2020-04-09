@@ -2178,7 +2178,7 @@ label.login-container {
 			width: 100%;
 			height: auto;
 			background-color: #3A3A39;
-			border-top: 30px solid #E4E4E4;
+			border-top: 0px;
 		}
 
 		footer .footer-top {
@@ -2194,7 +2194,7 @@ label.login-container {
 		}
 
 		footer .footer-top .top-left {
-			margin-top: 10px;
+			margin-top: 30px;
 			display: flex;
 			width: 100%;
 			justify-content: center;
@@ -2219,6 +2219,9 @@ label.login-container {
 
 		.bilgi {
 			margin-top: 20px !important;
+		}
+		.kesfet h2, .bilgi h2 {
+			font-size: 18px;
 		}
 
 		footer .footer-top .footer-form	{
