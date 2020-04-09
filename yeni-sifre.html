@@ -55,7 +55,7 @@
 
 	<section class="forget-pass">
 		<form>
-			<!--<div class="success-alert">Şifre sıfırlama e-postası gönderildi.</div> başarılı olduğunda gösterilecek -->
+		<div class="success-alert">Şifreniz başarıyla değiştirildi.</div>	<!-- başarılı olduğunda gösterilecek -->
 			<h1>Yeni Şifre Belirleyin</h1>
 			<p>Yeni şifreniz en az 8 karakter uzunluğunda olmalı;
 				güvenliğiniz için lütfen sizin unutmayacağınız bir 
@@ -63,13 +63,13 @@
 			</p>
 			<label>
 				<span>Yeni Şifre</span>
-				<input type="mail" name="">
+				<input type="password" name="">
 			</label>
 			<label>
 				<span>Yeni Şifre (tekrar)</span>
-				<input type="mail" name="">
+				<input type="password" name="">
 			</label>
-			<button type="submit">DEĞİŞTİR</button>
+			<a>DEĞİŞTİR</a>
 		</form>
 	</section>
 
@@ -233,7 +233,13 @@
 </div>
 
 
+<script type="text/javascript">
+	$('.forget-pass form > a').on('click', function() {
+		$('.success-alert').css("transform", "scale(1)");
+	});
+</script>
 
+</script>
 
 <script type="text/javascript" src="js/main.js"></script>
 

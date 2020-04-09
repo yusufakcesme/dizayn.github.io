@@ -55,7 +55,7 @@
 
 	<section class="forget-pass">
 		<form>
-			 <!--<div class="success-alert">Şifre sıfırlama e-postası gönderildi.</div> başarılı olduğunda gösterilecek -->
+			<div class="success-alert">Şifre sıfırlama e-postası gönderildi.</div><!-- başarılı olduğunda gösterilecek -->
 			<h1>Dizaynet hesabınızı bulun</h1>
 			<p>Hesabınızla bağlantılı e-posta adresini girdiğinizde, 
 				bu e-posta adresine parolanızı sıfırlamanız için bir 
@@ -64,7 +64,7 @@
 				<span>E-posta Adresi</span>
 				<input type="mail" name="">
 			</label>
-			<button type="submit">DEVAM ET</button>
+			<a>DEVAM ET</a>
 			<span>Henüz kaydolmadınız mı? <a href="#!">Kayıt Ol</a></span>
 		</form>
 	</section>
@@ -229,7 +229,11 @@
 </div>
 
 
-
+<script type="text/javascript">
+	$('.forget-pass form > a').on('click', function() {
+		$('.success-alert').css("transform", "scale(1)");
+	});
+</script>
 
 <script type="text/javascript" src="js/main.js"></script>
 

@@ -8,6 +8,7 @@ body {
 section.forget-pass {
 	width: 100%;
 	height: 600px;
+	background: #fff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -70,7 +71,7 @@ section.forget-pass form label > input:focus {
 
 
 
-section.forget-pass form button {
+section.forget-pass form > a {
 	width: 230px;
 	height: 40px;
 	border-radius: 40px;
@@ -80,9 +81,13 @@ section.forget-pass form button {
 	font-weight: normal;
 	margin-bottom: 30px;
 	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
 }
 
-section.forget-pass form button:hover {
+section.forget-pass form > a:hover {
 	transition: .3s;
 	background-color: #AA7C13;
 	color: #fff;
@@ -109,6 +114,8 @@ section.forget-pass form > span > a {
 	align-items: center;
 	justify-content: center;
 	font-size: 15px;
+	transform: scale(0);
+	transition: .3s;
 }
 
 
@@ -136,6 +143,11 @@ footer {
 		align-items: center;
 	}
 
+	section.forget-pass form label {
+		width: 96%;
+		margin: 0 auto;
+	}
+
 	section.forget-pass form h1 {
 		font-size: 30px;
 		color: #363732;
@@ -154,7 +166,7 @@ footer {
 
 
 
-	section.forget-pass form button {
+	section.forget-pass form > a {
 		width: 230px;
 		height: 40px;
 		border-radius: 40px;
