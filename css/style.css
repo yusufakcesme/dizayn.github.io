@@ -2221,7 +2221,7 @@ label.login-container {
 			margin-top: 20px !important;
 		}
 		.kesfet h2, .bilgi h2 {
-			font-size: 18px;
+			font-size: 18.5px;
 		}
 
 		footer .footer-top .footer-form	{
@@ -2229,7 +2229,7 @@ label.login-container {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			margin: 20px auto;
+			margin: -10px auto 20px auto;
 		}
 
 
