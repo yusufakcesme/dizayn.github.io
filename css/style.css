@@ -2,15 +2,6 @@
 author: Yusuf AKCESME
 email: yusufakcesme0[at]gmail.com
 website: https://yusufakcesme.com
-
-
-- blog içerik ortala, margin düzelt.
-- blog mobil hero image
-- 
-
-
-
-
 ----------------------------------------------------------*/
 
 * {
@@ -1050,6 +1041,7 @@ footer {
 	background-color: #3A3A39;
 	border-top: 1px solid #eee;
 	margin-top: auto;
+	font-family: 'sofiapro-light' !important;
 }
 
 footer .footer-top {
@@ -1087,7 +1079,7 @@ footer .footer-top .top-left h1 > span {
 }
 
 footer .footer-top .top-left p {
-	font-family: 'coco-light';
+	font-family: 'sofiapro-light';
 	font-size: 15px;
 	color: #fff;
 	width: 500px;
@@ -1113,13 +1105,13 @@ footer .footer-top .kesfet {
 footer .footer-top .kesfet > h2 {
 	margin-bottom: 30px;
 	color: #fff;
-	font-family: 'nunito-bold';
+	font-family: 'sofiapro-light';
 }
 
 footer .footer-top .kesfet > a {
 	margin-bottom: 12px;
 	color: #fff;
-	font-family: 'coco-light';
+	font-family: 'sofiapro-light';
 }
 
 footer .footer-top .bilgi {
@@ -1132,13 +1124,13 @@ footer .footer-top .bilgi {
 footer .footer-top .bilgi > h2 {	
 	margin-bottom: 30px;
 	color: #fff;
-	font-family: 'nunito-bold';
+	font-family: 'sofiapro-light';
 }
 
 footer .footer-top .bilgi > a {
 	margin-bottom: 12px;
 	color: #fff;
-	font-family: 'coco-light';
+	font-family: 'sofiapro-light';
 }
 
 
@@ -1155,14 +1147,14 @@ footer .footer-top .footer-form img {
 
 footer .footer-top .footer-form h3 {
 	margin-bottom: 17px;
-	font-family: 'nunito-regular';
+	font-family: 'sofiapro-light';
 	color: #fff;
 }
 
 footer .footer-top .footer-form p {
 	margin-bottom: 15px;
 	color: #fff;
-	font-family: 'nunito-light';
+	font-family: 'sofiapro-light';
 	line-height: 1.4;
 }
 
@@ -2191,6 +2183,7 @@ label.login-container {
 
 		footer .footer-top {
 			width: 100%;
+			padding: 0 25px;
 			height: auto;
 			margin: 0  auto;
 			border-bottom: 1px solid #707070;
@@ -2203,26 +2196,35 @@ label.login-container {
 		footer .footer-top .top-left {
 			margin-top: 10px;
 			display: flex;
-			align-items: center;
-			text-align: center;
+			width: 100%;
 			justify-content: center;
 			flex-direction: column;
 		}
 
 		footer .footer-top .top-left p {
-			width: 85%;
+			max-width: 100% !important;
+		}
+
+		footer .footer-top .top-left .app-badges {
+			margin-left: -5px; 
 		}
 
 		.links {
 			margin: 30px auto;
 			width: 100%;
-			justify-content: space-around;
+			height: auto;
+			font-size: 15px;
+			flex-direction: column;
+		}
+
+		.bilgi {
+			margin-top: 20px !important;
 		}
 
 		footer .footer-top .footer-form	{
+			width: 100%;
 			display: flex;
 			flex-direction: column;
-			align-items: center;
 			justify-content: center;
 			margin: 20px auto;
 		}
@@ -2232,8 +2234,8 @@ label.login-container {
 		footer .footer-bottom {
 			display: flex;
 			width: 90%;
-			margin: 20px auto;
-			justify-content: space-between;
+			margin: 0px auto;
+			justify-content: center;
 			align-items: center;
 			flex-direction: column;
 			text-align: center;
@@ -2243,7 +2245,7 @@ label.login-container {
 			color: #CFCFCF;
 			font-weight: var(--light);
 			font-size: 15px;
-			margin: 5px auto;
+			margin: 0px auto;
 		}
 
 		footer .footer-bottom .bottom-links a {
