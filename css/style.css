@@ -1125,7 +1125,7 @@ footer .footer-top .bilgi {
 }
 
 footer .footer-top .bilgi > h2 {
-font-size: 18.5px;	
+	font-size: 18.5px;	
 	margin-bottom: 30px;
 	color: #fff;
 	font-family: 'sofiapro-light';
@@ -2223,6 +2223,10 @@ label.login-container {
 
 		.bilgi {
 			margin-top: 20px !important;
+			margin-left: 0px !important;
+		}
+		.kesfet {
+			margin-left: 0px !important;
 		}
 		.kesfet h2, .bilgi h2 {
 			font-size: 18.5px;
