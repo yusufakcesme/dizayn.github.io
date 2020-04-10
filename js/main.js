@@ -25,8 +25,9 @@ function activeTab() {
 		aciklama.style.display = "none";
 		kaynaklar.style.display = "flex";
 	}
-
 }
+
+
 function removeTab() {
 	tab_btn.forEach(item => item.classList.remove('active-detay-tab'));
 }

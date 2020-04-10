@@ -322,17 +322,38 @@
 
 
 
+<div class="mobile-cont-filter" id="mobile-cont-filter">
+	
+</div>
 
 <div class="mobile-menu-cont" id="mobile-menu-cont">
 	<div class="mobil-login">
-		<a onclick="openLogin()">Giriş Yap</a>
+		<div class="mobil-login-top">
+			<a onclick="openLogin()">Giriş Yap</a>
+			<a href="#">Profesyonel Ol</a>
+		</div>
 		<button onclick="closeMobileMenu()"><i class="fa fa-times"></i></button>
 	</div>
+
+	<div class="mobile-kesfedin" id="mobile-kesfedin">
+		<p onclick="openKesfedin()">Kesfedin <i class="fa fa-chevron-down"></i></p>
+		<div class="kesfedin-links">
+			<a href="#"> Mimari</a>
+			<a href="#">İç Mimari</a>
+			<a href="#">Peyzaj</a>
+			<a href="#">Endüstriyel Tasarım</a>
+		</div>
+	</div>
+
 	<div class="mobile-menu-nav">
-		<a href="tasarim.html"><i class="fa fa-chevron-right"></i> DİZAYN</a>
-		<a href="profesyoneller"><i class="fa fa-chevron-right"></i> PROFESYONELLER</a>
-		<a href="yarisma.html"><i class="fa fa-chevron-right"></i> YARIŞMALAR</a>
-		<a href="blog.html"><i class="fa fa-chevron-right"></i> BLOG</a>
+		<a href="tasarim.html"> Dizayn</a>
+		<a href="profesyoneller">Profesyoneller</a>
+		<a href="yarisma.html">Yarışmalar</a>
+		<a href="blog.html">Blog</a>
+	</div>
+
+	<div class="mobile-proje-baslat">
+		<a href="yarisma-ekleme.html">Proje Başlat</a>
 	</div>
 </div>
 
@@ -349,7 +370,7 @@
 			<p>Devam etmek için lütfen giriş yapın.</p>
 			<input type="mail" name="" placeholder="E-posta">
 			<input type="password" name="" placeholder="Şifre">
-			<a class="forget-pass" href="#!">Şifremi unuttum</a>
+			<a class="forget-pass" href="sifremi-unuttum.html">Şifremi unuttum</a>
 			<p class="or">Veya</p>
 
 			<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
@@ -367,6 +388,17 @@
 		<div class="container">
 			<h3>Kayıt Ol</h3>
 			<p>Devam etmek için lütfen bilgilerinizi girin.</p>
+
+			<div class="register-radios">
+				<label class="container-check">Tasarımcıyım
+					<input type="checkbox">
+					<span class="checkmark-check"></span>
+				</label>
+				<label class="container-check">Tasarımcı Arıyorum
+					<input type="checkbox">
+					<span class="checkmark-check"></span>
+				</label>
+			</div>
 			<input type="mail" name="" placeholder="E-posta">
 			<input type="password" name="" placeholder="Şifre">
 			<label class="login-container">
@@ -390,42 +422,6 @@
 		</div>
 	</form>
 </div>
-
-
-<!-- foto kaydet -->
-<div id="id05" class="modal5">
-	<form class="modal-content save-photo" action="" method="post">
-		<div class="container">
-			<h2>Fotoğrafı Kaydet</h2>
-			<div class="content-main">
-				<div class="image-area">
-					<img src="images/22.jpg">
-				</div>
-				<div class="form-area">
-					<div class="custom-select">
-						<select>
-							<option value="0">Fikirlerim</option>
-							<option value="1">test1 </option>
-							<option value="2">test2</option>
-							<option value="3">test3</option>
-						</select>
-					</div>
-						<div class="yeni-fikir">
-						<i class="fa fa-plus"></i>
-						<input type="text" name="" placeholder="Yeni bir seçenek ekleyin">
-						<button>Oluştur</button>
-						</div>
-						<textarea placeholder="Notlarınız ekleyin"></textarea>
-					</div>
-				</div>
-				<div class="buttons-bottom">
-					<button>İptal</button>
-					<button>Fikirlerime Ekle</button>
-				</div>
-			</div>
-		</form>
-	</div>
-
 
 
 

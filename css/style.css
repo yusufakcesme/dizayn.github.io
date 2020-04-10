@@ -1068,7 +1068,7 @@ footer .footer-top .top-left .app-badges {
 }
 
 footer .footer-top .top-left h1 {
-	font-size: 32px;
+	font-size: 42px;
 	color: #fff;
 	font-family: 'sofiapro-light';
 	letter-spacing: 1px;
@@ -1100,9 +1100,11 @@ footer .footer-top .kesfet {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-left: -150px;
 }
 
 footer .footer-top .kesfet > h2 {
+	font-size: 18.5px;
 	margin-bottom: 30px;
 	color: #fff;
 	font-family: 'sofiapro-light';
@@ -1119,9 +1121,11 @@ footer .footer-top .bilgi {
 	flex-direction: column;
 	justify-content: center;
 	margin-top: -31px;
+	margin-left: -150px;
 }
 
-footer .footer-top .bilgi > h2 {	
+footer .footer-top .bilgi > h2 {
+font-size: 18.5px;	
 	margin-bottom: 30px;
 	color: #fff;
 	font-family: 'sofiapro-light';
@@ -1138,7 +1142,7 @@ footer .footer-top .footer-form	{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-top: -60px;
+	margin-top: -72px;
 }
 
 footer .footer-top .footer-form img {
@@ -1174,7 +1178,7 @@ footer .footer-bottom {
 	width: 90%;
 	margin: 0 auto;
 	min-height: 95px;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -1189,7 +1193,7 @@ footer .footer-bottom .bottom-links a {
 	color: #cfcfcf;
 	margin-right: 5px;
 	padding-right: 5px;
-	font-size: 14px;
+	font-size: 15px;
 	font-family: 'nunito-regular';
 }
 
@@ -1846,7 +1850,7 @@ label.login-container {
 
 	.mobile-kesfedin {
 		padding: 0px 25px;
-		height: 70px;
+		height: 64px;
 		border-bottom: 1px solid rgba(255,255,255,.1);
 		overflow: hidden;
 		transition: .3s;
