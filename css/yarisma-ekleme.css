@@ -229,6 +229,7 @@ section.yarisma-ekle form .form-box .form-section .el .select-box select {
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	width: 100%;
 }
 
 
@@ -512,8 +513,13 @@ form .submit-btn button:hover {
 		margin-left: 80px;
 	}
 
+	.hl-checkboxes {
+		justify-content: space-between;
+	}
+
 	.hl-container {
 		margin: 5px;
+		width: auto;
 	}
 
 
