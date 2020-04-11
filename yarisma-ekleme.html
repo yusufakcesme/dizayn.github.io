@@ -62,11 +62,13 @@
 <section class="yarisma-ekle">
 	<div class="form-nav">
 		<nav id="desktop-nav">
-			<a href="#general" class="active-nav nav_btn">General</a>
-			<a href="#highlights" class="nav_btn">Hightlights</a>
-			<a href="#location" class="nav_btn">Location</a>
-			<a href="#contact" class="nav_btn">Contact info</a>
+			<a href="#general" class="active-nav nav_btn">Proje Özeti</a>
+			<a href="#highlights" class="nav_btn">Etiketler</a>
+			<a href="#location" class="nav_btn">Lokasyon</a>
+			<a href="#contact" class="nav_btn">İletişim</a>
 			<a href="#media" class="nav_btn">Media</a>
+			<a href="#davet" class="nav_btn">Davet</a>
+			<a href="#odul" class="nav_btn">Proje Ödülü</a>
 		</nav>
 		<nav class="mobile-nav">
 			<a href="#general" class="active-nav nav_btn"><i class="fa fa-cog"></i></a>
@@ -74,37 +76,33 @@
 			<a href="#location" class="nav_btn"><i class="fa fa-map-marker-alt"></i></a> 
 			<a href="#contact" class="nav_btn"><i class="fa fa-phone"></i></a>
 			<a href="#media" class="nav_btn"><i class="fa fa-image"></i></a>
+			<a href="#odul" class="nav_btn"><i class="fa fa-award"></i></a>
 		</nav>
 	</div>
 
 
 	<form method="POST" action="">
 		<h1>Bize İhtiyacınızdan Bahsedin.</h1>
-		<p>Profesyonellerle hemen iletişime geçin. Profilleri, yorumları ve portföyleri <br> görüntüleyin. Teklifleri beğendiğiniz takdirde satın alın
+		<p>Hayalinizdeki ev veya ofis için kolay, hızlı ve bütçenize uygun onlarca tasarım edinin.
 		</p>
 
 		<div class="form-box" id="general">
 			<div class="form-section">
-				<h3>GENERAL</h3>
+				<h3>PROJE ÖZETİ</h3>
+				<p>Projeniz hakkında vereceğiniz tüm detaylar, tasarımcıların beklentilerinizi karşılamasını kolaylaştıracaktır.</p>
 				<div class="el">
 					<p>Proje İsmi</p>
 					<input type="text" name="" placeholder="Projenin adı">
 				</div>
+
 				<div class="el">
-					<p>Proje Bedeli</p>
-					<input type="text" name="" placeholder="Proje bedeli">
-				</div>
-				<div class="el">
-					<p>Proje Tanımı</p>
-					<textarea placeholder="Hayalinizdeki projeyi burada anlatın."></textarea>
-				</div>
-				<div class="el">
-					<p>Kategori</p>
+					<p>Tür</p>
 					<div class="select-box">
-						<select class="first">
-							<option>option1</option>
-							<option>option2</option>
-							<option>option3</option>
+						<select class="first" id="proje-tur">
+							<option>Mimari</option>
+							<option>İç Mimari</option>
+							<option>Peyzaj</option>
+							<option>Endüstriyel Tasarım</option>
 						</select>
 						<div class="down">
 							<i class="fa fa-chevron-down"></i>
@@ -112,45 +110,121 @@
 					</div>
 				</div>
 
+				<div class="el">
+					<p>Alt Başlık</p>
+
+					<div class="select-box" id="mimari">
+						<select class="first">
+							<option>mimari</option>
+							<option>mimari</option>
+						</select>
+						<div class="down">
+							<i class="fa fa-chevron-down"></i>
+						</div>
+					</div>
+
+
+					<div class="select-box ic-mimari" id="ic-mimari">
+						<select class="first">
+							<option>Mutfak</option>
+							<option>Oturma Odası</option>
+							<option>Salon</option>
+							<option>Yatak Odası</option>
+						</select>
+						<div class="down">
+							<i class="fa fa-chevron-down"></i>
+						</div>
+					</div>
+
+					<div class="select-box ic-mimari" id="peyzaj">
+						<select class="first">
+							<option>Bahçe</option>
+							<option>Park</option>
+							<option>Kampüs</option>
+						</select>
+						<div class="down">
+							<i class="fa fa-chevron-down"></i>
+						</div>
+					</div>
+
+					<div class="select-box ic-mimari" id="endustriyel">
+						<select class="first">
+							<option>Yemek Takımı</option>
+							<option>Oturma Grubu</option>
+							<option>Sandalye</option>
+							<option>Masa</option>
+						</select>
+						<div class="down">
+							<i class="fa fa-chevron-down"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="el">
+					<p>Stil</p>
+					<div class="select-box">
+						<select class="first">
+							<option>Modern</option>
+							<option>Geleneksel</option>
+						</select>
+						<div class="down">
+							<i class="fa fa-chevron-down"></i>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="el">
+					<p>Proje Tanımı</p>
+					<textarea placeholder="Hayalinizdeki projeyi burada anlatın."></textarea>
+				</div>
+
+				<div class="el">
+					<p>Proje Hedefleriniz</p>
+					<textarea placeholder="Proje hedefleriniz.."></textarea>
+				</div>
+				
+
 			</div>
 		</div>
 
 		<div class="form-box" id="highlights">	
 			<div class="form-section">
-				<h3>HIGHLIGHTS</h3>
+				<h3>ETİKETLER</h3>
+				<p>Projenizi en iyi tanımlayacak etiketleri seçiniz.</p>
 				<div class="hl-checkboxes">
 					
 					
-					<label class="hl-container">One
+					<label class="hl-container">Modern
 						<input type="checkbox" checked="checked">
 						<span class="hl-checkmark"></span>
 					</label>
-					<label class="hl-container">Two
+					<label class="hl-container">Geleneksel
 						<input type="checkbox">
 						<span class="hl-checkmark"></span>
 					</label>
-					<label class="hl-container">Three
+					<label class="hl-container">Minimal
 						<input type="checkbox">
 						<span class="hl-checkmark"></span>
 					</label>
-					<label class="hl-container">Four
+					<label class="hl-container">Rustik
 						<input type="checkbox">
 						<span class="hl-checkmark"></span>
 					</label>
 
-					<label class="hl-container">One
+					<label class="hl-container">İskandinav
 						<input type="checkbox">
 						<span class="hl-checkmark"></span>
 					</label>
-					<label class="hl-container">Two
+					<label class="hl-container">Endüstriyel
 						<input type="checkbox">
 						<span class="hl-checkmark"></span>
 					</label>
-					<label class="hl-container">Three
+					<label class="hl-container">Kırsal
 						<input type="checkbox">
 						<span class="hl-checkmark"></span>
 					</label>
-					<label class="hl-container">Four
+					<label class="hl-container">Eklektik
 						<input type="checkbox">
 						<span class="hl-checkmark"></span>
 					</label>
@@ -165,7 +239,7 @@
 
 		<div class="form-box" id="location">	
 			<div class="form-section">
-				<h3>LOCATIOn</h3>
+				<h3>LOKASYON</h3>
 				<div class="multiple-inputs">
 					<div class="el">
 						<p>Şehir</p>
@@ -193,7 +267,7 @@
 
 		<div class="form-box" id="contact">	
 			<div class="form-section">
-				<h3>CONTACT INFO</h3>
+				<h3>İLETİŞİM</h3>
 
 				<div class="el">
 					<p>Email</p>
@@ -210,14 +284,17 @@
 
 		<div class="form-box" id="media">	
 			<div class="form-section">
-				<h3>MEDIA</h3>
-
-				<div class="el">
-					<p>Dosya Ekleme</p>
-					<input type="file" class="custom-file-input">
-				</div>
+				<h3>PROJE FOTOĞRAFLARI</h3>
+				<p>Projenize ait çizimleri, fotoğrafları vb. yükleyiniz.</p>
 				<div class="el big-media">
-					<p><i class="fa fa-upload"></i> Çoklu Dosya Yükleyin</p>
+					<p><i class="fa fa-upload"></i></p>
+					<input type="file" class="custom-input" multiple>
+				</div>
+
+				<h3>İLHAM VEREN FOTOĞRAFLAR</h3>
+				<p>Hoşunuza giden ve projenize yön vermesini istediğiniz tasarımları profesyoneller ile paylaşın.</p>
+				<div class="el big-media">
+					<p><i class="fa fa-upload"></i></p>
 					<input type="file" class="custom-input" multiple>
 				</div>
 
@@ -228,6 +305,49 @@
 
 			</div>
 		</div>
+
+
+		<div class="form-box" id="davet">	
+			<div class="form-section">
+				<h3>DAVET</h3>
+				<p>Dizaynet'te gördüğünüz ve projenize davet etmek istediğiniz Profesyonellerin adını giriniz.</p>
+				
+				<div class="el">
+					<input id="invite-input" type="text" placeholder="Kullanıcının adını girin">
+					<a type="button" onclick="getInputValue()" class="add-people-btn">Ekle</a>
+				</div>
+				<div id="added-persons" class="added-persons">
+					<!-- eklenen isimler buraya geliyor -->
+				</div>
+			</div>
+		</div>
+
+
+		<div class="form-box" id="davet">	
+			<div class="form-section">
+				<h3>PROJE ÖDÜLÜ</h3>
+				<p>Ödülünüz miktarı profesyonellerin projeye olan ilgisini doğrudan etkileyecektir.</p>
+				
+				<div class="el">
+					<p>Proje Ödülü (₺)</p>
+					<input id="invite-input" type="text" placeholder="Proje ödülü">
+				</div>
+				<div class="el">
+					<p>Proje Teslim Tarihi</p>
+					<input type="text" placeholder="örn: 11.04.2020">
+				</div>
+				
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
 
 		<div class="submit-btn">
 			<button type="submit">GÖNDER</button>
@@ -241,117 +361,6 @@
 
 </section>
 
-
-
-
-
-
-<!--
-	<section class="design-ideas design-page">
-
-		<div class="gallery">
-			<div class="gallery-img">
-				<div class="card-img-overlay">
-					<span>MİMARİ</span>
-					<p>Mutfak Renevasyon Projesi <b>10.000 ₺</b></p>
-				</div>
-				<img src="images/4.jpg">
-			</div>
-
-			<div class="gallery-img">
-				<img src="images/11.jpg">
-			</div>
-
-			<div class="gallery-img">
-				<img src="images/22.jpg">
-			</div>
-
-			<div class="gallery-img">
-				<img src="images/33.jpg">
-			</div>
-
-			<div class="gallery-img">
-				<img src="images/44.jpg">
-			</div>
-
-			<div class="gallery-img">
-				<img src="images/55.jpg">
-			</div>
-
-			<div class="gallery-img">
-				<img src="images/66.jpg">
-			</div>
-
-			<div class="gallery-img">
-				<img src="images/77.jpg">
-			</div>
-
-		</div>
-
-	</section>
--->
-
-<!--
-	<footer>
-		<div class="footer-top">
-			<div class="top-left">
-				<h1>dizay<span>n</span>et</h1>
-				<p>
-					Dizaynet mimarlık, iç tasarım, ürün tasarımı, dekorasyon ve peyzaj alanında kullanıcıları profesyoneller ile buluşturan çevrimiçi bir platformdur. Projelerinizde size yardımcı olacak nitelikli tasarım uzmanlarını bulmanıza ve projelerinizi 
-					hayata geçirmenize olanak tanır.
-				</p>
-				<div class="icons">
-					<a href="#"><i class="fab fa-facebook-square"></i></a>
-					<a href="#"><i class="fab fa-behance"></i></a>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-					<a href="#"><i class="fab fa-linkedin"></i></a>
-				</div>
-			</div>
-
-			<div class="links">
-				<div class="kesfet">
-					<h2>KEŞFET</h2>
-					<a href="#!">Anasayfa</a>
-					<a href="#!">Dizayn</a>
-					<a href="#!">Yarışmalar</a>
-					<a href="#!">Blog</a>
-					<a href="#!">Profesyoneller</a>
-				</div>
-
-
-				<div class="bilgi">
-					<h2>BİLGİ</h2>
-					<a href="#!">Hakkımızda</a>
-					<a href="#!">Profesyonel Olun</a>
-					<a href="#!">Premium Üyelik</a>
-					<a href="#!">İletişim</a>
-				</div>
-			</div>
-
-			<div class="footer-form">
-				<img src="images/fly.png">
-				<h3>DİZAYNET TASARIM DÜNYASINA KATIL!</h3>
-				<p>En yeni tasarım fikirleri, yaratıcı profesyoneller ve <br> daha fazlası için...
-				</p>
-
-				<input type="text" name="" placeholder="E-posta adresinizi giriniz">
-			</div>
-
-		</div>
-
-		<div class="footer-bottom">
-			<p>© 2020 DİZAYNET. Tüm hakları saklıdır.</p>
-			<div class="bottom-links">
-				<a href="#!">Üyelik Sözleşmesi</a>
-				<a href="#!">Destek</a>
-				<a href="#!">Şartlar ve Koşullar</a>
-				<a href="#!">Sıkça Sorulan Sorular</a>
-			</div>
-		</div>
-
-	</footer>
--->
 
 
 
@@ -468,7 +477,42 @@
 
 
 
+<script type="text/javascript">
+	/* proje ekleme sayfası kategoriler */
+	var proje_tur = document.getElementById('proje-tur');
+	var icmimar_altbaslik = document.getElementById('ic-mimari');
+	var mimari_altbaslik = document.getElementById('mimari');
+	var peyzaj_altbaslik = document.getElementById('peyzaj');
+	var endustriyel_altbaslik = document.getElementById('endustriyel');
 
+	proje_tur.addEventListener("change", function () {
+		if (this.selectedIndex == 1) {
+			icmimar_altbaslik.style.display = "block";
+			mimari.style.display = "none";
+			peyzaj_altbaslik.style.display = "none";
+			endustriyel_altbaslik.style.display = "none";
+			console.log(this);
+		} else if (this.selectedIndex == 0) {
+			peyzaj_altbaslik.style.display = "none";
+			endustriyel_altbaslik.style.display = "none";
+			icmimar_altbaslik.style.display = "none";
+			mimari.style.display = "block";
+		} else if (this.selectedIndex == 2) {
+			peyzaj_altbaslik.style.display = "block";
+			endustriyel_altbaslik.style.display = "none";
+			icmimar_altbaslik.style.display = "none";
+			mimari.style.display = "none";
+		} else if (this.selectedIndex == 3) {
+			peyzaj_altbaslik.style.display = "none";
+			endustriyel_altbaslik.style.display = "block";
+			icmimar_altbaslik.style.display = "none";
+			mimari.style.display = "none";
+		} 
+
+
+	});
+
+</script>
 
 
 

@@ -1,6 +1,42 @@
 
 
 
+function getInputValue(){
+	var inputVal = document.getElementById("invite-input").value;
+	createPerson(inputVal);
+	document.getElementById("invite-input").value = '';
+}
+
+var added_persons = document.getElementById('added-persons');
+
+function createPerson(name) {
+	var ad = name;
+	if (ad !== '') {
+		var yenidiv = document.createElement("DIV");
+		yenidiv.setAttribute("class", "person");
+		yenidiv.innerHTML = `${ad}<span onclick="benisil(this)" title="Sil"><i class="fa fa-trash"></i></span>`;
+		added_persons.appendChild(yenidiv);
+		console.log(yenidiv);
+	} else {
+		alert("Lütfen bir isim giriniz..");
+	}
+}
+
+
+function benisil(spanEl) {
+	var spanParent = spanEl.parentNode;
+	spanParent.remove();
+}
+
+
+/*
+var delete_person = document.querySelectorAll('.delete-person');
+
+delete_person.forEach(item => item.addEventListener('click', function(e) {
+	var element = e.target.parentNode.parentNode.parentNode;
+	element.remove();
+}));*/
+
 
 /* yarisma detay sayfası tab nav */
 
@@ -11,7 +47,7 @@ var kaynaklar = document.getElementById('kaynaklar');
 function activeTab() {
 	removeTab();
 	this.classList.add('active-detay-tab');
-	
+
 	if (this.innerText == "Teslimler") {
 		projeler.style.display = "flex";
 		aciklama.style.display = "none";
