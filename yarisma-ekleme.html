@@ -62,22 +62,23 @@
 <section class="yarisma-ekle">
 	<div class="form-nav">
 		<nav id="desktop-nav">
-			<a href="#general" class="active-nav nav_btn">Proje Özeti</a>
-			<a href="#highlights" class="nav_btn">Etiketler</a>
-			<a href="#location" class="nav_btn">Lokasyon</a>
-			<a href="#contact" class="nav_btn">İletişim</a>
-			<a href="#media" class="nav_btn">Media</a>
-			<a href="#davet" class="nav_btn">Davet</a>
-			<a href="#odul" class="nav_btn">Proje Ödülü</a>
-		</nav>
-		<nav class="mobile-nav">
+			<a href="#general" class="active-nav nav_btn"><span class="nav-fa"><i class="fa fa-cog"></i></span><p>Proje Özeti</p></a>
+			<a href="#highlights" class="nav_btn"><span class="nav-fa"><i class="fa fa-tag"></i></span><p>Etiketler</p></a>
+			<a href="#location" class="nav_btn"><span class="nav-fa"><i class="fa fa-map-marker-alt"></i></span><p>Lokasyon</p></a>
+				<a href="#contact" class="nav_btn"><span class="nav-fa"><i class="fa fa-phone"></i></span><p>İletişim</p></a>
+				<a href="#media" class="nav_btn"><span class="nav-fa"><i class="fa fa-image"></i></span><p>Media</p></a>
+				<a href="#davet" class="nav_btn"><span class="nav-fa"><i class="fa fa-receipt"></i></span><p>Davet</p></a>
+				<a href="#odul" class="nav_btn"><span class="nav-fa"><i class="fa fa-award"></i></span><p>Proje Ödülü</p></a>
+			</nav>
+	<!--	<nav class="mobile-nav" id="desktop-nav">
 			<a href="#general" class="active-nav nav_btn"><i class="fa fa-cog"></i></a>
 			<a href="#highlights" class="nav_btn"><i class="fa fa-tag"></i></a>
 			<a href="#location" class="nav_btn"><i class="fa fa-map-marker-alt"></i></a> 
 			<a href="#contact" class="nav_btn"><i class="fa fa-phone"></i></a>
 			<a href="#media" class="nav_btn"><i class="fa fa-image"></i></a>
+			<a href="#davet" class="nav_btn"><i class="fa fa-receipt"></i></a>
 			<a href="#odul" class="nav_btn"><i class="fa fa-award"></i></a>
-		</nav>
+		</nav> -->
 	</div>
 
 
@@ -86,7 +87,7 @@
 		<p>Hayalinizdeki ev veya ofis için kolay, hızlı ve bütçenize uygun onlarca tasarım edinin.
 		</p>
 
-		<div class="form-box" id="general">
+		<div class="form-box scrollspy" id="general">
 			<div class="form-section">
 				<h3>PROJE ÖZETİ</h3>
 				<p>Projeniz hakkında vereceğiniz tüm detaylar, tasarımcıların beklentilerinizi karşılamasını kolaylaştıracaktır.</p>
@@ -188,7 +189,7 @@
 			</div>
 		</div>
 
-		<div class="form-box" id="highlights">	
+		<div class="form-box scrollspy" id="highlights">	
 			<div class="form-section">
 				<h3>ETİKETLER</h3>
 				<p>Projenizi en iyi tanımlayacak etiketleri seçiniz.</p>
@@ -237,7 +238,7 @@
 			</div>
 		</div>
 
-		<div class="form-box" id="location">	
+		<div class="form-box scrollspy" id="location">	
 			<div class="form-section">
 				<h3>LOKASYON</h3>
 				<div class="multiple-inputs">
@@ -265,7 +266,7 @@
 		</div>
 
 
-		<div class="form-box" id="contact">	
+		<div class="form-box scrollspy" id="contact">	
 			<div class="form-section">
 				<h3>İLETİŞİM</h3>
 
@@ -282,7 +283,7 @@
 		</div>
 
 
-		<div class="form-box" id="media">	
+		<div class="form-box scrollspy" id="media">	
 			<div class="form-section">
 				<h3>PROJE FOTOĞRAFLARI</h3>
 				<p>Projenize ait çizimleri, fotoğrafları vb. yükleyiniz.</p>
@@ -307,7 +308,7 @@
 		</div>
 
 
-		<div class="form-box" id="davet">	
+		<div class="form-box scrollspy" id="davet">	
 			<div class="form-section">
 				<h3>DAVET</h3>
 				<p>Dizaynet'te gördüğünüz ve projenize davet etmek istediğiniz Profesyonellerin adını giriniz.</p>
@@ -323,7 +324,7 @@
 		</div>
 
 
-		<div class="form-box" id="davet">	
+		<div class="form-box scrollspy" id="odul">	
 			<div class="form-section">
 				<h3>PROJE ÖDÜLÜ</h3>
 				<p>Ödülünüz miktarı profesyonellerin projeye olan ilgisini doğrudan etkileyecektir.</p>
@@ -478,6 +479,33 @@
 
 
 <script type="text/javascript">
+
+	(function() {
+		'use strict';
+
+		var section = document.querySelectorAll(".scrollspy");
+		var sections = {};
+		var i = 0;
+
+		Array.prototype.forEach.call(section, function(e) {
+			sections[e.id] = e.offsetTop;
+		});
+
+		window.onscroll = function() {
+			var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+			for (i in sections) {
+				if (sections[i] <= (scrollPosition + 400)) {
+					document.querySelector('.active-nav').setAttribute('class', ' ');
+					document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active-nav');
+				}
+			}
+		};
+	})();
+
+
+
+
+
 	/* proje ekleme sayfası kategoriler */
 	var proje_tur = document.getElementById('proje-tur');
 	var icmimar_altbaslik = document.getElementById('ic-mimari');

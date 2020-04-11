@@ -427,6 +427,9 @@ form .submit-btn button:hover {
 	transition: .3s ease;
 }
 
+.nav-fa {
+	display: none;
+}
 
 .add-people-btn {
 	display: flex;
@@ -499,28 +502,31 @@ form .submit-btn button:hover {
 		border-right: 1px solid #eee;
 	}
 
-	section.yarisma-ekle .form-nav nav#desktop-nav {
+	section.yarisma-ekle .form-nav nav#desktop-nav p {
 		display: none;
 	}
-
+	.nav-fa {
+		display: block;
+	}
+/*
 	section.yarisma-ekle .form-nav nav.mobile-nav {
 		display: flex;
+		}*/
+
+		section.yarisma-ekle form {
+			width: 325px;
+			height: auto;
+			margin-left: 80px;
+		}
+
+		.hl-checkboxes {
+			justify-content: space-between;
+		}
+
+		.hl-container {
+			margin: 5px;
+			width: auto;
+		}
+
+
 	}
-
-	section.yarisma-ekle form {
-		width: 325px;
-		height: auto;
-		margin-left: 80px;
-	}
-
-	.hl-checkboxes {
-		justify-content: space-between;
-	}
-
-	.hl-container {
-		margin: 5px;
-		width: auto;
-	}
-
-
-}
