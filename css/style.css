@@ -1911,6 +1911,70 @@ label.login-container {
 
 
 
+	.timer {
+		width: 100%;
+		height: auto;
+		margin-top: 10px;
+		margin-bottom: -10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.timer .counter {
+		display: flex;
+		align-items: center;
+	}
+
+	.timer .counter span {
+		width: 23px;
+		height: 30px;
+		border-radius: 2px;
+		background-color: #272726;
+		border: 1px solid #D19E2C;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 15px;
+		font-family: 'sofiapro-light';
+		color: #fff;
+		margin: 0 3px;
+	}
+
+	.timer .counter-info {
+		width: 150px;
+		margin-left: 8px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+
+	.timer .counter-info p {
+		font-family: 'sofiapro-light';
+		font-size: 10px;
+		color: #7B7B7B;
+		margin-top: 3px;
+	}
+
+
+	@media only screen and (max-width: 550px) {
+		.timer .counter span {
+			width: 28px;
+			height: 35px;
+			border-radius: 2px;
+			background-color: #272726;
+			border: 1px solid #D19E2C;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 15px;
+			font-family: 'sofiapro-light';
+			color: #fff;
+			margin: 0 3px;
+		}
+	}
 
 	/* responsive codes */
 

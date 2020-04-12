@@ -38,6 +38,8 @@ delete_person.forEach(item => item.addEventListener('click', function(e) {
 }));*/
 
 
+
+
 /* yarisma detay sayfası tab nav */
 
 var tab_btn = document.querySelectorAll('.tab-btn');

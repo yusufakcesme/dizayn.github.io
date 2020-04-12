@@ -11,6 +11,13 @@
 	padding-bottom: 16px !important;
 }
 
+
+.card-img-overlay-tasarim p {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .timer {
 	width: 100%;
 	height: auto;
