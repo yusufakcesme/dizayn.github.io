@@ -89,7 +89,10 @@
 						<img src="images/1.jpg">
 					</div>
 					<!-- TARİH data-countdown içine girilecek -->
-					<div data-countdown="2020/05/01"></div>
+					<div class="timer">
+						<div class="counter" data-countdown="2020/05/01"></div>
+						<div class="counter-info"><p>Gün</p> <p>Saat</p> <p>Dakika</p></div>
+					</div>
 					<a href="#">
 						KATIL
 					</a>
@@ -103,7 +106,11 @@
 						</div>
 						<img src="images/2.jpg">
 					</div>
-					<div data-countdown="2020/06/01"></div>
+					<!-- TARİH data-countdown içine girilecek -->
+					<div class="timer">
+						<div class="counter" data-countdown="2020/04/18"></div>
+						<div class="counter-info"><p>Gün</p> <p>Saat</p> <p>Dakika</p></div>
+					</div>
 					<a href="#">
 						KATIL
 					</a>
@@ -117,8 +124,9 @@
 						</div>
 						<img src="images/3.jpg">
 					</div>
+					<!-- TARİH data-countdown içine girilecek -->
 					<div class="timer">
-						<div class="counter"><span>4</span><span>3</span>:<span>2</span><span>1</span>:<span>5</span><span>8</span></div>
+						<div class="counter" data-countdown="2020/04/30"></div>
 						<div class="counter-info"><p>Gün</p> <p>Saat</p> <p>Dakika</p></div>
 					</div>
 					<a href="#">
@@ -134,8 +142,9 @@
 						</div>
 						<img src="images/4.jpg">
 					</div>
+					<!-- TARİH data-countdown içine girilecek -->
 					<div class="timer">
-						<div class="counter"><span>4</span><span>3</span>:<span>2</span><span>1</span>:<span>5</span><span>8</span></div>
+						<div class="counter" data-countdown="2020/05/10"></div>
 						<div class="counter-info"><p>Gün</p> <p>Saat</p> <p>Dakika</p></div>
 					</div>
 					<a href="#">
@@ -384,7 +393,19 @@
 	$('[data-countdown]').each(function() {
 		var $this = $(this), finalDate = $(this).data('countdown');
 		$this.countdown(finalDate, function(event) {
-			$this.html(event.strftime('%D:%H:%M'));
+			//console.log(event.strftime('%D')[0]);
+			var gun_ilk =  event.strftime('%D')[0];
+			var gun_son =  event.strftime('%D')[1];
+
+			var saat_ilk =  event.strftime('%H')[0];
+			var saat_son =  event.strftime('%H')[1];
+			
+			var dakika_ilk =  event.strftime('%M')[0];
+			var dakika_son =  event.strftime('%M')[1];
+
+			$this.html(event.strftime(`
+				<span>${gun_ilk}</span><span>${gun_son}</span>:<span>${saat_ilk}</span><span>${saat_son}</span>:<span>${dakika_ilk}</span><span>${dakika_son}</span>
+				`));
 		});
 	});
 
