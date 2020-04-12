@@ -526,6 +526,7 @@ form .submit-btn button:hover {
 		.hl-container {
 			margin: 5px;
 			width: auto;
+			flex: 1;
 		}
 
 
