@@ -1,13 +1,12 @@
 
 body {
-	background-color: #f4f4f4 !important;
+	background-color: #f6f6f6 !important;
 }
 
 
 section.resimler {
 	width: 100%;
-	height: calc(100vh - 60px);
-	margin-top: 60px;
+	height: 100vh;
 	display: flex;
 }
 
@@ -18,9 +17,9 @@ section.resimler {
 	position: relative;
 }
 .resimler-content {
-	flex: 1;
+	flex: 1.1;
 	height: 100%;
-	background-color: #272726	;
+	background-color: #fff;
 	display: flex;
 	flex-direction: column;
 	overflow: auto;
@@ -28,94 +27,154 @@ section.resimler {
 
 .user-info {
 	display: flex;
-	width: 80%;
+	align-items: center;
+	width: 100%;
+	padding-right: 5%;
+	padding-left: 5%;
 	margin: 30px auto 5px auto;
+	padding-bottom: 20px;
+	border-bottom: 0.5px solid #E6E6E6;
+}
+
+.rate-stars {
+	display: flex;
+	margin-top: 0px;
 	align-items: center;
 }
 
+.rate-stars p {
+	font-size: 10px;
+	color: #5A5A5A;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+
+
+.fa-star {
+	color: #CFCFCF;
+	font-size: 9px;
+	margin-right: 2px;
+}
+
+.checked-star {
+	color: #D19E2C;
+}
+
+
 .user-info img {
-	width: 35px;
-	height: 35px;
+	width: 45px;
+	height: 45px;
 	border-radius: 50%;
 	margin-right: 10px;
+	border: 1px solid #D19E2C;
+	margin-top: 1px;
+}
+
+.user-info .user-name {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
 .user-info .user-name a {
 	font-size: 14px;
 	display: block;
-	font-family: 'nunito-regular';
-	color: #fff;
+	font-family: 'sofiapro-light';
+	color: #3A3A39;
 }
 
 .user-info .user-name span {
-	font-size: 12px;
-	font-family: 'nunito-light';
-	color: #CFCFCF;
+	font-size: 10px;
+	font-family: 'sofiapro-light';
+	color: #5A5A5A;
+	margin-top: 2px;
 }
 
 
 .job-info {
-	width: 80%;
+	width: 90%;
 	margin: 20px auto 10px auto;
-	border-bottom: 1px solid #FFD982;
 }
 
 .job-info h3 {
-	font-size: 28px;
-	font-family: 'nunito-regular';
-	color: #fff;
+	font-size: 22px;
+	font-family: 'sofiapro-light';
+	color: #3A3A39;
 }
 
 .job-info span {
 	font-size: 13px;
-	font-family: 'nunito-light';
-	color: #CFCFCF;
+	font-family: 'sofiapro-light';
+	color: #5A5A5A;
 	display: block;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
-.job-info p {
+.job-info > p {
 	font-size: 13px;
-	font-family: 'nunito-light';
-	color: #FFD982;
+	font-family: 'sofiapro-light';
+	color: #D19E2C;
 	display: block;
 	margin-bottom: 20px;
 }
 
+.job-info-text {
+	height: auto;
+}
+
+.job-info-text p {
+	font-family: 'sofiapro-light';
+	font-size: 13px;
+	color: #5A5A5A;
+	line-height: 1.2;
+	height: 75px;
+	overflow: hidden;
+}
+
+.job-info-text span {
+	font-family: 'sofiapro-light';
+	font-size: 10px;
+	color: #D19E2C;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
 .other-projects-title {
 	margin-top: 10px;
-	width: 80%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 15px;
 	font-size: 14px;
-	font-family: 'nunito-light';
-	color: #fff;
+	font-family: 'sofiapro-light';
+	font-weight: normal;
+	color: #5A5A5A;
 }
 
 .other-projects {
-	width: 80%;
-	height: auto;
+	width: 90%;
+	min-height: 130px;
+	overflow: hidden;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 	border-bottom: #999;
-	justify-content: space-between;	
+	justify-content: space-between;
 }
 
 .other-projects a.other-p {
-	width: 95px;
-	height: 100px;
+	width: 122px;
+	height: 122px;
 	margin-bottom: 10px;
 }
 
 .other-projects a.other-p img {
-	width: 95px;
-	height: 100px;
+	width: 122px;
+	height: 122px;
 }
 
 .benzer-fikirler {
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -123,17 +182,17 @@ section.resimler {
 }
 
 .benzer-fikirler .benzer-fikir {
-	width: 56px;
-	height: 55px;
-	margin-bottom: 10px;
+	width: 73px;
+	height: 73px;
+	margin-bottom: 5px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .benzer-fikirler .benzer-fikir img {
-	width: 56px;
-	height: 55px;
+	width: 73px;
+	height: 73px;
 }
 
 
@@ -147,14 +206,18 @@ section.resimler {
 }
 
 .slider-img {
-	width: 100%;
-	height: 100%;
+	width: auto;
+	height: 100vh;
 	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .slider-img img {
-	width: 100%;
-	height: auto;
+	max-width: 100%;
+	width: auto;
+	height: 100%;
 }
 
 .user-info-top {
@@ -166,10 +229,6 @@ section.resimler {
 	height: 250px;
 	position: absolute;
 	bottom: 0px;
-	background: -moz-linear-gradient(bottom,  rgba(0,0,0,0.96) 0%, rgba(125,185,232,0) 100%);
-	background: -webkit-linear-gradient(bottom,  rgba(0,0,0,0.96) 0%,rgba(125,185,232,0) 100%);
-	background: linear-gradient(to top,  rgba(0,0,0,0.96) 0%,rgba(125,185,232,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db000000', endColorstr='#007db9e8',GradientType=0 );
 	display: flex;
 	align-items: flex-end;
 	padding: 30px 50px;
@@ -178,7 +237,7 @@ section.resimler {
 
 .slider-bottom .left-buttons {
 	display: flex;
-	margin-right: auto;
+	margin-left: auto;
 }
 
 
@@ -201,7 +260,7 @@ section.resimler {
 	width: auto;
 	height: 100px;
 	margin-right: auto;
-	margin-left: -100px;
+	margin-left: 200px;
 	display: flex;
 }
 
@@ -209,7 +268,7 @@ section.resimler {
 	width: 100px;
 	height: 100px;
 	margin-right: 20px;
-	opacity: .6;
+	opacity: .7;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
@@ -221,13 +280,14 @@ section.resimler {
 	width: 100px;
 	height: 100px;
 	border-radius: 1px;
+	border: 2px solid #fff;
 }
 
 .active-thumb {
 	opacity: 1 !important;
 }
-.active-thumb img {
-	border: 2px solid #FFD982;
+.active-thumb > img {
+	border: 2px solid #D19E2C !important;
 }
 
 .slider-bottom .thumb-images .thumb:hover {
@@ -247,7 +307,7 @@ section.resimler {
 	padding: 0 15px;
 }
 
-.slider-nav-buttons button {
+.slider-nav-buttons button  {
 	width: 50px;
 	height: 50px;
 	font-size: 35px;
@@ -267,7 +327,7 @@ section.resimler {
 	height: auto;
 	border-radius: 5px;
 	margin: 0 auto;
-	padding: 50px 30px;
+	padding: 50px 0px;
 	position: relative;
 }
 
@@ -284,8 +344,8 @@ section.resimler {
 	height: 30px;
 	margin-top: 20px;
 	border-radius: 30px;
-	border: 1.5px solid #FFD982;
-	color: #FFD982;
+	border: 1.5px solid #D19E2C;
+	color: #D19E2C;
 	background: none;
 	cursor: pointer;
 }
@@ -297,29 +357,35 @@ section.resimler {
 
 .comment-section .make-comment .comment-input input {
 	flex: 1;
-	height: 30px;
-	line-height: 30px;
+	height: 55px;
+	text-indent: 10px;
+	border-radius: 5px;
 	order: 1;
 	margin-left: 20px;
 	border-top: 0;
 	border-left: 0;
 	border-right: 0;
 	outline: 0;
-	border-bottom: 2px solid #FFD982;
+	border: 2px solid #D19E2C;
 	font-style: normal;
 	padding: 0 0 6px;
 	width: 100%;
 	box-shadow: inherit;
 	background-image: initial;
 	background: none;
-	color: #fff;
+	color: #CFCFCF;
 }
 
 
+.comment-section .last-comments {
+	width: 90%;
+	margin: 0 auto;
+}
+
 .comment-section .last-comments > p {
-	font-family: 'nunito-regular';
+	font-family: 'sofiapro-light';
 	font-size: 17px;
-	color: #fff;
+	color: #5A5A5A;
 }
 
 
@@ -347,28 +413,38 @@ section.resimler {
 }
 
 .comment-section .last-comments .comment .comment-profile .comment-name p {
-	font-family: 'nunito-regular';
+	font-family: 'sofiapro-light';
 	font-size: 15px;
-	color: #fbfbfb;
+	color: #5A5A5A;
 }
 
 .comment-section .last-comments .comment .comment-profile .comment-name span {
-	font-family: 'nunito-light';
+	font-family: 'sofiapro-light';
 	font-size: 12px;
-	color: #999;
+	color: #CFCFCF;
 }
 
-.comment-section .last-comments .comment .comment-content {
-	height: 44px;
-	overflow: hidden;
-}
+
 
 .comment-section .last-comments .comment .comment-content p {
-	font-family: 'nunito-light';
+	font-family: 'sofiapro-light';
 	font-size: 15px;
-	color: #fbfbfb;
+	color: #5A5A5A;
 }
 
+
+.like-comment {
+	color: #5A5A5A;
+	font-size: 13px;
+	margin-top: 5px;
+}
+
+.like-comment button {
+	background: none;
+	border: none;
+	color: #5A5A5A;
+	cursor: pointer;
+}
 
 
 .mobile-save-like {
@@ -622,16 +698,19 @@ section.resimler {
 
 	.owl-theme {
 		display: block !important;
+		height: 570px;
 	}
 
 	.item-owl {
 		width: 100%;
 		height: 570px;
+		display: flex;align-items: center;
+		justify-content: center;
 	}
 
 	.item-owl img {
 		width: 100%;
-		height: 570px;
+		height: auto;
 	}
 
 
@@ -649,8 +728,8 @@ section.resimler {
 
 	section.resimler {
 		width: 100%;
-		height: calc(100vh - 60px);
-		margin-top: 60px;
+		height: 100vh;
+		margin-top: 0px;
 		display: flex;
 		flex-direction: column;
 	}
@@ -744,12 +823,13 @@ section.resimler {
 		width: 100%;
 		height: 100px;
 		overflow: hidden;
-		background-color: #272726;
+		background-color: #fff;
 		margin-top: 0px;
 		padding: 30px 5%;
 		align-items: flex-start;
 		flex-direction: column;
 		z-index: 3;
+		border-bottom: 1px solid #ddd;
 	}
 	.user-info-top {
 		display: flex;
@@ -765,7 +845,7 @@ section.resimler {
 
 
 	.user-info-top .user-name a {
-		font-size: 20px;
+		font-size: 13px;
 	}
 
 	.user-info-top .user-name span {
@@ -813,14 +893,13 @@ section.resimler {
 		height: 32px;
 		border-radius: 50%;
 		color: #363237;
-		background-color: #fff;
+		background: none;
 		border: none;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		font-size: 18px;
 		cursor: pointer;
-		margin-right: 15px;
 	}
 
 	.see-more {
@@ -833,7 +912,7 @@ section.resimler {
 		height: 32px;
 		background: none;
 		font-size: 22px;
-		color: #fff;
+		color: #363237;
 		border: none;
 	}
 
@@ -849,6 +928,7 @@ section.resimler {
 		color: #272726;
 		font-size: 16px;
 		font-family: 'nunito-regular';
+		border-top: 1px solid #ddd;
 	}
 
 	.other-projects {
@@ -861,6 +941,7 @@ section.resimler {
 		overflow-x: auto !important;
 		-webkit-overflow-scrolling: touch;
 		justify-content:flex-start;
+		border-bottom: 1px solid #ddd;
 	}
 
 	.other-projects::-webkit-scrollbar {
@@ -926,26 +1007,6 @@ section.resimler {
 	}
 
 
-	.comment-section .make-comment .comment-input input {
-		flex: 1;
-		height: 30px;
-		line-height: 30px;
-		order: 1;
-		margin-left: 20px;
-		border-top: 0;
-		border-left: 0;
-		border-right: 0;
-		outline: 0;
-		border-bottom: 2px solid #AA7C13;
-		font-style: normal;
-		padding: 0 0 6px;
-		width: 100%;
-		box-shadow: inherit;
-		background-image: initial;
-		background: none;
-		color: #272726;
-	}
-
 	.comment-section .make-comment button {
 		margin-left: auto;	
 		width: 90px;
@@ -958,6 +1019,9 @@ section.resimler {
 		cursor: pointer;
 	}
 
+	.comment-section .last-comments > p {
+		margin-bottom: 10px;
+	}
 
 	.comment-section .last-comments .comment {
 		width: 100%;

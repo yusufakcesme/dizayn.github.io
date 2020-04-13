@@ -37,6 +37,15 @@ delete_person.forEach(item => item.addEventListener('click', function(e) {
 	element.remove();
 }));*/
 
+/*
+function likeComment(z) {
+	var yenisayi = parseInt(z.childNodes[2].innerText);
+	yenisayi++;
+	var yenisayiStr = yenisayi.toString();
+	z.childNodes[2].innerText = yenisayiStr;
+}
+
+*/
 
 
 
@@ -160,6 +169,19 @@ function openKesfedin() {
 }
 
 
+
+
+function openJobInfoText(spanText) {
+	var job_info_text = document.getElementById('job-info-text');
+
+	if (job_info_text.style.height === "auto") {
+		job_info_text.style.height = "75px";
+		spanText.innerText = "DEVAMINI OKU..";
+	} else {
+		job_info_text.style.height = "auto";
+		spanText.innerText = "DAHA AZ GÖSTER..";
+	}
+}
 
 
 
