@@ -465,7 +465,7 @@ section.resimler {
 }
 
 .modal5 {
-	display: flex;
+	display: none;
 	position: fixed; 
 	left: 0;
 	top: 0;
@@ -853,30 +853,30 @@ section.resimler {
 	}
 
 	.mobile-user-text {
-		color: #fff;
-		font-family: 'nunito-light';
+		color: #363237;
+		font-family: 'sofiapro-light';
 		display: block;
 	}
 
 
 	.mobile-user-text .job-info-mobile h3 {
 		font-size: 28px;
-		font-family: 'nunito-regular';
-		color: #fff;
+		font-family: 'sofiapro-light';
+		color: #363237;
 	}
 
 	.mobile-user-text .job-info-mobile span {
 		font-size: 13px;
-		font-family: 'nunito-light';
-		color: #CFCFCF;
+		font-family: 'sofiapro-light';
+		color: #999;
 		display: block;
 		margin-bottom: 10px;
 	}
 
 	.mobile-user-text .job-info-mobile p {
 		font-size: 13px;
-		font-family: 'nunito-light';
-		color: #FFD982;
+		font-family: 'sofiapro-light';
+		color: #D19E2C;
 		display: block;
 		margin-bottom: 20px;
 	}
