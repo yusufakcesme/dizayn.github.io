@@ -18,22 +18,19 @@
   display: none;
 }
 .grid-item {
-  margin: 10px;
+  margin: 5px;
   padding: 0;
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 95%;
+    width: 98%;
   }
   .grid-col--2 {
     display: block;
   }
   .grid-col {
     padding: 0 0.5em;
-  }
-  img {
-    margin-bottom: 0.8em;
   }
   .content {
     opacity: 0;
@@ -54,6 +51,13 @@
     display: block;
   }
   .container {
-    width: calc(90% + 10px);
+    width: 98%;
+  }
+}
+
+
+@media (max-width: 1080px) {
+  .mobile-col-del {
+    display: none;
   }
 }
