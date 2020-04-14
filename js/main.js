@@ -373,17 +373,17 @@ function prevSlide(eksi) {
 
 
 
-/* resimler mobile user info açılır kapanır text */
+/* resimler mobile user info açılır kapanır text*/
 
-var userInfoResimler = document.getElementById('user-info-resimler');
+var mobileUserText = document.getElementById('mobile-user-text');
 var chevronDown = document.getElementById('chevron-down');
 
 function openMobileText() {
-	if (userInfoResimler.style.height === "auto") {
-		userInfoResimler.style.height = "100px";
+	if (mobileUserText.style.height === "auto") {
+		mobileUserText.style.height = "60px";
 		chevronDown.style.transform = "rotate(0deg)";
 	} else {
-		userInfoResimler.style.height = "auto";
+		mobileUserText.style.height = "auto";
 		chevronDown.style.transform = "rotate(180deg)";
 	}
 }

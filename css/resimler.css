@@ -260,14 +260,14 @@ section.resimler {
 	width: auto;
 	height: 100px;
 	margin-right: auto;
-	margin-left: 200px;
+	margin-left: 230px;
 	display: flex;
 }
 
 .slider-bottom .thumb-images .thumb {
 	width: 100px;
 	height: 100px;
-	margin-right: 20px;
+	margin-right: 10px;
 	opacity: .7;
 	cursor: pointer;
 	display: flex;
@@ -821,11 +821,11 @@ section.resimler {
 
 	.user-info {
 		width: 100%;
-		height: 100px;
+		height: auto;
 		overflow: hidden;
 		background-color: #fff;
 		margin-top: 0px;
-		padding: 30px 5%;
+		padding: 30px 0;
 		align-items: flex-start;
 		flex-direction: column;
 		z-index: 3;
@@ -843,21 +843,34 @@ section.resimler {
 		height: 40px;
 	}
 
+	.user-info-top {
+		padding: 0 5%;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #ddd;
+	}
 
 	.user-info-top .user-name a {
-		font-size: 13px;
+		font-size: 14px;
 	}
 
 	.user-info-top .user-name span {
-		font-size: 15px;
+		font-size: 12px;
 	}
 
 	.mobile-user-text {
 		color: #363237;
 		font-family: 'sofiapro-light';
 		display: block;
+		margin: -15px 5% -20px 5%;
+		height: 60px;
+		overflow: hidden;
 	}
 
+	.mobile-text-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
 	.mobile-user-text .job-info-mobile h3 {
 		font-size: 28px;
@@ -926,8 +939,8 @@ section.resimler {
 		width: 100%;
 		padding: 10px 5%;
 		color: #272726;
-		font-size: 16px;
-		font-family: 'nunito-regular';
+		font-size: 15px;
+		font-family: 'sofiapro-light';
 		border-top: 1px solid #ddd;
 	}
 
@@ -951,7 +964,8 @@ section.resimler {
 	.other-projects a.other-p {
 		width: 150px;
 		height: 150px;
-		margin-left: 14px;
+		margin-left: 0px;
+		margin-right: 14px;
 	}
 
 	.other-projects a.other-p img {
@@ -965,16 +979,16 @@ section.resimler {
 		height: auto;
 		padding: 10px 5% 30px 5%;
 		margin-top: -17px;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 	.benzer-fikirler .benzer-fikir {
 		margin-bottom: 10px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 160px;
-		height: 160px;
-		margin-top: 10px;
+		width: 48%;
+		height: 170px;
+		margin-top: 5px;
 	}
 
 	.benzer-fikirler .benzer-fikir img {

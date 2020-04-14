@@ -29,13 +29,13 @@
 
 			<div class="owl-carousel owl-theme">
 				<div class="item-owl">
-					<img src="images/dizaynbannerfoto.jpg">
+					<img src="images/home-design.jpg">
 				</div>
 				<div class="item-owl">
 					<img src="images/denemeresim.jpg">
 				</div>
 				<div class="item-owl">
-					<img src="images/22.jpg">
+					<img src="images/dizaynbannerfoto.jpg">
 				</div>
 				<div class="item-owl">
 					<img src="images/33.jpg">
@@ -67,7 +67,7 @@
 						<img src="images/denemeresim.jpg">
 					</div>
 					<div class="thumb" id="3">
-						<img src="images/22.jpg">
+						<img src="images/home-design.jpg">
 					</div>
 					<div class="thumb" id="4">
 						<img src="images/33.jpg">
@@ -110,16 +110,20 @@
 						<button onclick="savePhoto()"><i class="fa fa-plus"></i></button>
 						<button><i class="far fa-paper-plane"></i></button>
 					</div>
-					<div class="see-more">
-						<button onclick="openMobileText()" id="chevron-down"><i class="fa fa-chevron-down"></i></button>
-					</div>
 				</div>
 
 
-				<div class="mobile-user-text">
+				<div class="mobile-user-text" id="mobile-user-text">
 					<div class="job-info-mobile">
-						<h3>Kuzu Effect</h3>
-						<span>Ankara</span>
+						<div class="mobile-text-top">
+							<div>
+								<h3>Kuzu Effect</h3>
+								<span>Ankara</span>
+							</div>
+							<div class="see-more">
+								<button onclick="openMobileText()" id="chevron-down"><i class="fa fa-chevron-down"></i></button>
+							</div>
+						</div>
 						<p>Oturma Odası, İç Mekan, Modern Tasarım</p>
 					</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -379,92 +383,92 @@
 							<option value="3">test3</option>
 						</select>
 					</div>
-						<div class="yeni-fikir">
+					<div class="yeni-fikir">
 						<i class="fa fa-plus"></i>
 						<input type="text" name="" placeholder="Yeni bir seçenek ekleyin">
 						<button>Oluştur</button>
-						</div>
-						<textarea placeholder="Notlarınız ekleyin"></textarea>
 					</div>
-				</div>
-				<div class="buttons-bottom">
-					<button>İptal</button>
-					<button>Fikirlerime Ekle</button>
+					<textarea placeholder="Notlarınız ekleyin"></textarea>
 				</div>
 			</div>
-		</form>
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-	<!-- giriş yap formu -->
-	<div id="id01" class="modal">
-		<form class="modal-content animate" action="" method="post">
-			<div class="container">
-				<h3>Hoşgeldiniz</h3>
-				<p>Devam etmek için lütfen giriş yapın.</p>
-				<input type="mail" name="" placeholder="E-posta">
-				<input type="password" name="" placeholder="Şifre">
-				<a class="forget-pass" href="sifremi-unuttum.html">Şifremi unuttum</a>
-				<p class="or">Veya</p>
-
-				<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
-				<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
-				<button type="submit">Giriş Yap</button>
-
-				<p class="dont-have-acc">Hesabınız yok mu? <a onclick="openRegister()">Kayıt Ol</a></p>
+			<div class="buttons-bottom">
+				<button>İptal</button>
+				<button>Fikirlerime Ekle</button>
 			</div>
-		</form>
-	</div>
+		</div>
+	</form>
+</div>
 
-	<!-- kayıt ol formu -->
-	<div id="id02" class="modal2">
-		<form class="modal-content animate modal-kayit" action="" method="post">
-			<div class="container">
-				<h3>Kayıt Ol</h3>
-				<p>Devam etmek için lütfen bilgilerinizi girin.</p>
 
-				<div class="register-radios">
-					<label class="container-check">Tasarımcıyım
-						<input type="checkbox">
-						<span class="checkmark-check"></span>
-					</label>
-					<label class="container-check">Tasarımcı Arıyorum
-						<input type="checkbox">
-						<span class="checkmark-check"></span>
-					</label>
-				</div>
-				<input type="mail" name="" placeholder="E-posta">
-				<input type="password" name="" placeholder="Şifre">
-				<label class="login-container">
-					Haber bülteni ve yenilikler ile ilgili mail almak istiyorum. 
-					<input type="checkbox" checked="checked">
-					<span class="login-checkmark"></span>
-				</label>
-				<label class="login-container">
-					Hüküm&Koşullar ve Gizlilik Politikasını kabul ediyorum.
+
+
+
+
+
+
+
+
+
+<!-- giriş yap formu -->
+<div id="id01" class="modal">
+	<form class="modal-content animate" action="" method="post">
+		<div class="container">
+			<h3>Hoşgeldiniz</h3>
+			<p>Devam etmek için lütfen giriş yapın.</p>
+			<input type="mail" name="" placeholder="E-posta">
+			<input type="password" name="" placeholder="Şifre">
+			<a class="forget-pass" href="sifremi-unuttum.html">Şifremi unuttum</a>
+			<p class="or">Veya</p>
+
+			<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
+			<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
+			<button type="submit">Giriş Yap</button>
+
+			<p class="dont-have-acc">Hesabınız yok mu? <a onclick="openRegister()">Kayıt Ol</a></p>
+		</div>
+	</form>
+</div>
+
+<!-- kayıt ol formu -->
+<div id="id02" class="modal2">
+	<form class="modal-content animate modal-kayit" action="" method="post">
+		<div class="container">
+			<h3>Kayıt Ol</h3>
+			<p>Devam etmek için lütfen bilgilerinizi girin.</p>
+
+			<div class="register-radios">
+				<label class="container-check">Tasarımcıyım
 					<input type="checkbox">
-					<span class="login-checkmark"></span>
+					<span class="checkmark-check"></span>
 				</label>
-
-				<p class="or">Veya</p>
-
-				<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
-				<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
-				<button type="submit">Kayıt Ol</button>
-
-				<p class="dont-have-acc">Hesabınız var mı? <a onclick="openLogin()">Giriş Yap</a></p>
+				<label class="container-check">Tasarımcı Arıyorum
+					<input type="checkbox">
+					<span class="checkmark-check"></span>
+				</label>
 			</div>
-		</form>
-	</div>
+			<input type="mail" name="" placeholder="E-posta">
+			<input type="password" name="" placeholder="Şifre">
+			<label class="login-container">
+				Haber bülteni ve yenilikler ile ilgili mail almak istiyorum. 
+				<input type="checkbox" checked="checked">
+				<span class="login-checkmark"></span>
+			</label>
+			<label class="login-container">
+				Hüküm&Koşullar ve Gizlilik Politikasını kabul ediyorum.
+				<input type="checkbox">
+				<span class="login-checkmark"></span>
+			</label>
+
+			<p class="or">Veya</p>
+
+			<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
+			<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
+			<button type="submit">Kayıt Ol</button>
+
+			<p class="dont-have-acc">Hesabınız var mı? <a onclick="openLogin()">Giriş Yap</a></p>
+		</div>
+	</form>
+</div>
 
 
 
@@ -475,32 +479,32 @@
 
 
 
-	<script>
+<script>
 
-		$('.owl-carousel').owlCarousel({
-			margin:10,
-			loop:true,
-			autoWidth:true,
-			items:4
-		})
+	$('.owl-carousel').owlCarousel({
+		margin:10,
+		loop:true,
+		autoWidth:true,
+		items:4
+	})
 
-	</script>
+</script>
 
-	<script>
-		var x, i, j, selElmnt, a, b, c;
-		/*look for any elements with the class "custom-select":*/
-		x = document.getElementsByClassName("custom-select");
-		for (i = 0; i < x.length; i++) {
-			selElmnt = x[i].getElementsByTagName("select")[0];
-			/*for each element, create a new DIV that will act as the selected item:*/
-			a = document.createElement("DIV");
-			a.setAttribute("class", "select-selected");
-			a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-			x[i].appendChild(a);
-			/*for each element, create a new DIV that will contain the option list:*/
-			b = document.createElement("DIV");
-			b.setAttribute("class", "select-items select-hide");
-			for (j = 1; j < selElmnt.length; j++) {
+<script>
+	var x, i, j, selElmnt, a, b, c;
+	/*look for any elements with the class "custom-select":*/
+	x = document.getElementsByClassName("custom-select");
+	for (i = 0; i < x.length; i++) {
+		selElmnt = x[i].getElementsByTagName("select")[0];
+		/*for each element, create a new DIV that will act as the selected item:*/
+		a = document.createElement("DIV");
+		a.setAttribute("class", "select-selected");
+		a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+		x[i].appendChild(a);
+		/*for each element, create a new DIV that will contain the option list:*/
+		b = document.createElement("DIV");
+		b.setAttribute("class", "select-items select-hide");
+		for (j = 1; j < selElmnt.length; j++) {
     /*for each option in the original select element,
     create a new DIV that will act as an option item:*/
     c = document.createElement("DIV");
