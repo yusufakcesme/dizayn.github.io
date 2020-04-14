@@ -166,7 +166,7 @@ section.resimler {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 15px;
-	font-size: 14px;
+	font-size: 16px;
 	font-family: 'sofiapro-light';
 	font-weight: bold;
 	color: #5A5A5A;
@@ -888,7 +888,7 @@ section.resimler {
 		font-family: 'sofiapro-light';
 		display: block;
 		margin: -15px 5% -20px 5%;
-		height: 60px;
+		height: 48px;
 		overflow: hidden;
 	}
 
@@ -965,7 +965,7 @@ section.resimler {
 		width: 100%;
 		padding: 10px 5%;
 		color: #272726;
-		font-size: 15px;
+		font-size: 16px;
 		font-family: 'sofiapro-light';
 		border-top: 1px solid #ddd;
 	}
