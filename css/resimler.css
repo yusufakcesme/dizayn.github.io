@@ -61,6 +61,26 @@ section.resimler {
 }
 
 
+.user-info-top {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.user-info-top .desktop-exit {
+	margin-left: auto;
+}
+
+.user-info-top .desktop-exit button {
+	width: 40px;
+	height: 40px;
+	font-size: 35px;
+	background: none;
+	border: none;
+	color: #3A3A39;
+	cursor: pointer;
+}
+
 .user-info img {
 	width: 45px;
 	height: 45px;
@@ -81,6 +101,7 @@ section.resimler {
 	display: block;
 	font-family: 'sofiapro-light';
 	color: #3A3A39;
+	font-weight: bold;
 }
 
 .user-info .user-name span {
@@ -147,7 +168,7 @@ section.resimler {
 	margin-bottom: 15px;
 	font-size: 14px;
 	font-family: 'sofiapro-light';
-	font-weight: normal;
+	font-weight: bold;
 	color: #5A5A5A;
 }
 
@@ -690,6 +711,11 @@ section.resimler {
 }
 
 @media only screen and (max-width: 1250px) {
+
+	.user-info-top .desktop-exit {
+		margin-left: auto;
+		display: none;
+	}
 
 	.slider {
 		display: none !important;

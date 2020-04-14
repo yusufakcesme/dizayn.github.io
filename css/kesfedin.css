@@ -4,8 +4,8 @@
   border-radius: 5px;
 }
 .container {
-  width: 95%;
-  margin: 20px auto;
+  width: 100%;
+  margin: 80px auto;
 }
 .container .grid {
   display: flex;
@@ -24,7 +24,7 @@
 
 @media (min-width: 768px) {
   .container {
-    width: 90%;
+    width: 95%;
   }
   .grid-col--2 {
     display: block;
@@ -54,6 +54,6 @@
     display: block;
   }
   .container {
-    width: 80%;
+    width: calc(90% + 10px);
   }
 }

@@ -380,7 +380,7 @@ var chevronDown = document.getElementById('chevron-down');
 
 function openMobileText() {
 	if (mobileUserText.style.height === "auto") {
-		mobileUserText.style.height = "60px";
+		mobileUserText.style.height = "48px";
 		chevronDown.style.transform = "rotate(0deg)";
 	} else {
 		mobileUserText.style.height = "auto";
