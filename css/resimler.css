@@ -71,7 +71,7 @@ section.resimler {
 	margin-left: auto;
 }
 
-.user-info-top .desktop-exit button {
+.user-info-top .desktop-exit a {
 	width: 40px;
 	height: 40px;
 	font-size: 35px;
@@ -79,6 +79,10 @@ section.resimler {
 	border: none;
 	color: #3A3A39;
 	cursor: pointer;
+}
+
+.mobile-exit {
+	display: none;
 }
 
 .user-info img {
@@ -711,6 +715,21 @@ section.resimler {
 }
 
 @media only screen and (max-width: 1250px) {
+
+	.mobile-exit {
+		width: 40px;
+		height: 40px;
+		font-size: 35px;
+		background: none;
+		border: none;
+		color: #3A3A39;
+		cursor: pointer;
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index: 888;
+	}
 
 	.user-info-top .desktop-exit {
 		margin-left: auto;
