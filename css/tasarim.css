@@ -330,10 +330,23 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	}
 
 
+}
 
 
 
+@media only screen and (min-width: 1920px) {
 
+	.filters {
+		width: 90%;
+		margin: 0 auto;
+		padding-left: calc((100vw - 1920px) / 2);
+		padding-right: calc((100vw - 1920px) / 2);
+	}
 
-
+	section.design-competition-tasarim {
+		margin: 0 auto;
+		width: 95%;
+		padding-left: calc((100vw - 1920px) / 2);
+		padding-right: calc((100vw - 1920px) / 2);
+	}
 }

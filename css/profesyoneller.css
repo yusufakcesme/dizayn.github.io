@@ -291,3 +291,20 @@ section.professionals .prof-box .prof-work-img .work-img-box img {
 	}
 
 }
+
+@media only screen and (min-width: 1920px) {
+
+
+	section.professionals {
+		padding-left: calc((100vw - 1920px) / 2);
+		padding-right: calc((100vw - 1920px) / 2);
+	}
+
+
+
+	.filters {
+		padding-left: calc((100vw - 1920px) / 2);
+		padding-right: calc((100vw - 1920px) / 2);
+	}
+
+} 

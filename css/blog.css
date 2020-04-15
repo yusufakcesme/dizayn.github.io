@@ -282,3 +282,20 @@
 
 
 	}
+
+
+	@media only screen and (min-width: 1920px) {
+
+		.blog-articles {
+			max-width: 90%;
+			padding-left: calc((100vw - 1920px) / 2);
+			padding-right: calc((100vw - 1920px) / 2);
+			height: auto;	
+			margin: 50px auto 20px auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+	}
