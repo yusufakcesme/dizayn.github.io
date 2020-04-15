@@ -531,3 +531,13 @@ form .submit-btn button:hover {
 
 
 	}
+
+
+	@media only screen and (min-width: 1920px) {
+
+		section.yarisma-ekle {
+			width: 90%;
+			margin: 0 auto;
+			padding-left: calc((100vw - 1920px) / 2);
+			padding-right: calc((100vw - 1920px) / 2);
+		}
