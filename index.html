@@ -235,6 +235,9 @@
 		</div>
 	</section>
 
+
+
+
 	<section class="design-ideas">
 		<div class="section-text section-text-2">
 			<h1>Yeni Tasarım Fikirleri</h1>
@@ -388,6 +391,8 @@
 		</div>
 
 	</section>
+
+
 
 	<section class="crew">
 		<div class="section-text">
@@ -712,7 +717,6 @@
 		$('[data-countdown]').each(function() {
 			var $this = $(this), finalDate = $(this).data('countdown');
 			$this.countdown(finalDate, function(event) {
-				console.log("asfasfa");
 				var gun_ilk =  event.strftime('%D')[0];
 				var gun_son =  event.strftime('%D')[1];
 

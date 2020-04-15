@@ -22,6 +22,7 @@ website: https://yusufakcesme.com
 	--bold: 700;
 }
 
+
 /* iphone 3 */
 @media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (-webkit-device-pixel-ratio: 1) { }
 
@@ -2431,4 +2432,57 @@ label.login-container {
 		.modal-kayit {
 			height: 650px;
 		}
+	}
+
+
+
+	@media only screen and (min-width: 1920px) {
+
+		header {
+			padding-left: calc((100vw - 1920px) / 2);
+			padding-right: calc((100vw - 1920px) / 2);
+		}
+
+
+		section.design-competition {
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: calc((100vw - 1920px) / 2);
+			padding-right: calc((100vw - 1920px) / 2);
+		}
+
+		/* finish cards */ 
+
+
+		section.design-ideas {
+			width: 90%;
+			height: auto;
+			padding-left: calc((100vw - 1920px) / 2);
+			padding-right: calc((100vw - 1920px) / 2);
+		}
+
+
+
+		section.crew {
+			width: 90%;
+			height: auto;
+			padding-left: calc((100vw - 1920px) / 2);
+			padding-right: calc((100vw - 1920px) / 2);
+		}
+
+		section.blog {
+			width: 90%;
+			height: auto;
+			padding-left: calc((100vw - 1920px) / 2);
+			padding-right: calc((100vw - 1920px) / 2);
+		}
+
+		footer {
+			padding-left: calc((100vw - 1920px) / 2);
+			padding-right: calc((100vw - 1920px) / 2);
+		}
+
+
+
 	}

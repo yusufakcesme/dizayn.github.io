@@ -16,7 +16,6 @@ function createPerson(name) {
 		yenidiv.setAttribute("class", "person");
 		yenidiv.innerHTML = `${ad}<span onclick="benisil(this)" title="Sil"><i class="fa fa-trash"></i></span>`;
 		added_persons.appendChild(yenidiv);
-		console.log(yenidiv);
 	} else {
 		alert("Lütfen bir isim giriniz..");
 	}
@@ -211,7 +210,6 @@ window.onclick = function(event) {
 	if (event.target == modal) {
 		modal.style.display = "none";
 		modal2.style.display = "none";
-		console.log(event.target);
 	} else if (event.target == modal2) {
 		modal2.style.display = "none";
 		modal.style.display = "none";
@@ -223,7 +221,6 @@ window.onclick = function(event) {
 		modal_save_photo.style.display = "none";
 	} else if (event.target == mobile_cont_filter) {
 		//mobile_menu_cont.style.transorm = "translateX(-100%)";
-		console.log(event.target);
 		mobile_menu_cont.style.transform = "translateX(-100%)";
 		mobile_cont_filter.style.transform = "translateX(-100%)";
 	}
