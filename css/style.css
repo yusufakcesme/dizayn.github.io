@@ -146,7 +146,7 @@ header .search-bar input {
 }
 
 header .search-bar input::placeholder {
-	font-family: 'nunito-light';
+	font-family: 'sofiapro-light';
 	letter-spacing: 1px;
 	color: #999;
 }
@@ -169,11 +169,11 @@ header nav {
 
 header nav a {
 	font-size: 14px;
-	text-transform: uppercase;
 	color: #fbfbfb;
-	font-family: 'coco-small-regular';
+	font-family: 'sofiapro-light';
 	margin-left: 22px;
-	letter-spacing: 1px;
+	letter-spacing: 1.3px;
+	font-weight: bold;
 }
 
 header nav a.active-header {
@@ -199,9 +199,9 @@ header .login-btn {
 
 header .login-btn a {
 	font-size: 13px;
-	text-transform: uppercase;
-	color: #fbfbfb;
-	font-family: 'coco-small-regular';
+	color: #FFD982;
+	font-family: 'sofiapro-light';
+	font-weight: bold;
 	margin-left: 10px;
 	margin-top: 3px;
 	cursor: pointer;
