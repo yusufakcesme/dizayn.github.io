@@ -12,7 +12,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/slick_/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="js/slick_/slick/slick-theme.css"/>
 </head>
 <body>
 
@@ -155,15 +156,19 @@
 
 		</div>
 	</header>
+	<!--	<div style="width: 100%;height: 100px;"></div> -->
+
+
+
 
 
 
 	<section class="design-cate">
 		<span class="cate-prev cate-left"><i class="fa fa-chevron-left"></i></span>
-		<div class="owl-carousel cate-carousel">
+		<div class="cate-carousel">
 
 			<div class="cate-item">
-				<a href="#" class="item-box">
+				<a href="#" class="item-box  active-cate">
 					<div class="cate-overlay">Mimari</div>
 					<img src="images/cate1.png">
 				</a>
@@ -194,7 +199,7 @@
 				<p>Mimar</p>
 			</div>
 
-			<div class="cate-item active-cate">
+			<div class="cate-item">
 				<a href="#" class="item-box">
 					<div class="cate-overlay">Mimari</div>
 					<img src="images/55.jpg">
@@ -237,7 +242,7 @@
 			<div class="cate-item">
 				<a href="#" class="item-box">
 					<div class="cate-overlay">Mimari</div>
-					<img src="images/cate1.png">
+					<img src="images/33.jpg">
 				</a>
 				<p>Mimar</p>
 			</div>
@@ -245,7 +250,7 @@
 			<div class="cate-item">
 				<a href="#" class="item-box">
 					<div class="cate-overlay">Mimari</div>
-					<img src="images/cate1.png">
+					<img src="images/66.jpg">
 				</a>
 				<p>Mimar</p>
 			</div>
@@ -253,14 +258,14 @@
 			<div class="cate-item">
 				<a href="#" class="item-box">
 					<div class="cate-overlay">Mimari</div>
-					<img src="images/cate1.png">
+					<img src="images/44.jpg">
 				</a>
 				<p>Mimar</p>			</div>
 
 				<div class="cate-item">
 					<a href="#" class="item-box">
 						<div class="cate-overlay">Mimari</div>
-						<img src="images/cate1.png">
+						<img src="images/44.jpg">
 					</a>
 					<p>Mimar</p>
 				</div>
@@ -268,24 +273,17 @@
 				<div class="cate-item">
 					<a href="#" class="item-box">
 						<div class="cate-overlay">Mimari</div>
-						<img src="images/cate1.png">
+						<img src="images/77.jpg">
 					</a>
 					<p>Mimar</p>
 				</div>
 
-				<div class="cate-item">
-					<a href="#" class="item-box">
-						<div class="cate-overlay">Mimari</div>
-						<img src="images/cate1.png">
-					</a>
-					<p>Mimar</p>			
-				</div>
+				
 
 
 			</div>
 
 			<span class="cate-next cate-right"><i class="fa fa-chevron-right"></i></span>
-
 		</section>
 
 
@@ -781,17 +779,57 @@
 </div>
 
 
+<script src="js/slick_/slick/slick.min.js"></script>
 <script type="text/javascript">
-	$('.owl-carousel').owlCarousel({
-		margin: 10,
-		loop:false,
+
+
+
+
+
+	$('.cate-carousel').slick({
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		slidesToScroll: 3,
+		slidesToShow: 8,
+		centerMode: true,
+		dots: false,
+		prevArrow: $('.cate-prev'),
+		nextArrow: $('.cate-next'),
+		responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 6
+			}
+		},
+		{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 4
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
+		}
+		]
+	});
+
+
+	/*$('.cate-carousel').owlCarousel({
+		margin:10,
+		loop:true,
 		autoWidth:false,
 		items:9,
 		navigation:true
 	});
 
-/*
-	var owl = $('.owl-carousel');
+
+	var owl = $('.cate-carousel');
 	owl.owlCarousel();
 	$('.cate-prev').click(function() {
 		owl.trigger('owl.prev');

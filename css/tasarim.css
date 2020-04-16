@@ -349,7 +349,7 @@ section.design-cate {
 
 section.design-cate .cate-carousel {
 	display: flex;
-	width: 90%;
+	width: 93%;
 	margin: 0 auto;
 	height: 100%;
 	align-items: center;
@@ -542,7 +542,7 @@ section.design-cate .cate-carousel .cate-item  p {
 
 	section.design-cate .cate-carousel {
 		display: flex;
-		width: 80%;
+		width: 100%;
 		max-height: 150px;
 		margin: 0 auto;
 		height: 100%;
@@ -553,19 +553,30 @@ section.design-cate .cate-carousel .cate-item  p {
 	section.design-cate .cate-carousel .cate-item {
 		width: 110px;
 		height: auto;
-		margin-left: 20px;
 		display: flex;
 		flex-direction: column;
 	}
 
-	.owl-item {
-		max-width: 130px;
-	}
-	.owl-wrapper {
-		display: inline-block !important;
-		max-height: 150px !important; 
+	.cate-left {
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		transform: translateY(-50%);
+		font-size: 40px;
+		cursor: pointer;
+		color: #3A3A39;
+		display: none !important;
 	}
 
-
+	.cate-right {
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		transform: translateY(-50%);
+		font-size: 40px;
+		cursor: pointer;
+		color: #3A3A39;
+		display: none !important;
+	}
 
 }
