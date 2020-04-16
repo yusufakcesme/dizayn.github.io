@@ -435,6 +435,8 @@ section.design-cate .cate-carousel .cate-item  p {
 	top: 32px;
 	transform: translateX(-50%);
 	color: #fff !important;
+	font-family: 'sofiapro-light';
+	font-weight: bolder;
 }
 
 .active-cate p {
@@ -444,6 +446,8 @@ section.design-cate .cate-carousel .cate-item  p {
 	top: 32px;
 	transform: translateX(-50%);
 	font-size: 16px;
+	font-family: 'sofiapro-light';
+	font-weight: bolder;
 	color: #fff !important;
 }
 
