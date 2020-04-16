@@ -346,6 +346,7 @@ section.design-cate {
 }
 
 
+
 section.design-cate .cate-carousel {
 	display: flex;
 	width: 90%;
@@ -541,7 +542,8 @@ section.design-cate .cate-carousel .cate-item  p {
 
 	section.design-cate .cate-carousel {
 		display: flex;
-		width: 90%;
+		width: 80%;
+		max-height: 150px;
 		margin: 0 auto;
 		height: 100%;
 		align-items: center;
@@ -555,6 +557,15 @@ section.design-cate .cate-carousel .cate-item  p {
 		display: flex;
 		flex-direction: column;
 	}
+
+	.owl-item {
+		max-width: 130px;
+	}
+	.owl-wrapper {
+		display: inline-block !important;
+		max-height: 150px !important; 
+	}
+
 
 
 }

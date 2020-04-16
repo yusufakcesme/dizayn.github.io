@@ -393,10 +393,8 @@ function openMobileText() {
 
 
 /* mobile crew section */
-$(document).ready(function(){
-	$(".owl-carousel").owlCarousel();
-});
 
+/*
 $('.owl-carousel').owlCarousel({
 	margin:10,
 	loop:false,
@@ -406,5 +404,5 @@ $('.owl-carousel').owlCarousel({
 });
 
 
-
+*/
 
