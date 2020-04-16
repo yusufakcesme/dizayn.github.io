@@ -388,7 +388,7 @@ section.design-cate .cate-carousel .cate-item  p {
 	margin-top: 10px;
 	color: #231F20;
 	font-family: 'sofiapro-light';
-	font-size: 17px;
+	font-size: 15.5px;
 	font-weight: normal;
 }
 
@@ -431,16 +431,19 @@ section.design-cate .cate-carousel .cate-item  p {
 
 .cate-item:hover > p {
 	position: absolute;
-	top: 38px;
-	left: 28px;
+	left: 50%;
+	top: 32px;
+	transform: translateX(-50%);
 	color: #fff !important;
 }
 
 .active-cate p {
 	display: flex;
 	position: absolute;
-	top: 38px;
-	left: 28px;
+	left: 50%;
+	top: 32px;
+	transform: translateX(-50%);
+	font-size: 16px;
 	color: #fff !important;
 }
 
