@@ -6,6 +6,9 @@ section.professionals {
 	margin: 40px auto;
 }
 
+.filter-button {
+	width: 110px !important;
+}
 
 section.professionals .prof-box {
 	width: 100%;
@@ -16,6 +19,7 @@ section.professionals .prof-box {
 	margin-bottom: 15px;
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
 }
 
 section.professionals .prof-box .prof-self-img {
@@ -298,6 +302,17 @@ section.professionals .prof-box .prof-work-img .work-img-box img {
 	section.professionals {
 		padding-left: calc((100vw - 1920px) / 2);
 		padding-right: calc((100vw - 1920px) / 2);
+	}
+	section.professionals .prof-box {
+		width: 100%;
+		min-height: 160px;
+		border-radius: 10px;
+		background-color: #fff;
+		box-shadow: 0px 3px 3px rgba(0,0,0,.16);
+		margin-bottom: 15px;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
 	}
 
 
