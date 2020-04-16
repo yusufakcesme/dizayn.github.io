@@ -364,6 +364,7 @@ section.design-cate .cate-carousel .cate-item {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
+	position: relative;
 }
 
 
@@ -395,10 +396,6 @@ section.design-cate .cate-carousel .cate-item  p {
 	display: none;
 }
 
-.active-cate > p {
-	display: none;
-	position: relative;
-}
 
 .active-cate .cate-overlay {
 	position: absolute;
@@ -414,6 +411,43 @@ section.design-cate .cate-carousel .cate-item  p {
 	border-radius: 25px;
 	background-color:rgba(209, 158, 44, .5);
 }
+
+
+
+.cate-item:hover .cate-overlay {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-family: 'sofiapro-light';
+	font-weight: bolder;
+	letter-spacing: 1px;
+	width: 110px;
+	height: 110px;
+	border-radius: 25px;
+	background-color:rgba(209, 158, 44, .5);
+}
+
+.cate-item:hover > p {
+	position: absolute;
+	top: 38px;
+	left: 28px;
+	color: #fff !important;
+}
+
+.active-cate p {
+	display: flex;
+	position: absolute;
+	top: 38px;
+	left: 28px;
+	color: #fff !important;
+}
+
+.cate-overlay p {
+	display: none;
+}
+
 
 
 
@@ -530,7 +564,7 @@ section.design-cate .cate-carousel .cate-item  p {
 	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
 
 	section.design-cate {
 		width: 100%;
