@@ -21,6 +21,7 @@ window.onclick = function(event) {
 
 function mobileFilterAll() {
 	if(window.innerWidth < 900) {
+		backAllFilters();
 		filter1.style.opacity = "1";
 		filter1.style.pointerEvents = "all";
 		mobile_filter1.style.transform = "translateY(0%)";
