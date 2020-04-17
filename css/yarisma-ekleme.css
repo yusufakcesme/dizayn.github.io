@@ -492,7 +492,7 @@ form .submit-btn button:hover {
 
 @media only screen and (max-width: 720px) {
 	section.yarisma-ekle .form-nav {
-		width: 70px;
+		width: 50px;
 		height: 100%;
 		position: fixed;
 		background-color: #fff;
@@ -508,36 +508,110 @@ form .submit-btn button:hover {
 	.nav-fa {
 		display: block;
 	}
-/*
-	section.yarisma-ekle .form-nav nav.mobile-nav {
-		display: flex;
-		}*/
 
-		section.yarisma-ekle form {
-			width: 325px;
-			height: auto;
-			margin-left: 80px;
-		}
+	section.yarisma-ekle .form-nav nav a {
+		margin-bottom: 20px;
+		color: #8d8d8d;
+		font-family: 'nunito-bold';
+		padding: 5px 12px 3px 0;
+		border-right: 4px solid #fff;
+	}
 
-		.hl-checkboxes {
-			justify-content: space-between;
-		}
+	section.yarisma-ekle form {
+		width: 345px;
+		height: auto;
+		margin-left: 70px;
+	}
 
-		.hl-container {
-			margin: 5px;
-			width: auto;
-			flex: 1;
-		}
+	.hl-checkboxes {
+		justify-content: space-between;
+	}
 
-
+	.hl-container {
+		margin: 5px;
+		width: auto;
+		flex: 1;
 	}
 
 
-	@media only screen and (min-width: 1920px) {
+}
 
-		section.yarisma-ekle {
-			width: 90%;
-			margin: 0 auto;
-			padding-left: calc((100vw - 1920px) / 2);
-			padding-right: calc((100vw - 1920px) / 2);
-		}
+
+@media only screen and (min-width: 1920px) {
+
+	section.yarisma-ekle {
+		width: 90%;
+		margin: 0 auto;
+		padding-left: calc((100vw - 1920px) / 2);
+		padding-right: calc((100vw - 1920px) / 2);
+	}
+
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1250px) {
+
+	section.yarisma-ekle .form-nav {
+		width: 400px;
+		height: 100%;
+		position: fixed;
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		border-right: 1px solid #eee;
+	}
+
+	section.yarisma-ekle form {
+		width: 600px;
+		height: auto;
+		margin-left: 450px;
+	}
+
+
+}
+
+
+@media only screen and (min-width: 900px) and (max-width: 1100px) {
+
+	section.yarisma-ekle .form-nav {
+		width: 300px;
+		height: 100%;
+		position: fixed;
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		border-right: 1px solid #eee;
+	}
+
+	section.yarisma-ekle form {
+		width: 500px;
+		height: auto;
+		margin-left: 350px;
+	}
+
+
+}
+
+
+@media only screen and (min-width: 720px) and (max-width: 900px) {
+
+	section.yarisma-ekle .form-nav {
+		width: 150px;
+		height: 100%;
+		position: fixed;
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		border-right: 1px solid #eee;
+	}
+
+	section.yarisma-ekle form {
+		width: 500px;
+		height: auto;
+		margin-left: 200px;
+	}
+
+
+}

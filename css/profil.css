@@ -756,3 +756,20 @@ span.like-comment > i {
 
 
 } 
+
+
+@media only screen and (min-width: 1350px) and (max-width: 1450px) {
+
+
+	section.profile-container {
+		width: 95%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: -200px;
+		z-index: 99;
+		display: flex;
+		margin-bottom: 200px;
+	}
+
+
+}

@@ -196,6 +196,7 @@ section.resimler {
 .other-projects a.other-p img {
 	width: 122px;
 	height: 122px;
+	border-radius: 10px;
 }
 
 .benzer-fikirler {
@@ -218,6 +219,7 @@ section.resimler {
 .benzer-fikirler .benzer-fikir img {
 	width: 73px;
 	height: 73px;
+	border-radius: 5px
 }
 
 
@@ -1214,3 +1216,71 @@ section.resimler {
 	}
 }
 
+
+@media only screen and (min-width: 1250px) and (max-width: 1450px) {
+
+
+
+	.other-projects a.other-p {
+		display: none;
+	}
+
+
+	.other-projects a.other-p:first-child {
+		display: flex;
+	}
+	.other-projects a.other-p:nth-child(2) {
+		display: flex;
+	}
+	.other-projects a.other-p:nth-child(3) {
+		display: flex;
+	}
+
+	.other-projects a.other-p {
+		display: none;
+	}
+
+	.other-projects a.other-p {
+		display: none;
+	}
+
+
+
+	.other-projects a.other-p {
+		width: 100px;
+		height: 100px;
+		margin-left: 0px;
+	}
+
+	.other-projects a.other-p img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.benzer-fikirler {
+		background-color: #fff;
+		width: 100%;
+		height: auto;
+		padding: 10px 5% 30px 5%;
+		margin-top: -17px;
+		justify-content: space-between;
+	}
+	.benzer-fikirler .benzer-fikir {
+		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 48%;
+		height: 170px;
+		margin-top: 5px;
+	}
+
+	.benzer-fikirler .benzer-fikir img {
+		width: 100%;
+		height: 100%;
+	}
+
+
+
+
+}

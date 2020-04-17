@@ -55,16 +55,10 @@
 <section class="yarisma-ekle">
 	<div class="form-nav">
 		<nav id="desktop-nav">
-			<a href="#general" class="active-nav nav_btn">Genel Bilgiler</a>	
-			<a href="#contact" class="nav_btn">Proje Detayları</a>
+			<a href="#general-form" class="active-nav nav_btn"><span class="nav-fa"><i class="fa fa-phone"></i></span><p>Genel Bilgiler</p></a>
+			<a href="#contact" class="nav_btn"><span class="nav-fa"><i class="fa fa-image"></i></span><p>Proje Detayları</p></a>
 		</nav>
-		<nav class="mobile-nav">
-			<a href="#general" class="active-nav nav_btn"><i class="fa fa-cog"></i></a>
-			<a href="#highlights" class="nav_btn"><i class="fa fa-tag"></i></a>
-			<a href="#location" class="nav_btn"><i class="fa fa-map-marker-alt"></i></a> 
-			<a href="#contact" class="nav_btn"><i class="fa fa-phone"></i></a>
-			<a href="#media" class="nav_btn"><i class="fa fa-image"></i></a>
-		</nav>
+
 	</div>
 
 
@@ -72,7 +66,7 @@
 		<h1>Proje Oluşturun</h1>
 		<p></p>
 
-		<div class="form-box" id="general">
+		<div class="form-box scrollspy" id="general">
 			<div class="form-section">
 				<h3>GENERAL</h3>
 				<div class="el">
@@ -111,6 +105,7 @@
 		<div class="form-box" id="yeniresim">
 			<div class="form-section">
 				<h3>PROJEYE YENİ RESİM EKLE</h3>
+				<br>
 				<span onclick="addNewImg()" class="yeni-resim"><i class="fa fa-plus"></i> Yeni Resim Ekle</span>
 			</div>
 		</div>
@@ -120,7 +115,7 @@
 			
 		</div>
 
-		<div class="form-box img-form" id="contact">	
+		<div class="form-box img-form scrollspy" id="contact">	
 			<div class="form-section">
 				<h3>PROJE DETAYLARI</h3>
 				<div class="el">
@@ -355,6 +350,32 @@
 
 
 <script type="text/javascript">
+
+	(function() {
+		'use strict';
+
+		var section = document.querySelectorAll(".scrollspy");
+		var sections = {};
+		var i = 0;
+
+		Array.prototype.forEach.call(section, function(e) {
+			sections[e.id] = e.offsetTop;
+		});
+
+		window.onscroll = function() {
+			var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+			for (i in sections) {
+				if (sections[i] <= (scrollPosition + 400)) {
+					document.querySelector('.active-nav').setAttribute('class', ' ');
+					document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active-nav');
+				}
+			}
+		};
+	})();
+
+
+
+
 	/* proje ekleme sayfası kategoriler */
 	var proje_tur = document.getElementById('proje-tur');
 	var icmimar_altbaslik = document.getElementById('ic-mimari');
