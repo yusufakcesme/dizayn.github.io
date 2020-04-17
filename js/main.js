@@ -109,14 +109,14 @@ $(document).ready(function(){
         		$(this).find(".filter-pop").addClass('filter-open');
         	});
 
-        	$(".user-pop-main").click(function() {
-        		$(this).find(".login-user-popup").css("display", "flex");
-        	});
-        	$(".notif-pop-main").click(function() {
-        		$(this).find(".notification-popup").css("display", "flex");
-        	});
-
         }
+
+        $(".user-pop-main").click(function() {
+        	$(this).find(".login-user-popup").css("display", "flex");
+        });
+        $(".notif-pop-main").click(function() {
+        	$(this).find(".notification-popup").css("display", "flex");
+        });
 
     });
 
@@ -210,7 +210,6 @@ window.onclick = function(event) {
 	} else if (event.target == modal_save_photo) {
 		modal_save_photo.style.display = "none";
 	} else if (event.target == mobile_cont_filter) {
-		//mobile_menu_cont.style.transorm = "translateX(-100%)";
 		mobile_menu_cont.style.transform = "translateX(-100%)";
 		mobile_cont_filter.style.transform = "translateX(-100%)";
 	}
