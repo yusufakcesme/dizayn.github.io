@@ -287,7 +287,7 @@
 	<div class="filters">
 
 		<div class="filter-tools">
-			<button class="filter-button-primary"><i class="fa fa-sliders-h"></i> Filtreler</button>
+			<button onclick="mobileFilterAll()" class="filter-button-primary"><i class="fa fa-sliders-h"></i> Filtreler</button>
 			<!--<div class="filter-pop">
 				<form>
 					<input type="text" name="" placeholder="Listeyi görmek için yazmaya başlayın">
@@ -550,313 +550,319 @@
 
 
 
-
-
-
-<!--
-	<section class="design-ideas design-page">
-
-		<div class="gallery">
-			<div class="gallery-img">
-				<div class="card-img-overlay">
-					<span>MİMARİ</span>
-					<p>Mutfak Renevasyon Projesi <b>10.000 ₺</b></p>
-				</div>
-				<img src="images/4.jpg">
-			</div>
-
-			<div class="gallery-img">
-				<img src="images/11.jpg">
-			</div>
-
-			<div class="gallery-img">
-				<img src="images/22.jpg">
-			</div>
-
-			<div class="gallery-img">
-				<img src="images/33.jpg">
-			</div>
-
-			<div class="gallery-img">
-				<img src="images/44.jpg">
-			</div>
-
-			<div class="gallery-img">
-				<img src="images/55.jpg">
-			</div>
-
-			<div class="gallery-img">
-				<img src="images/66.jpg">
-			</div>
-
-			<div class="gallery-img">
-				<img src="images/77.jpg">
-			</div>
-
-		</div>
-
-	</section>
--->
-
-<!--
-	<footer>
-		<div class="footer-top">
-			<div class="top-left">
-				<h1>dizay<span>n</span>et</h1>
-				<p>
-					Dizaynet mimarlık, iç tasarım, ürün tasarımı, dekorasyon ve peyzaj alanında kullanıcıları profesyoneller ile buluşturan çevrimiçi bir platformdur. Projelerinizde size yardımcı olacak nitelikli tasarım uzmanlarını bulmanıza ve projelerinizi 
-					hayata geçirmenize olanak tanır.
-				</p>
-				<div class="icons">
-					<a href="#"><i class="fab fa-facebook-square"></i></a>
-					<a href="#"><i class="fab fa-behance"></i></a>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-					<a href="#"><i class="fab fa-linkedin"></i></a>
-				</div>
-			</div>
-
-			<div class="links">
-				<div class="kesfet">
-					<h2>KEŞFET</h2>
-					<a href="#!">Anasayfa</a>
-					<a href="#!">Dizayn</a>
-					<a href="#!">Yarışmalar</a>
-					<a href="#!">Blog</a>
-					<a href="#!">Profesyoneller</a>
-				</div>
-
-
-				<div class="bilgi">
-					<h2>BİLGİ</h2>
-					<a href="#!">Hakkımızda</a>
-					<a href="#!">Profesyonel Olun</a>
-					<a href="#!">Premium Üyelik</a>
-					<a href="#!">İletişim</a>
-				</div>
-			</div>
-
-			<div class="footer-form">
-				<img src="images/fly.png">
-				<h3>DİZAYNET TASARIM DÜNYASINA KATIL!</h3>
-				<p>En yeni tasarım fikirleri, yaratıcı profesyoneller ve <br> daha fazlası için...
-				</p>
-
-				<input type="text" name="" placeholder="E-posta adresinizi giriniz">
-			</div>
-
-		</div>
-
-		<div class="footer-bottom">
-			<p>© 2020 DİZAYNET. Tüm hakları saklıdır.</p>
-			<div class="bottom-links">
-				<a href="#!">Üyelik Sözleşmesi</a>
-				<a href="#!">Destek</a>
-				<a href="#!">Şartlar ve Koşullar</a>
-				<a href="#!">Sıkça Sorulan Sorular</a>
-			</div>
-		</div>
-
-	</footer>
--->
-
-
-
-
-<div id="id03" class="mobile-search-modal">
-	<form class="search-modal">
-		<input type="text" name="" placeholder="Tasarım fikir bulun..">
-		<button><i class="fa fa-search"></i></button>
-	</form>
-</div>
-
-
-
-<div class="mobile-cont-filter" id="mobile-cont-filter">
+	<div class="filter-mobile" id="filter-mobile-black">
+	</div>
 	
-</div>
+	<div class="mobile-filter-content"  id="mobile-filter-1">
 
-<div class="mobile-menu-cont" id="mobile-menu-cont">
-	<div class="mobil-login">
-		<div class="mobil-login-top">
-			<a onclick="openLogin()">Giriş Yap</a>
-			<a href="#">Profesyonel Ol</a>
-		</div>
-		<button onclick="closeMobileMenu()"><i class="fa fa-times"></i></button>
-	</div>
-
-	<div class="mobile-kesfedin" id="mobile-kesfedin">
-		<p onclick="openKesfedin()">Kesfedin <i class="fa fa-chevron-down"></i></p>
-		<div class="kesfedin-links">
-			<a href="#"> Mimari</a>
-			<a href="#">İç Mimari</a>
-			<a href="#">Peyzaj</a>
-			<a href="#">Endüstriyel Tasarım</a>
-		</div>
-	</div>
-
-	<div class="mobile-menu-nav">
-		<a href="tasarim.html"> Dizayn</a>
-		<a href="profesyoneller">Profesyoneller</a>
-		<a href="yarisma.html">Yarışmalar</a>
-		<a href="blog.html">Blog</a>
-	</div>
-
-	<div class="mobile-proje-baslat">
-		<a href="yarisma-ekleme.html">Proje Başlat</a>
-	</div>
-</div>
-
-
-
-
-
-
-<!-- giriş yap formu -->
-<div id="id01" class="modal">
-	<form class="modal-content animate" action="" method="post">
-		<div class="container">
-			<h3>Hoşgeldiniz</h3>
-			<p>Devam etmek için lütfen giriş yapın.</p>
-			<input type="mail" name="" placeholder="E-posta">
-			<input type="password" name="" placeholder="Şifre">
-			<a class="forget-pass" href="sifremi-unuttum.html">Şifremi unuttum</a>
-			<p class="or">Veya</p>
-
-			<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
-			<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
-			<button type="submit">Giriş Yap</button>
-
-			<p class="dont-have-acc">Hesabınız yok mu? <a onclick="openRegister()">Kayıt Ol</a></p>
-		</div>
-	</form>
-</div>
-
-<!-- kayıt ol formu -->
-<div id="id02" class="modal2">
-	<form class="modal-content animate modal-kayit" action="" method="post">
-		<div class="container">
-			<h3>Kayıt Ol</h3>
-			<p>Devam etmek için lütfen bilgilerinizi girin.</p>
-
-			<div class="register-radios">
-				<label class="container-check">Tasarımcıyım
-					<input type="checkbox">
-					<span class="checkmark-check"></span>
-				</label>
-				<label class="container-check">Tasarımcı Arıyorum
-					<input type="checkbox">
-					<span class="checkmark-check"></span>
-				</label>
+		<div class="filter-content-item" id="item-1">
+			<div class="mobile-filter-title">
+				<p>All Filters</p>
+				<a href="#">Done</a>
 			</div>
-			<input type="mail" name="" placeholder="E-posta">
-			<input type="password" name="" placeholder="Şifre">
-			<label class="login-container">
-				Haber bülteni ve yenilikler ile ilgili mail almak istiyorum. 
-				<input type="checkbox" checked="checked">
-				<span class="login-checkmark"></span>
-			</label>
-			<label class="login-container">
-				Hüküm&Koşullar ve Gizlilik Politikasını kabul ediyorum.
-				<input type="checkbox">
-				<span class="login-checkmark"></span>
-			</label>
-
-			<p class="or">Veya</p>
-
-			<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
-			<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
-			<button type="submit">Kayıt Ol</button>
-
-			<p class="dont-have-acc">Hesabınız var mı? <a onclick="openLogin()">Giriş Yap</a></p>
+			<div class="mobile-filter-item" onclick="openTur()">
+				<p>Tür</p>
+				<span><i class="fa fa-chevron-right"></i></span>
+			</div>
+			<div class="mobile-filter-item" onclick="openOdalar()">
+				<p>Odalar</p>
+				<span><i class="fa fa-chevron-right"></i></span>
+			</div>
+			<div class="mobile-filter-item" onclick="openStiller()">
+				<p>Stiller</p>
+				<span><i class="fa fa-chevron-right"></i></span>
+			</div>
+			<div class="mobile-filter-item" onclick="openKonum()">
+				<p>Konum</p>
+				<span><i class="fa fa-chevron-right"></i></span>
+			</div>
 		</div>
-	</form>
-</div>
+
+		<div class="filter-content-item" id="item-2">
+			<div class="mobile-filter-title">
+				<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> All Filters</span>
+				<p>Tür</p>
+				<a href="#">Bitti</a>
+			</div>
+			<div class="mobile-filter-item">
+				<p>Tür</p>
+			</div>
+			<div class="mobile-filter-item">
+				<p>Odalar</p>
+			</div>
+			<div class="mobile-filter-item">
+				<p>Stiller</p>
+			</div>
+			<div class="mobile-filter-item">
+				<p>Konum</p>
+			</div>
+		</div>
+
+		<div class="filter-content-item" id="item-3">
+			<div class="mobile-filter-title">
+				<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> All Filters</span>
+				<p>Odalar</p>
+				<a href="#">Bitti</a>
+			</div>
+			<div class="mobile-filter-item">
+				<p>3 + 1</p>
+			</div>
+			<div class="mobile-filter-item">
+				<p>2 + 1</p>
+			</div>
+			<div class="mobile-filter-item">
+				<p>1 + 1</p>
+			</div>
+			<div class="mobile-filter-item">
+				<p>1 + 0</p>
+			</div>
+		</div>
 
 
-<script src="js/slick_/slick/slick.min.js"></script>
-<script type="text/javascript">
+		<div class="filter-content-item" id="item-4">
+			<div class="mobile-filter-title">
+				<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> All Filters</span>
+				<p>Stiller</p>
+				<a href="#">Bitti</a>
+			</div>
+			<div class="mobile-filter-item">
+				<p>Modern</p>
+			</div>
+			<div class="mobile-filter-item">
+				<p>Geleneksel</p>
+			</div>
+			<div class="mobile-filter-item">
+				<p>Antik</p>
+			</div>
+			<div class="mobile-filter-item">
+				<p>Modern</p>
+			</div>
+		</div>
+
+
+		<div class="filter-content-item" id="item-5">
+			<div class="mobile-filter-title">
+				<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> All Filters</span>
+				<p>Konum</p>
+				<a href="#">Bitti</a>
+			</div>
+			<div class="mobile-filter-item">
+				sd
+			</div>
+		</div>
 
 
 
 
 
-	$('.cate-carousel').slick({
-		infinite: true,
-		autoplay: false,
-		autoplaySpeed: 2000,
-		slidesToScroll: 3,
-		slidesToShow: 9,
-		centerMode: true,
-		dots: false,
-		prevArrow: $('.cate-prev'),
-		nextArrow: $('.cate-next'),
-		responsive: [
-		{
-			breakpoint: 1366,
-			settings: {
-				slidesToShow: 6,
-				slidesToScroll: 1,
-				autoplay: true
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="id03" class="mobile-search-modal">
+		<form class="search-modal">
+			<input type="text" name="" placeholder="Tasarım fikir bulun..">
+			<button><i class="fa fa-search"></i></button>
+		</form>
+	</div>
+
+
+
+	<div class="mobile-cont-filter" id="mobile-cont-filter">
+
+	</div>
+
+	<div class="mobile-menu-cont" id="mobile-menu-cont">
+		<div class="mobil-login">
+			<div class="mobil-login-top">
+				<a onclick="openLogin()">Giriş Yap</a>
+				<a href="#">Profesyonel Ol</a>
+			</div>
+			<button onclick="closeMobileMenu()"><i class="fa fa-times"></i></button>
+		</div>
+
+		<div class="mobile-kesfedin" id="mobile-kesfedin">
+			<p onclick="openKesfedin()">Kesfedin <i class="fa fa-chevron-down"></i></p>
+			<div class="kesfedin-links">
+				<a href="#"> Mimari</a>
+				<a href="#">İç Mimari</a>
+				<a href="#">Peyzaj</a>
+				<a href="#">Endüstriyel Tasarım</a>
+			</div>
+		</div>
+
+		<div class="mobile-menu-nav">
+			<a href="tasarim.html"> Dizayn</a>
+			<a href="profesyoneller">Profesyoneller</a>
+			<a href="yarisma.html">Yarışmalar</a>
+			<a href="blog.html">Blog</a>
+		</div>
+
+		<div class="mobile-proje-baslat">
+			<a href="yarisma-ekleme.html">Proje Başlat</a>
+		</div>
+	</div>
+
+
+
+
+
+
+	<!-- giriş yap formu -->
+	<div id="id01" class="modal">
+		<form class="modal-content animate" action="" method="post">
+			<div class="container">
+				<h3>Hoşgeldiniz</h3>
+				<p>Devam etmek için lütfen giriş yapın.</p>
+				<input type="mail" name="" placeholder="E-posta">
+				<input type="password" name="" placeholder="Şifre">
+				<a class="forget-pass" href="sifremi-unuttum.html">Şifremi unuttum</a>
+				<p class="or">Veya</p>
+
+				<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
+				<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
+				<button type="submit">Giriş Yap</button>
+
+				<p class="dont-have-acc">Hesabınız yok mu? <a onclick="openRegister()">Kayıt Ol</a></p>
+			</div>
+		</form>
+	</div>
+
+	<!-- kayıt ol formu -->
+	<div id="id02" class="modal2">
+		<form class="modal-content animate modal-kayit" action="" method="post">
+			<div class="container">
+				<h3>Kayıt Ol</h3>
+				<p>Devam etmek için lütfen bilgilerinizi girin.</p>
+
+				<div class="register-radios">
+					<label class="container-check">Tasarımcıyım
+						<input type="checkbox">
+						<span class="checkmark-check"></span>
+					</label>
+					<label class="container-check">Tasarımcı Arıyorum
+						<input type="checkbox">
+						<span class="checkmark-check"></span>
+					</label>
+				</div>
+				<input type="mail" name="" placeholder="E-posta">
+				<input type="password" name="" placeholder="Şifre">
+				<label class="login-container">
+					Haber bülteni ve yenilikler ile ilgili mail almak istiyorum. 
+					<input type="checkbox" checked="checked">
+					<span class="login-checkmark"></span>
+				</label>
+				<label class="login-container">
+					Hüküm&Koşullar ve Gizlilik Politikasını kabul ediyorum.
+					<input type="checkbox">
+					<span class="login-checkmark"></span>
+				</label>
+
+				<p class="or">Veya</p>
+
+				<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
+				<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
+				<button type="submit">Kayıt Ol</button>
+
+				<p class="dont-have-acc">Hesabınız var mı? <a onclick="openLogin()">Giriş Yap</a></p>
+			</div>
+		</form>
+	</div>
+
+
+	<script src="js/slick_/slick/slick.min.js"></script>
+	<script type="text/javascript">
+
+
+
+
+
+		$('.cate-carousel').slick({
+			infinite: true,
+			autoplay: false,
+			autoplaySpeed: 2000,
+			slidesToScroll: 3,
+			slidesToShow: 9,
+			centerMode: true,
+			dots: false,
+			prevArrow: $('.cate-prev'),
+			nextArrow: $('.cate-next'),
+			responsive: [
+			{
+				breakpoint: 1366,
+				settings: {
+					slidesToShow: 6,
+					slidesToScroll: 1,
+					autoplay: true
+				}
+			},
+			{
+				breakpoint: 1280,
+				settings: {
+					slidesToShow: 5	,
+					slidesToScroll: 1,
+					autoplay: true
+				}
+			},
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					autoplay: true
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					autoplay: true
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					autoplay: true
+				}
 			}
-		},
-		{
-			breakpoint: 1280,
-			settings: {
-				slidesToShow: 5	,
-				slidesToScroll: 1,
-				autoplay: true
-			}
-		},
-		{
-			breakpoint: 1024,
-			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 1,
-				autoplay: true
-			}
-		},
-		{
-			breakpoint: 600,
-			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 1,
-				autoplay: true
-			}
-		},
-		{
-			breakpoint: 480,
-			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 1,
-				autoplay: true
-			}
-		}
-		]
-	});
+			]
+		});
 
 
-	/*$('.cate-carousel').owlCarousel({
-		margin:10,
-		loop:true,
-		autoWidth:false,
-		items:9,
-		navigation:true
-	});
+	</script>
 
 
-	var owl = $('.cate-carousel');
-	owl.owlCarousel();
-	$('.cate-prev').click(function() {
-		owl.trigger('owl.prev');
-	})
-	$('.cate-next').click(function() {
-		owl.trigger('owl.next');
-	})*/
-</script>
-
-
-<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 </html>
