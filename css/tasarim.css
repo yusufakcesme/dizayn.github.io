@@ -215,7 +215,7 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 
 
 
-.filters::-webkit-scrollbar {
+.filters form::-webkit-scrollbar {
 	display: none;
 }
 
