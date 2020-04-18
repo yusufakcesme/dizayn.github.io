@@ -114,8 +114,13 @@ $(document).ready(function(){
         $(".user-pop-main").click(function() {
         	$(this).find(".login-user-popup").css("display", "flex");
         });
+
         $(".notif-pop-main").click(function() {
         	$(this).find(".notification-popup").css("display", "flex");
+        });
+
+        $(".chosen-one").click(function() {
+        	$(this).find(".chosen-one-pop").css("display", "flex");
         });
 
     });
@@ -138,6 +143,11 @@ $(document).on("click", function(event){
 	var $notif_trigger = $(".notif-pop-main");
 	if($notif_trigger !== event.target && !$notif_trigger.has(event.target).length){
 		$(".notification-popup").css("display", "none");
+	}    
+
+	var $chosen_trigger = $(".chosen-one");
+	if($chosen_trigger !== event.target && !$chosen_trigger.has(event.target).length){
+		$(".chosen-one-pop").css("display", "none");
 	}    
 
 

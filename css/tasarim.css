@@ -155,9 +155,10 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 
 .chosen-one {
 	margin-bottom: -20px;
-	width: 89%;
-	margin-left: auto;
+	width: auto;
+	margin-left: 5.5%;
 	margin-right: auto;
+	position: relative;
 }
 
 .chosen-one p {
@@ -168,6 +169,34 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 
 .chosen-one p > span {
 	color: #D19E2C;
+	font-family: 'sofiapro-light';
+	cursor: pointer;
+}
+
+.chosen-one-pop {
+	position: absolute;
+	width: 150px;
+	height: 100px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.16);
+	z-index: 88;
+	left: 20px;
+	top: 30px;
+	border-radius: 5px;
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.chosen-one-pop a {
+	padding: 5px 10px;
+	color: #363732;
+	font-family: 'sofiapro-light';
+	font-weight: bold;
+}
+
+.chosen-one-pop a:hover {
+	background-color: #eee;
 }
 
 .filters {
@@ -200,6 +229,7 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	justify-content: space-between;
 	padding: 0 10px;
 	font-family: 'sofiapro-light';
+	font-weight: bold;
 	font-size: 15px;
 	color: #3A3A39;
 	cursor: pointer;
@@ -297,8 +327,8 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 
 .konum .filter-pop form select {
 	flex: 1;
-	margin-left: 20px;
-	height: 35px;
+	width: 100%;
+	height: 40px;
 	border: 1px solid #e8e8e8;
 	border-radius: 5px;
 	cursor: pointer;
@@ -306,11 +336,10 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 
 .konum .filter-pop form label input {
 	flex: 1;
-	margin-left: 73px;
 	border: 1px solid #e8e8e8;
 	border-radius: 5px;
 	text-indent: 10px;
-	height: 35px;
+	height: 40px;
 }
 
 .konum-buttons {
@@ -326,9 +355,15 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 }
 
 .konum-buttons button {
-	background-color: #AA7C13;
+	background-color: #D19E2C;
 	border-radius: 22px;
 	color: #fff;
+	border: none;
+	width: 110px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
 }
 
 
@@ -516,6 +551,10 @@ section.design-cate .cate-carousel .cate-item  p {
 	left: 0;
 }
 
+.mobile-filter-content form {
+	width: 100%;
+}
+
 
 .filter-content-item .mobile-filter-title {
 	width: 100%;
@@ -661,21 +700,26 @@ section.design-cate .cate-carousel .cate-item  p {
 
 .konum-mobil select {
 	flex: 1;
-	margin-left: 20px;
-	height: 30px;
+	width: 100%;
+	height: 40px;
 	border: 1px solid #e8e8e8;
 	border-radius: 5px;
 	cursor: pointer;
 	background-color: #fff;
+	font-family: 'sofiapro-light';
+	font-weight: bold;
+	font-size: 16px;
 }
 
 .konum-mobil input {
 	flex: 1;
-	margin-left: 73px;
 	border: 1px solid #e8e8e8;
 	border-radius: 5px;
 	text-indent: 10px;
-	height: 35px;
+	height: 40px;
+	font-family: 'sofiapro-light';
+	font-weight: bold;
+	font-size: 16px;
 }
 
 
@@ -721,6 +765,83 @@ section.design-cate .cate-carousel .cate-item  p {
 	height: 20px;
 	margin-left: 5px;
 }
+
+
+
+
+
+/* The container */
+.container-mobil-check {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-mobil-check input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-mobil {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	border-radius: 3px;
+	background-color: #fff;
+	margin-top: 16px;
+	border: 2px solid #D19E2C;
+}
+
+/* On mouse-over, add a grey background color */
+.container-mobil-check:hover input ~ .checkmark-mobil {
+	background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-mobil-check input:checked ~ .checkmark-mobil {
+	background-color: #D19E2C;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-mobil:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.container-mobil-check input:checked ~ .checkmark-mobil:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-mobil-check .checkmark-mobil:after {
+	left: 7px;
+	top: 3px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+
+
 
 
 
