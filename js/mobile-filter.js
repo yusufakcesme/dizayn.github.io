@@ -10,15 +10,6 @@ var item4 = document.getElementById('item-4');
 var item5 = document.getElementById('item-5');
 var item6 = document.getElementById('item-6');
 
-window.onclick = function(event) {
-	if (event.target == filter1) {
-		filter1.style.opacity = "0";
-		filter1.style.pointerEvents = "none";
-		mobile_filter1.style.transform = "translateY(100%)";
-	} 
-
-}
-
 
 var bitti_a = document.querySelectorAll('.bitti-a');
 

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/blog.css">
 	<link rel="stylesheet" type="text/css" href="css/kesfedin.css">
+	<link rel="stylesheet" type="text/css" href="css/tasarim.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
@@ -46,6 +47,189 @@
 		</div>
 
 	</header>
+
+
+
+	<div class="filters">
+		<div class="filter-tools">
+			<button onclick="mobileFilterAll()" class="filter-button-primary"><i class="fa fa-sliders-h"></i> Filtreler</button>
+			<!--<div class="filter-pop">
+				<form>
+					<input type="text" name="" placeholder="Listeyi görmek için yazmaya başlayın">
+					<p>POPÜLER ARAÇLAR</p>
+					<div class="results">
+						<a href="#!">deneme bir</a>
+						<a href="#!">deneme iki</a>
+						<a href="#!">deneme üç</a>
+						<a href="#!">deneme dört</a>
+					</div>
+				</form>
+			</div>-->
+		</div>
+
+		<div class="filter-tools">
+			<button onclick="openSelfTur()" class="filter-button">Tür <span><i class="fa fa-sort-down" style="margin-top:-5px;"></i></span></button>
+			<div class="filter-pop">
+				<div class="results">
+					<div>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>Mimari</p>
+						</label>
+					</div>
+					<div>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>Mimari</p>
+						</label>
+					</div>
+					<div>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>Mimari</p>
+						</label>
+					</div>
+					<div>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>Mimari</p>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="filter-tools">
+			<button onclick="openSelfOdalar()" class="filter-button">Alanlar <span><i class="fa fa-sort-down" style="margin-top:-5px;"></i></span></button>
+			<div class="filter-pop">
+				<div class="results">
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="filter-tools">
+			<button onclick="openSelfStiller()" class="filter-button">Stil <span><i class="fa fa-sort-down" style="margin-top:-5px;"></i></span></button>
+			<div class="filter-pop">
+				<div class="results">
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="filter-tools">
+			<button style="width: 105px;" onclick="openSelfMalzeme()" class="filter-button">Malzeme <span><i class="fa fa-sort-down" style="margin-top:-5px;"></i></span></button>
+			<div class="filter-pop">
+				<div class="results">
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Ahşap</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Taş</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Beton</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Metal</p>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="filter-tools konum">
+			<button onclick="openSelfKonum()" class="filter-button">Konum <span><i class="fa fa-sort-down" style="margin-top:-5px;"></i><span></button>
+				<div class="filter-pop">
+					<form>
+						<label>
+							<select>
+								<option>Şehir adı seçiniz</option>
+								<option>Türkiye</option>
+								<option>Türkiye</option>
+								<option>Türkiye</option>
+								<option>Türkiye</option>
+							</select>
+						</label>
+						<label>
+							<input type="text" name="" placeholder="İlçe giriniz">
+						</label>
+					</form>
+
+					<div class="konum-buttons">
+						<a href="">İptal</a>
+						<button class="uygula" type="submit">Filtre Uygula</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Seçilen filtreler buraya döndürülecek -->
+		<div class="chosen-filters">
+
+			<!--<div class="chosen-filter">Modern <a href="#!"><i class="fa fa-times"></i></a></div>-->
+
+		</div>
+
+
+
+		<div class="chosen-one">
+			<p>Sırala: <span>En Beğenilen <b><i class="fa fa-sort-down"></i></b></span></p>
+			<div class="chosen-one-pop">
+				<a href="#">En Beğenilenler</a>
+				<a href="#">En Yeniler</a>
+				<a href="#">Bugün Popüler</a>
+			</div>
+		</div>
+
+
 
 
 
@@ -520,6 +704,210 @@
 
 
 
+		<div class="filter-mobile" id="filter-mobile-black">
+		</div>
+
+		<div class="mobile-filter-content"  id="mobile-filter-1">
+			<div class="filter-content-item" id="item-1">
+				<div class="mobile-filter-title">
+					<p>Filtreler</p>
+					<a class="bitti-a" href="#">Bitti</a>
+				</div>
+				<div class="mobile-filter-item-main" onclick="openTur()">
+					<p>Tür</p>
+					<span><i class="fa fa-chevron-right"></i></span>
+				</div>
+				<div class="mobile-filter-item-main" onclick="openOdalar()">
+					<p>Alanlar</p>
+					<span><i class="fa fa-chevron-right"></i></span>
+				</div>
+				<div class="mobile-filter-item-main" onclick="openStiller()">
+					<p>Stil</p>
+					<span><i class="fa fa-chevron-right"></i></span>
+				</div>
+				<div class="mobile-filter-item-main" onclick="openMalzeme()">
+					<p>Malzeme</p>
+					<span><i class="fa fa-chevron-right"></i></span>
+				</div>
+				<div class="mobile-filter-item-main" onclick="openKonum()">
+					<p>Konum</p>
+					<span><i class="fa fa-chevron-right"></i></span>
+				</div>
+			</div>
+
+			<div class="filter-content-item" id="item-2">
+				<div class="mobile-filter-title">
+					<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+					<p>Tür</p>
+					<a class="bitti-a" href="#">Bitti</a>
+				</div>
+				<div class="mobile-filter-item">
+					<label class="container-mobil-check">
+						<input type="checkbox">
+						<span class="checkmark-mobil"></span>
+						<p>Mimari</p>
+					</label>
+				</div>
+				<div class="mobile-filter-item">
+					<label class="container-mobil-check">
+						<input type="checkbox">
+						<span class="checkmark-mobil"></span>
+						<p>İç Mimari</p>
+					</label>
+				</div>
+				<div class="mobile-filter-item">
+					<label class="container-mobil-check">
+						<input type="checkbox">
+						<span class="checkmark-mobil"></span>
+						<p>Peyzaj</p>	
+					</label>
+				</div>
+				<div class="mobile-filter-item">
+					<label class="container-mobil-check">
+						<input type="checkbox">
+						<span class="checkmark-mobil"></span>
+						<p>Endüstriyel Tasarım</p>
+					</label>
+				</div>
+			</div>
+
+			<div class="filter-content-item" id="item-3">
+				<div class="mobile-filter-title">
+					<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+					<p>Alanlar</p>
+					<a class="bitti-a" href="#">Bitti</a>
+				</div>
+				<div class="mobile-filter-item">
+					<label class="container-mobil-check">
+						<input type="checkbox">
+						<span class="checkmark-mobil"></span>
+						<p>3 + 1</p>
+					</label>
+				</div>
+				<div class="mobile-filter-item">
+					<label class="container-mobil-check">
+						<input type="checkbox">
+						<span class="checkmark-mobil"></span>
+						<p>2 + 1</p>
+					</label>
+				</div>
+				<div class="mobile-filter-item">
+					<label class="container-mobil-check">
+						<input type="checkbox">
+						<span class="checkmark-mobil"></span>
+						<p>1 + 1</p>
+					</label>
+				</div>
+				<div class="mobile-filter-item">
+					<label class="container-mobil-check">
+						<input type="checkbox">
+						<span class="checkmark-mobil"></span>
+						<p>1 + 0</p>
+					</label>
+				</div>
+			</div>
+
+
+			<div class="filter-content-item" id="item-4">
+				<div class="mobile-filter-title">
+					<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+					<p>Stil</p>
+					<a class="bitti-a" href="#">Bitti</a>
+				</div>
+				<div class="mobile-filter-item">
+					<label class="container-mobil-check">
+						<input type="checkbox">
+						<span class="checkmark-mobil"></span>
+						<p>Modern</p>
+					</label>
+				</div>
+				<div class="mobile-filter-item">
+					<label class="container-mobil-check">
+						<input type="checkbox">
+						<span class="checkmark-mobil"></span>
+						<p>Geleneksel</p>
+					</label>
+				</div>
+				<div class="mobile-filter-item">
+					<label class="container-mobil-check">
+						<input type="checkbox">
+						<span class="checkmark-mobil"></span>
+						<p>Minimal</p>
+					</label>
+				</div>
+				<div class="mobile-filter-item">
+					<label class="container-mobil-check">
+						<input type="checkbox">
+						<span class="checkmark-mobil"></span>
+						<p>Rustik</p>
+					</label>	
+				</div>
+			</div>
+
+
+			<div class="filter-content-item" id="item-6">
+				<div class="mobile-filter-title">
+					<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+					<p>Malzeme</p>
+					<a class="bitti-a" href="#">Bitti</a>
+				</div>
+				<div class="mobile-filter-item">
+					<label class="container-mobil-check">
+						<input type="checkbox">
+						<span class="checkmark-mobil"></span>
+						<p>Ahşap</p>
+					</label>
+				</div>
+				<div class="mobile-filter-item">
+					<label class="container-mobil-check">
+						<input type="checkbox">
+						<span class="checkmark-mobil"></span>
+						<p>Taş</p>
+					</label>
+				</div>
+				<div class="mobile-filter-item">
+					<label class="container-mobil-check">
+						<input type="checkbox">
+						<span class="checkmark-mobil"></span>
+						<p>Beton</p>
+					</label>
+				</div>
+				<div class="mobile-filter-item">
+					<label class="container-mobil-check">
+						<input type="checkbox">
+						<span class="checkmark-mobil"></span>
+						<p>Metal</p>
+					</label>	
+				</div>
+			</div>
+
+
+			<div class="filter-content-item" id="item-5">
+				<div class="mobile-filter-title">
+					<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+					<p>Konum</p>
+					<a class="bitti-a" href="#">Bitti</a>
+				</div>
+				<div class="konum-mobil">
+					<label>
+						<input type="text" name="" placeholder="Şehir adı giriniz">
+					</label>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -647,6 +1035,7 @@
 
 
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/mobile-filter.js"></script>
 
 	</body>
 	</html>

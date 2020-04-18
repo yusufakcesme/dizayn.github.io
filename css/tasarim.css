@@ -383,6 +383,7 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 
 
 
+
 /* The container */
 .container-desk-check {
 	display: block;
@@ -415,7 +416,7 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	width: 25px;
 	border-radius: 3px;
 	background-color: #fff;
-	margin-top: 6px;
+	margin-top: 16px;
 	border: 2px solid #ddd;
 }
 
@@ -454,6 +455,13 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
+
+
+
+
+
+
+
 
 
 

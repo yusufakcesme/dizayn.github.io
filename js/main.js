@@ -222,7 +222,11 @@ window.onclick = function(event) {
 	} else if (event.target == mobile_cont_filter) {
 		mobile_menu_cont.style.transform = "translateX(-100%)";
 		mobile_cont_filter.style.transform = "translateX(-100%)";
-	}
+	} else if (event.target == filter1) {
+		filter1.style.opacity = "0";
+		filter1.style.pointerEvents = "none";
+		mobile_filter1.style.transform = "translateY(100%)";
+	} 
 }
 
 function openLogin() {
