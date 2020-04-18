@@ -173,10 +173,15 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	cursor: pointer;
 }
 
+.chosen-one p > span > b {
+	color: #363732;
+	margin-top: -5px;
+}
+
 .chosen-one-pop {
 	position: absolute;
-	width: 150px;
-	height: 100px;
+	width: 180px;
+	min-height: 100px;
 	background-color: #fff;
 	box-shadow: 0px 0px 10px rgba(0,0,0,.16);
 	z-index: 88;
@@ -189,7 +194,7 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 }
 
 .chosen-one-pop a {
-	padding: 5px 10px;
+	padding: 12px 16px;
 	color: #363732;
 	font-family: 'sofiapro-light';
 	font-weight: bold;
