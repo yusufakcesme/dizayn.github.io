@@ -199,7 +199,7 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	background-color: #eee;
 }
 
-.filters form {
+.filters {
 	width: 88.5%;
 	margin-left: auto;
 	margin-right: auto;	
@@ -215,7 +215,7 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 
 
 
-.filters form::-webkit-scrollbar {
+.filters::-webkit-scrollbar {
 	display: none;
 }
 
