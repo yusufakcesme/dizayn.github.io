@@ -285,9 +285,9 @@
 
 
 	<div class="filters">
-
-		<div class="filter-tools">
-			<button onclick="mobileFilterAll()" class="filter-button-primary"><i class="fa fa-sliders-h"></i> Filtreler</button>
+		<form>
+			<div class="filter-tools">
+				<button onclick="mobileFilterAll()" class="filter-button-primary"><i class="fa fa-sliders-h"></i> Filtreler</button>
 			<!--<div class="filter-pop">
 				<form>
 					<input type="text" name="" placeholder="Listeyi görmek için yazmaya başlayın">
@@ -305,52 +305,87 @@
 		<div class="filter-tools">
 			<button onclick="openSelfTur()" class="filter-button">Tür <i class="fa fa-sort-down" style="margin-top:-5px;"></i></button>
 			<div class="filter-pop">
-				<form>
-					<input type="text" name="" placeholder="Listeyi görmek için yazmaya başlayın">
-					<p>POPÜLER ARAÇLAR</p>
-					<div class="results">
-						<a href="#!">deneme bir</a>
-						<a href="#!">deneme iki</a>
-						<a href="#!">deneme üç</a>
-						<a href="#!">deneme dört</a>
-					</div>
-				</form>
+				<div class="results">
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+				</div>
 			</div>
 		</div>
 		<div class="filter-tools">
 			<button onclick="openSelfOdalar()" class="filter-button">Odalar <i class="fa fa-sort-down" style="margin-top:-5px;"></i></button>
 			<div class="filter-pop">
-				<form>
-					<input type="text" name="" placeholder="Listeyi görmek için yazmaya başlayın">
-					<p>POPÜLER ARAÇLAR</p>
-					<div class="results">
-						<a href="#!">deneme bir</a>
-						<a href="#!">deneme iki</a>
-						<a href="#!">deneme üç</a>
-						<a href="#!">deneme dört</a>
-					</div>
-				</form>
+				<div class="results">
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+				</div>
 			</div>
 		</div>
 		<div class="filter-tools">
 			<button onclick="openSelfStiller()" class="filter-button">Stiller <i class="fa fa-sort-down" style="margin-top:-5px;"></i></button>
 			<div class="filter-pop">
-				<form>
-					<input type="text" name="" placeholder="Listeyi görmek için yazmaya başlayın">
-					<p>POPÜLER ARAÇLAR</p>
-					<div class="results">
-						<a href="#!">deneme bir</a>
-						<a href="#!">deneme iki</a>
-						<a href="#!">deneme üç</a>
-						<a href="#!">deneme dört</a>
-					</div>
-				</form>
+				<div class="results">
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+					<label class="container-desk-check">
+						<input type="checkbox">
+						<span class="checkmark-desk"></span>
+						<p>Mimari</p>
+					</label>
+				</div>
 			</div>
 		</div>
 		<div class="filter-tools konum">
 			<button onclick="openSelfKonum()" class="filter-button">Konum <i class="fa fa-sort-down" style="margin-top:-5px;"></i></button>
 			<div class="filter-pop">
-				<form>
 					<label>
 						<select>
 							<option>Şehir adı seçiniz</option>
@@ -363,7 +398,6 @@
 					<label>
 						<input type="text" name="" placeholder="İlçe giriniz">
 					</label>
-				</form>
 
 				<div class="konum-buttons">
 					<a href="">İptal</a>
@@ -371,563 +405,564 @@
 				</div>
 			</div>
 		</div>
+	</form>
+</div>
+
+
+<!-- Seçilen filtreler buraya döndürülecek -->
+<div class="chosen-filters">
+
+	<div class="chosen-filter">Modern <a href="#!"><i class="fa fa-times"></i></a></div>
+
+</div>
+
+
+
+<div class="chosen-one">
+	<p>Sırala: <span>En Beğenilen <i class="fa fa-sort-down"></i></span></p>
+	<div class="chosen-one-pop">
+		<a href="#">En Beğenilenler</a>
+		<a href="#">En Yeniler</a>
+		<a href="#">Bugün Popüler</a>
 	</div>
-
-
-	<!-- Seçilen filtreler buraya döndürülecek -->
-	<div class="chosen-filters">
-
-		<div class="chosen-filter">Modern <a href="#!"><i class="fa fa-times"></i></a></div>
-
-	</div>
-
-
-
-	<div class="chosen-one">
-		<p>Sırala: <span>En Beğenilen <i class="fa fa-sort-down"></i></span></p>
-		<div class="chosen-one-pop">
-			<a href="#">En Beğenilenler</a>
-			<a href="#">En Yeniler</a>
-			<a href="#">Bugün Popüler</a>
-		</div>
-	</div>
+</div>
 
 
 
 
-	<section class="design-competition-tasarim">
+<section class="design-competition-tasarim">
 
-		<div class="card-container-tasarim">
-
-
+	<div class="card-container-tasarim">
 
 
-			<div class="card-tasarim">
-				<div class="card-img-tasarim">
-					<div class="card-img-overlay-tasarim">
-						<span>MİMARİ</span>
-						<p>Mutfak Renevasyon Projesi</p>
-					</div>
-					<img class="main-img" src="images/1.jpg">
-					<div class="card-bottom">
-						<img src="images/person1.jpg" width="25px" height="25px">
-						<a href="#">Doğan Hazar</a>
-						<div class="card-buttons">
-							<button><i class="fa fa-thumbs-up"></i> 1532</button>
-							<button><i class="fa fa-eye"></i> 15103</button>
 
-						</div>
+
+		<div class="card-tasarim">
+			<div class="card-img-tasarim">
+				<div class="card-img-overlay-tasarim">
+					<span>MİMARİ</span>
+					<p>Mutfak Renevasyon Projesi</p>
+				</div>
+				<img class="main-img" src="images/1.jpg">
+				<div class="card-bottom">
+					<img src="images/person1.jpg" width="25px" height="25px">
+					<a href="#">Doğan Hazar</a>
+					<div class="card-buttons">
+						<button><i class="fa fa-thumbs-up"></i> 1532</button>
+						<button><i class="fa fa-eye"></i> 15103</button>
+
 					</div>
 				</div>
-			</div>
-
-			<div class="card-tasarim">
-				<div class="card-img-tasarim">
-					<div class="card-img-overlay-tasarim">
-						<span>MİMARİ</span>
-						<p>Mutfak Renevasyon Projesi</p>
-					</div>
-					<img class="main-img" src="images/2.jpg">
-					<div class="card-bottom">
-						<img src="images/person1.jpg" width="25px" height="25px">
-						<a href="#">Doğan Hazar</a>
-						<div class="card-buttons">
-							<button><i class="fa fa-thumbs-up"></i> 1532</button>
-							<button><i class="fa fa-eye"></i> 15103</button>
-
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card-tasarim">
-				<div class="card-img-tasarim">
-					<div class="card-img-overlay-tasarim">
-						<span>MİMARİ</span>
-						<p>Mutfak Renevasyon Projesi</p>
-					</div>
-					<img class="main-img" src="images/3.jpg">
-					<div class="card-bottom">
-						<img src="images/person1.jpg" width="25px" height="25px">
-						<a href="#">Doğan Hazar</a>
-						<div class="card-buttons">
-							<button><i class="fa fa-thumbs-up"></i> 1532</button>
-							<button><i class="fa fa-eye"></i> 15103</button>
-
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card-tasarim">
-				<div class="card-img-tasarim">
-					<div class="card-img-overlay-tasarim">
-						<span>MİMARİ</span>
-						<p>Mutfak Renevasyon Projesi</p>
-					</div>
-					<img class="main-img" src="images/4.jpg">
-					<div class="card-bottom">
-						<img src="images/person1.jpg" width="25px" height="25px">
-						<a href="#">Doğan Hazar</a>
-						<div class="card-buttons">
-							<button><i class="fa fa-thumbs-up"></i> 1532</button>
-							<button><i class="fa fa-eye"></i> 15103</button>
-
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card-tasarim">
-				<div class="card-img-tasarim">
-					<div class="card-img-overlay-tasarim">
-						<span>MİMARİ</span>
-						<p>Mutfak Renevasyon Projesi</p>
-					</div>
-					<img class="main-img" src="images/55.jpg">
-					<div class="card-bottom">
-						<img src="images/person1.jpg" width="25px" height="25px">
-						<a href="#">Doğan Hazar</a>
-						<div class="card-buttons">
-							<button><i class="fa fa-thumbs-up"></i> 1532</button>
-							<button><i class="fa fa-eye"></i> 15103</button>
-
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card-tasarim">
-				<div class="card-img-tasarim">
-					<div class="card-img-overlay-tasarim">
-						<span>MİMARİ</span>
-						<p>Mutfak Renevasyon Projesi</p>
-					</div>
-					<img class="main-img" src="images/66.jpg">
-					<div class="card-bottom">
-						<img src="images/person1.jpg" width="25px" height="25px">
-						<a href="#">Doğan Hazar</a>
-						<div class="card-buttons">
-							<button><i class="fa fa-thumbs-up"></i> 1532</button>
-							<button><i class="fa fa-eye"></i> 15103</button>
-
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card-tasarim">
-				<div class="card-img-tasarim">
-					<div class="card-img-overlay-tasarim">
-						<span>MİMARİ</span>
-						<p>Mutfak Renevasyon Projesi</p>
-					</div>
-					<img class="main-img" src="images/1.jpg">
-					<div class="card-bottom">
-						<img src="images/person1.jpg" width="25px" height="25px">
-						<a href="#">Doğan Hazar</a>
-						<div class="card-buttons">
-							<button><i class="fa fa-thumbs-up"></i> 1532</button>
-							<button><i class="fa fa-eye"></i> 15103</button>
-
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card-tasarim">
-				<div class="card-img-tasarim">
-					<div class="card-img-overlay-tasarim">
-						<span>MİMARİ</span>
-						<p>Mutfak Renevasyon Projesi</p>
-					</div>
-					<img class="main-img" src="images/1.jpg">
-					<div class="card-bottom">
-						<img src="images/person1.jpg" width="25px" height="25px">
-						<a href="#">Doğan Hazar</a>
-						<div class="card-buttons">
-							<button><i class="fa fa-thumbs-up"></i> 1532</button>
-							<button><i class="fa fa-eye"></i> 15103</button>
-
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-
-
-
-		</div>
-	</section>
-
-
-
-
-	<div class="filter-mobile" id="filter-mobile-black">
-	</div>
-	
-	<div class="mobile-filter-content"  id="mobile-filter-1">
-		<form action="" method="POST">
-			<div class="filter-content-item" id="item-1">
-				<div class="mobile-filter-title">
-					<p>Filtreler</p>
-					<a class="bitti-a" href="#">Bitti</a>
-				</div>
-				<div class="mobile-filter-item-main" onclick="openTur()">
-					<p>Tür</p>
-					<span><i class="fa fa-chevron-right"></i></span>
-				</div>
-				<div class="mobile-filter-item-main" onclick="openOdalar()">
-					<p>Odalar</p>
-					<span><i class="fa fa-chevron-right"></i></span>
-				</div>
-				<div class="mobile-filter-item-main" onclick="openStiller()">
-					<p>Stiller</p>
-					<span><i class="fa fa-chevron-right"></i></span>
-				</div>
-				<div class="mobile-filter-item-main" onclick="openKonum()">
-					<p>Konum</p>
-					<span><i class="fa fa-chevron-right"></i></span>
-				</div>
-			</div>
-
-			<div class="filter-content-item" id="item-2">
-				<div class="mobile-filter-title">
-					<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
-					<p>Tür</p>
-					<a class="bitti-a" href="#">Bitti</a>
-				</div>
-				<div class="mobile-filter-item">
-					<label class="container-mobil-check">
-						<input type="checkbox">
-						<span class="checkmark-mobil"></span>
-						<p>Mimari</p>
-					</label>
-				</div>
-				<div class="mobile-filter-item">
-					<label class="container-mobil-check">
-						<input type="checkbox">
-						<span class="checkmark-mobil"></span>
-						<p>İç Mimari</p>
-					</label>
-				</div>
-				<div class="mobile-filter-item">
-					<label class="container-mobil-check">
-						<input type="checkbox">
-						<span class="checkmark-mobil"></span>
-						<p>Peyzaj</p>	
-					</label>
-				</div>
-				<div class="mobile-filter-item">
-					<label class="container-mobil-check">
-						<input type="checkbox">
-						<span class="checkmark-mobil"></span>
-						<p>Endüstriyel Tasarım</p>
-					</label>
-				</div>
-			</div>
-
-			<div class="filter-content-item" id="item-3">
-				<div class="mobile-filter-title">
-					<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
-					<p>Odalar</p>
-					<a class="bitti-a" href="#">Bitti</a>
-				</div>
-				<div class="mobile-filter-item">
-					<label class="container-mobil-check">
-						<input type="checkbox">
-						<span class="checkmark-mobil"></span>
-						<p>3 + 1</p>
-					</label>
-				</div>
-				<div class="mobile-filter-item">
-					<label class="container-mobil-check">
-						<input type="checkbox">
-						<span class="checkmark-mobil"></span>
-						<p>2 + 1</p>
-					</label>
-				</div>
-				<div class="mobile-filter-item">
-					<label class="container-mobil-check">
-						<input type="checkbox">
-						<span class="checkmark-mobil"></span>
-						<p>1 + 1</p>
-					</label>
-				</div>
-				<div class="mobile-filter-item">
-					<label class="container-mobil-check">
-						<input type="checkbox">
-						<span class="checkmark-mobil"></span>
-						<p>1 + 0</p>
-					</label>
-				</div>
-			</div>
-
-
-			<div class="filter-content-item" id="item-4">
-				<div class="mobile-filter-title">
-					<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
-					<p>Stiller</p>
-					<a class="bitti-a" href="#">Bitti</a>
-				</div>
-				<div class="mobile-filter-item">
-					<label class="container-mobil-check">
-						<input type="checkbox">
-						<span class="checkmark-mobil"></span>
-						<p>Modern</p>
-					</label>
-				</div>
-				<div class="mobile-filter-item">
-					<label class="container-mobil-check">
-						<input type="checkbox">
-						<span class="checkmark-mobil"></span>
-						<p>Geleneksel</p>
-					</label>
-				</div>
-				<div class="mobile-filter-item">
-					<label class="container-mobil-check">
-						<input type="checkbox">
-						<span class="checkmark-mobil"></span>
-						<p>Minimal</p>
-					</label>
-				</div>
-				<div class="mobile-filter-item">
-					<label class="container-mobil-check">
-						<input type="checkbox">
-						<span class="checkmark-mobil"></span>
-						<p>Rustik</p>
-					</label>	
-				</div>
-			</div>
-
-
-			<div class="filter-content-item" id="item-5">
-				<div class="mobile-filter-title">
-					<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
-					<p>Konum</p>
-					<a class="bitti-a" href="#">Bitti</a>
-				</div>
-				<div class="mobile-filter-item konum-mobil">
-					<label>
-						<select>
-							<option>Şehir adı seçiniz</option>
-							<option>Türkiye</option>
-							<option>Türkiye</option>
-							<option>Türkiye</option>
-							<option>Türkiye</option>
-						</select>
-					</label>
-				</div>
-				<div class="mobile-filter-item konum-mobil">
-					<label>
-						<input type="text" name="" placeholder="İlçe giriniz">
-					</label>
-				</div>
-			</div>
-		</form>
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<div id="id03" class="mobile-search-modal">
-		<form class="search-modal">
-			<input type="text" name="" placeholder="Tasarım fikir bulun..">
-			<button><i class="fa fa-search"></i></button>
-		</form>
-	</div>
-
-
-
-	<div class="mobile-cont-filter" id="mobile-cont-filter"></div>
-
-	<div class="mobile-menu-cont" id="mobile-menu-cont">
-		<div class="mobil-login">
-			<div class="mobil-login-top">
-				<a onclick="openLogin()">Giriş Yap</a>
-				<a href="#">Profesyonel Ol</a>
-			</div>
-			<button onclick="closeMobileMenu()"><i class="fa fa-times"></i></button>
-		</div>
-
-		<div class="mobile-kesfedin" id="mobile-kesfedin">
-			<p onclick="openKesfedin()">Kesfedin <i class="fa fa-chevron-down"></i></p>
-			<div class="kesfedin-links">
-				<a href="#"> Mimari</a>
-				<a href="#">İç Mimari</a>
-				<a href="#">Peyzaj</a>
-				<a href="#">Endüstriyel Tasarım</a>
 			</div>
 		</div>
 
-		<div class="mobile-menu-nav">
-			<a href="tasarim.html"> Dizayn</a>
-			<a href="profesyoneller">Profesyoneller</a>
-			<a href="yarisma.html">Yarışmalar</a>
-			<a href="blog.html">Blog</a>
-		</div>
-
-		<div class="mobile-proje-baslat">
-			<a href="yarisma-ekleme.html">Proje Başlat</a>
-		</div>
-	</div>
-
-
-
-
-
-
-	<!-- giriş yap formu -->
-	<div id="id01" class="modal">
-		<form class="modal-content animate" action="" method="post">
-			<div class="container">
-				<h3>Hoşgeldiniz</h3>
-				<p>Devam etmek için lütfen giriş yapın.</p>
-				<input type="mail" name="" placeholder="E-posta">
-				<input type="password" name="" placeholder="Şifre">
-				<a class="forget-pass" href="sifremi-unuttum.html">Şifremi unuttum</a>
-				<p class="or">Veya</p>
-
-				<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
-				<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
-				<button type="submit">Giriş Yap</button>
-
-				<p class="dont-have-acc">Hesabınız yok mu? <a onclick="openRegister()">Kayıt Ol</a></p>
-			</div>
-		</form>
-	</div>
-
-	<!-- kayıt ol formu -->
-	<div id="id02" class="modal2">
-		<form class="modal-content animate modal-kayit" action="" method="post">
-			<div class="container">
-				<h3>Kayıt Ol</h3>
-				<p>Devam etmek için lütfen bilgilerinizi girin.</p>
-
-				<div class="register-radios">
-					<label class="container-check">Tasarımcıyım
-						<input type="checkbox">
-						<span class="checkmark-check"></span>
-					</label>
-					<label class="container-check">Tasarımcı Arıyorum
-						<input type="checkbox">
-						<span class="checkmark-check"></span>
-					</label>
+		<div class="card-tasarim">
+			<div class="card-img-tasarim">
+				<div class="card-img-overlay-tasarim">
+					<span>MİMARİ</span>
+					<p>Mutfak Renevasyon Projesi</p>
 				</div>
-				<input type="mail" name="" placeholder="E-posta">
-				<input type="password" name="" placeholder="Şifre">
-				<label class="login-container">
-					Haber bülteni ve yenilikler ile ilgili mail almak istiyorum. 
-					<input type="checkbox" checked="checked">
-					<span class="login-checkmark"></span>
-				</label>
-				<label class="login-container">
-					Hüküm&Koşullar ve Gizlilik Politikasını kabul ediyorum.
+				<img class="main-img" src="images/2.jpg">
+				<div class="card-bottom">
+					<img src="images/person1.jpg" width="25px" height="25px">
+					<a href="#">Doğan Hazar</a>
+					<div class="card-buttons">
+						<button><i class="fa fa-thumbs-up"></i> 1532</button>
+						<button><i class="fa fa-eye"></i> 15103</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-tasarim">
+			<div class="card-img-tasarim">
+				<div class="card-img-overlay-tasarim">
+					<span>MİMARİ</span>
+					<p>Mutfak Renevasyon Projesi</p>
+				</div>
+				<img class="main-img" src="images/3.jpg">
+				<div class="card-bottom">
+					<img src="images/person1.jpg" width="25px" height="25px">
+					<a href="#">Doğan Hazar</a>
+					<div class="card-buttons">
+						<button><i class="fa fa-thumbs-up"></i> 1532</button>
+						<button><i class="fa fa-eye"></i> 15103</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-tasarim">
+			<div class="card-img-tasarim">
+				<div class="card-img-overlay-tasarim">
+					<span>MİMARİ</span>
+					<p>Mutfak Renevasyon Projesi</p>
+				</div>
+				<img class="main-img" src="images/4.jpg">
+				<div class="card-bottom">
+					<img src="images/person1.jpg" width="25px" height="25px">
+					<a href="#">Doğan Hazar</a>
+					<div class="card-buttons">
+						<button><i class="fa fa-thumbs-up"></i> 1532</button>
+						<button><i class="fa fa-eye"></i> 15103</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-tasarim">
+			<div class="card-img-tasarim">
+				<div class="card-img-overlay-tasarim">
+					<span>MİMARİ</span>
+					<p>Mutfak Renevasyon Projesi</p>
+				</div>
+				<img class="main-img" src="images/55.jpg">
+				<div class="card-bottom">
+					<img src="images/person1.jpg" width="25px" height="25px">
+					<a href="#">Doğan Hazar</a>
+					<div class="card-buttons">
+						<button><i class="fa fa-thumbs-up"></i> 1532</button>
+						<button><i class="fa fa-eye"></i> 15103</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-tasarim">
+			<div class="card-img-tasarim">
+				<div class="card-img-overlay-tasarim">
+					<span>MİMARİ</span>
+					<p>Mutfak Renevasyon Projesi</p>
+				</div>
+				<img class="main-img" src="images/66.jpg">
+				<div class="card-bottom">
+					<img src="images/person1.jpg" width="25px" height="25px">
+					<a href="#">Doğan Hazar</a>
+					<div class="card-buttons">
+						<button><i class="fa fa-thumbs-up"></i> 1532</button>
+						<button><i class="fa fa-eye"></i> 15103</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-tasarim">
+			<div class="card-img-tasarim">
+				<div class="card-img-overlay-tasarim">
+					<span>MİMARİ</span>
+					<p>Mutfak Renevasyon Projesi</p>
+				</div>
+				<img class="main-img" src="images/1.jpg">
+				<div class="card-bottom">
+					<img src="images/person1.jpg" width="25px" height="25px">
+					<a href="#">Doğan Hazar</a>
+					<div class="card-buttons">
+						<button><i class="fa fa-thumbs-up"></i> 1532</button>
+						<button><i class="fa fa-eye"></i> 15103</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-tasarim">
+			<div class="card-img-tasarim">
+				<div class="card-img-overlay-tasarim">
+					<span>MİMARİ</span>
+					<p>Mutfak Renevasyon Projesi</p>
+				</div>
+				<img class="main-img" src="images/1.jpg">
+				<div class="card-bottom">
+					<img src="images/person1.jpg" width="25px" height="25px">
+					<a href="#">Doğan Hazar</a>
+					<div class="card-buttons">
+						<button><i class="fa fa-thumbs-up"></i> 1532</button>
+						<button><i class="fa fa-eye"></i> 15103</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+	</div>
+</section>
+
+
+
+
+<div class="filter-mobile" id="filter-mobile-black">
+</div>
+
+<div class="mobile-filter-content"  id="mobile-filter-1">
+	<form action="" method="POST">
+		<div class="filter-content-item" id="item-1">
+			<div class="mobile-filter-title">
+				<p>Filtreler</p>
+				<a class="bitti-a" href="#">Bitti</a>
+			</div>
+			<div class="mobile-filter-item-main" onclick="openTur()">
+				<p>Tür</p>
+				<span><i class="fa fa-chevron-right"></i></span>
+			</div>
+			<div class="mobile-filter-item-main" onclick="openOdalar()">
+				<p>Odalar</p>
+				<span><i class="fa fa-chevron-right"></i></span>
+			</div>
+			<div class="mobile-filter-item-main" onclick="openStiller()">
+				<p>Stiller</p>
+				<span><i class="fa fa-chevron-right"></i></span>
+			</div>
+			<div class="mobile-filter-item-main" onclick="openKonum()">
+				<p>Konum</p>
+				<span><i class="fa fa-chevron-right"></i></span>
+			</div>
+		</div>
+
+		<div class="filter-content-item" id="item-2">
+			<div class="mobile-filter-title">
+				<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+				<p>Tür</p>
+				<a class="bitti-a" href="#">Bitti</a>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
 					<input type="checkbox">
-					<span class="login-checkmark"></span>
+					<span class="checkmark-mobil"></span>
+					<p>Mimari</p>
 				</label>
-
-				<p class="or">Veya</p>
-
-				<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
-				<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
-				<button type="submit">Kayıt Ol</button>
-
-				<p class="dont-have-acc">Hesabınız var mı? <a onclick="openLogin()">Giriş Yap</a></p>
 			</div>
-		</form>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>İç Mimari</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>Peyzaj</p>	
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>Endüstriyel Tasarım</p>
+				</label>
+			</div>
+		</div>
+
+		<div class="filter-content-item" id="item-3">
+			<div class="mobile-filter-title">
+				<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+				<p>Odalar</p>
+				<a class="bitti-a" href="#">Bitti</a>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>3 + 1</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>2 + 1</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>1 + 1</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>1 + 0</p>
+				</label>
+			</div>
+		</div>
+
+
+		<div class="filter-content-item" id="item-4">
+			<div class="mobile-filter-title">
+				<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+				<p>Stiller</p>
+				<a class="bitti-a" href="#">Bitti</a>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>Modern</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>Geleneksel</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>Minimal</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>Rustik</p>
+				</label>	
+			</div>
+		</div>
+
+
+		<div class="filter-content-item" id="item-5">
+			<div class="mobile-filter-title">
+				<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+				<p>Konum</p>
+				<a class="bitti-a" href="#">Bitti</a>
+			</div>
+			<div class="mobile-filter-item konum-mobil">
+				<label>
+					<select>
+						<option>Şehir adı seçiniz</option>
+						<option>Türkiye</option>
+						<option>Türkiye</option>
+						<option>Türkiye</option>
+						<option>Türkiye</option>
+					</select>
+				</label>
+			</div>
+			<div class="mobile-filter-item konum-mobil">
+				<label>
+					<input type="text" name="" placeholder="İlçe giriniz">
+				</label>
+			</div>
+		</div>
+	</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="id03" class="mobile-search-modal">
+	<form class="search-modal">
+		<input type="text" name="" placeholder="Tasarım fikir bulun..">
+		<button><i class="fa fa-search"></i></button>
+	</form>
+</div>
+
+
+
+<div class="mobile-cont-filter" id="mobile-cont-filter"></div>
+
+<div class="mobile-menu-cont" id="mobile-menu-cont">
+	<div class="mobil-login">
+		<div class="mobil-login-top">
+			<a onclick="openLogin()">Giriş Yap</a>
+			<a href="#">Profesyonel Ol</a>
+		</div>
+		<button onclick="closeMobileMenu()"><i class="fa fa-times"></i></button>
 	</div>
 
+	<div class="mobile-kesfedin" id="mobile-kesfedin">
+		<p onclick="openKesfedin()">Kesfedin <i class="fa fa-chevron-down"></i></p>
+		<div class="kesfedin-links">
+			<a href="#"> Mimari</a>
+			<a href="#">İç Mimari</a>
+			<a href="#">Peyzaj</a>
+			<a href="#">Endüstriyel Tasarım</a>
+		</div>
+	</div>
 
-	<script src="js/slick_/slick/slick.min.js"></script>
-	<script type="text/javascript">
+	<div class="mobile-menu-nav">
+		<a href="tasarim.html"> Dizayn</a>
+		<a href="profesyoneller">Profesyoneller</a>
+		<a href="yarisma.html">Yarışmalar</a>
+		<a href="blog.html">Blog</a>
+	</div>
+
+	<div class="mobile-proje-baslat">
+		<a href="yarisma-ekleme.html">Proje Başlat</a>
+	</div>
+</div>
 
 
 
 
 
-		$('.cate-carousel').slick({
-			infinite: true,
-			autoplay: false,
-			autoplaySpeed: 2000,
-			slidesToScroll: 3,
-			slidesToShow: 9,
-			centerMode: true,
-			dots: false,
-			prevArrow: $('.cate-prev'),
-			nextArrow: $('.cate-next'),
-			responsive: [
-			{
-				breakpoint: 1366,
-				settings: {
-					slidesToShow: 6,
-					slidesToScroll: 1,
-					autoplay: true
-				}
-			},
-			{
-				breakpoint: 1280,
-				settings: {
-					slidesToShow: 5	,
-					slidesToScroll: 1,
-					autoplay: true
-				}
-			},
-			{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1,
-					autoplay: true
-				}
-			},
-			{
-				breakpoint: 600,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1,
-					autoplay: true
-				}
-			},
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					autoplay: true
-				}
+
+<!-- giriş yap formu -->
+<div id="id01" class="modal">
+	<form class="modal-content animate" action="" method="post">
+		<div class="container">
+			<h3>Hoşgeldiniz</h3>
+			<p>Devam etmek için lütfen giriş yapın.</p>
+			<input type="mail" name="" placeholder="E-posta">
+			<input type="password" name="" placeholder="Şifre">
+			<a class="forget-pass" href="sifremi-unuttum.html">Şifremi unuttum</a>
+			<p class="or">Veya</p>
+
+			<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
+			<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
+			<button type="submit">Giriş Yap</button>
+
+			<p class="dont-have-acc">Hesabınız yok mu? <a onclick="openRegister()">Kayıt Ol</a></p>
+		</div>
+	</form>
+</div>
+
+<!-- kayıt ol formu -->
+<div id="id02" class="modal2">
+	<form class="modal-content animate modal-kayit" action="" method="post">
+		<div class="container">
+			<h3>Kayıt Ol</h3>
+			<p>Devam etmek için lütfen bilgilerinizi girin.</p>
+
+			<div class="register-radios">
+				<label class="container-check">Tasarımcıyım
+					<input type="checkbox">
+					<span class="checkmark-check"></span>
+				</label>
+				<label class="container-check">Tasarımcı Arıyorum
+					<input type="checkbox">
+					<span class="checkmark-check"></span>
+				</label>
+			</div>
+			<input type="mail" name="" placeholder="E-posta">
+			<input type="password" name="" placeholder="Şifre">
+			<label class="login-container">
+				Haber bülteni ve yenilikler ile ilgili mail almak istiyorum. 
+				<input type="checkbox" checked="checked">
+				<span class="login-checkmark"></span>
+			</label>
+			<label class="login-container">
+				Hüküm&Koşullar ve Gizlilik Politikasını kabul ediyorum.
+				<input type="checkbox">
+				<span class="login-checkmark"></span>
+			</label>
+
+			<p class="or">Veya</p>
+
+			<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
+			<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
+			<button type="submit">Kayıt Ol</button>
+
+			<p class="dont-have-acc">Hesabınız var mı? <a onclick="openLogin()">Giriş Yap</a></p>
+		</div>
+	</form>
+</div>
+
+
+<script src="js/slick_/slick/slick.min.js"></script>
+<script type="text/javascript">
+
+
+
+
+
+	$('.cate-carousel').slick({
+		infinite: true,
+		autoplay: false,
+		autoplaySpeed: 2000,
+		slidesToScroll: 3,
+		slidesToShow: 9,
+		centerMode: true,
+		dots: false,
+		prevArrow: $('.cate-prev'),
+		nextArrow: $('.cate-next'),
+		responsive: [
+		{
+			breakpoint: 1366,
+			settings: {
+				slidesToShow: 6,
+				slidesToScroll: 1,
+				autoplay: true
 			}
-			]
-		});
+		},
+		{
+			breakpoint: 1280,
+			settings: {
+				slidesToShow: 5	,
+				slidesToScroll: 1,
+				autoplay: true
+			}
+		},
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				autoplay: true
+			}
+		},
+		{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				autoplay: true
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				autoplay: true
+			}
+		}
+		]
+	});
 
 
-	</script>
+</script>
 
 
-	<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
-	<script type="text/javascript" src="js/mobile-filter.js"></script>
+<script type="text/javascript" src="js/mobile-filter.js"></script>
 
 </body>
 </html>
