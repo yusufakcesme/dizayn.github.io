@@ -407,7 +407,7 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	border-radius: 3px;
 	background-color: #fff;
 	margin-top: 6px;
-	border: 2px solid #D19E2C;
+	border: 2px solid #ddd;
 }
 
 /* On mouse-over, add a grey background color */
@@ -418,6 +418,7 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 /* When the checkbox is checked, add a blue background */
 .container-desk-check input:checked ~ .checkmark-desk {
 	background-color: #D19E2C;
+	border: 2px solid #D19E2C;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -884,7 +885,7 @@ section.design-cate .cate-carousel .cate-item  p {
 	border-radius: 3px;
 	background-color: #fff;
 	margin-top: 16px;
-	border: 2px solid #D19E2C;
+	border: 2px solid #ddd;
 }
 
 /* On mouse-over, add a grey background color */
@@ -895,6 +896,7 @@ section.design-cate .cate-carousel .cate-item  p {
 /* When the checkbox is checked, add a blue background */
 .container-mobil-check input:checked ~ .checkmark-mobil {
 	background-color: #D19E2C;
+	border: 2px solid #D19E2C;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
