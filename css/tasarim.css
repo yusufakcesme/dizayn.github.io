@@ -973,6 +973,42 @@ section.design-cate .cate-carousel .cate-item  p {
 		border-radius: 5px;
 	}
 
+	.filters button {
+		width: 90px;
+		height: 36px;
+		border: 1px solid #504C43;
+		border-radius: 8px;
+		background: transparent;
+		margin-right: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 10px;
+		font-family: 'sofiapro-light';
+		font-weight: bold;
+		font-size: 15px;
+		color: #3A3A39;
+		cursor: pointer;
+	}
+
+
+	.filters button.filter-button-primary {
+		width: 100px;
+		height: 36px;
+		border: 0;
+		border-radius: 8px;
+		background-color: #D19E2C;
+		margin-right: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 10px;
+		font-family: 'sofiapro-light';
+		font-size: 15px;
+		color: #fff;
+		cursor: pointer;
+	}
+
 
 }
 
