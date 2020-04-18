@@ -232,13 +232,18 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	margin-right: 20px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 0 10px;
 	font-family: 'sofiapro-light';
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 14px;
 	color: #3A3A39;
 	cursor: pointer;
+}
+
+.filters button span {
+	margin-left: 5px;
+	margin-top: -2px;
 }
 
 .filters button.filter-button-primary {
@@ -253,7 +258,7 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	justify-content: space-between;
 	padding: 0 10px;
 	font-family: 'sofiapro-light';
-	font-size: 15px;
+	font-size: 14px;
 	color: #fff;
 	cursor: pointer;
 }
@@ -982,7 +987,7 @@ section.design-cate .cate-carousel .cate-item  p {
 		margin-right: 10px;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
 		padding: 0 10px;
 		font-family: 'sofiapro-light';
 		font-weight: bold;
