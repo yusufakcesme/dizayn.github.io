@@ -8,6 +8,7 @@ var item2 = document.getElementById('item-2');
 var item3 = document.getElementById('item-3');
 var item4 = document.getElementById('item-4');
 var item5 = document.getElementById('item-5');
+var item6 = document.getElementById('item-6');
 
 window.onclick = function(event) {
 	if (event.target == filter1) {
@@ -91,6 +92,29 @@ function openKonum() {
 	item5.style.transform = "translateX(0%)";
 }
 
+
+
+function openMalzeme() {
+	item1.style.position = "absolute";
+	item1.style.transform = "translateX(-100%)";
+
+	item2.style.position = "absolute";
+	item2.style.transform = "translateX(-100%)";
+
+	item3.style.position = "absolute";
+	item3.style.transform = "translateX(-100%)";
+
+	item4.style.position = "absolute";
+	item4.style.transform = "translateX(-100%)";
+
+	item5.style.position = "absolute";
+	item5.style.transform = "translateX(-100%)";
+
+
+	item6.style.position = "static";
+	item6.style.transform = "translateX(0%)";
+}
+
 function backAllFilters() {
 	item1.style.position = "static";
 	item1.style.transform = "translateX(0%)";
@@ -106,6 +130,9 @@ function backAllFilters() {
 
 	item5.style.position = "absolute";
 	item5.style.transform = "translateX(100%)";
+
+	item6.style.position = "absolute";
+	item6.style.transform = "translateX(100%)";
 }
 
 
@@ -185,6 +212,33 @@ function openSelfKonum() {
 
 		item5.style.position = "static";
 		item5.style.transform = "translateX(0%)";
+	}
+}
+
+
+function openSelfMalzeme() {
+	if (window.innerWidth < 900) {
+		backAllFilters();
+		filter1.style.opacity = "1";
+		filter1.style.pointerEvents = "all";
+		mobile_filter1.style.transform = "translateY(0%)";
+		item1.style.position = "absolute";
+		item1.style.transform = "translateX(-100%)";
+
+		item2.style.position = "absolute";
+		item2.style.transform = "translateX(-100%)";
+
+		item3.style.position = "absolute";
+		item3.style.transform = "translateX(-100%)";
+
+		item4.style.position = "absolute";
+		item4.style.transform = "translateX(-100%)";
+
+		item5.style.position = "absolute";
+		item5.style.transform = "translateX(-100%)";
+
+		item6.style.position = "static";
+		item6.style.transform = "translateX(0%)";
 	}
 }
 

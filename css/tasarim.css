@@ -763,10 +763,18 @@ section.design-cate .cate-carousel .cate-item  p {
 	width: 100%;
 }
 
+#item-6 {
+	transition: .3s ease;
+	transform: translateX(100%);
+	position: absolute;
+	width: 100%;
+}
+
 #item-2 .mobile-filter-title span,
 #item-3 .mobile-filter-title span,
 #item-4 .mobile-filter-title span,
-#item-5 .mobile-filter-title span {
+#item-5 .mobile-filter-title span,
+#item-6 .mobile-filter-title span {
 	font-size: 16px;
 	font-family: 'sofiapro-light';
 	color: #999;
@@ -797,11 +805,12 @@ section.design-cate .cate-carousel .cate-item  p {
 }
 
 .konum-mobil input {
-	flex: 1;
+	width: 95%;
+	margin: 10px auto;
 	border: 1px solid #e8e8e8;
 	border-radius: 5px;
 	text-indent: 10px;
-	height: 40px;
+	height: 50px;
 	font-family: 'sofiapro-light';
 	font-weight: bold;
 	font-size: 16px;
