@@ -14,9 +14,9 @@ var item6 = document.getElementById('item-6');
 var bitti_a = document.querySelectorAll('.bitti-a');
 
 bitti_a.forEach(item => item.addEventListener('click', function() {
-	filter1.style.opacity = "0";
+/*	filter1.style.opacity = "0";
 	filter1.style.pointerEvents = "none";
-	mobile_filter1.style.transform = "translateY(100%)";
+	mobile_filter1.style.transform = "translateY(100%)";*/
 }));
 
 

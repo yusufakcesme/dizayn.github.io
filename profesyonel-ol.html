@@ -7,15 +7,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/yarisma-ekleme.css">
+	<link rel="stylesheet" type="text/css" href="css/profesyonel-ol.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.min.js" ></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.min.css">
+
+	<!-- Include stylesheet -->
+	<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 </head>
 <body>
 	
@@ -23,28 +26,13 @@
 		<div onclick="openMobileMenu()" class="hamburger-menu">
 			<button><i class="fa fa-bars"></i></button>
 		</div>
-		<div class="logo">
-			<h1><a href="index.html">dizay<span>n</span>et</a></h1>
-		</div>
+		<div class="logo" style="margin-right: auto;
+		margin-left: 5%;">
+		<h1><a href="index.html">dizay<span>n</span>et</a></h1>
+	</div>
 
-		<div onclick="openSearch()" class="mobile-search">
-			<button><i class="fa fa-search"></i></button>
-		</div>
-		<div class="search-bar">
-			<button><i class="fa fa-search"></i></button>
-			<input type="text" name="" placeholder="Eviniz için tasarım fikirleri bulun...">
-		</div>
-		<nav>
-			<a href="tasarim.html">Dizayn</a>
-			<a href="profesyoneller.html">Profesyoneller</a>
-			<a href="yarisma.html">Yarışmalar</a>
-			<a href="blog.html">Blog</a>
-		</nav>
-		<div class="login-btn">
-			<a onclick="openLogin()">Giriş Yap</a>
-		</div>
 
-	</header>
+</header>
 
 
 <!--
@@ -63,39 +51,40 @@
 <section class="yarisma-ekle">
 	<div class="form-nav">
 		<nav id="desktop-nav">
-			<a href="#general" class="active-nav nav_btn"><span class="nav-fa"><i class="fa fa-cog"></i></span><p>Proje Özeti</p></a>
-			<a href="#highlights" class="nav_btn"><span class="nav-fa"><i class="fa fa-tag"></i></span><p>Etiketler</p></a>
-			<a href="#location" class="nav_btn"><span class="nav-fa"><i class="fa fa-map-marker-alt"></i></span><p>Lokasyon</p></a>
-			<a href="#contact" class="nav_btn"><span class="nav-fa"><i class="fa fa-phone"></i></span><p>İletişim</p></a>
-			<a href="#media" class="nav_btn"><span class="nav-fa"><i class="fa fa-image"></i></span><p>Media</p></a>
-			<a href="#davet" class="nav_btn"><span class="nav-fa"><i class="fa fa-receipt"></i></span><p>Davet</p></a>
-			<a href="#odul" class="nav_btn"><span class="nav-fa"><i class="fa fa-award"></i></span><p>Proje Ödülü</p></a>
+			<a href="#genel" class="active-nav nav_btn"><span class="nav-fa"><i class="fa fa-cog"></i></span><p>Genel</p></a>
+			<a href="#egitim" class="nav_btn"><span class="nav-fa"><i class="fa fa-user-graduate"></i></span><p>Eğitim</p></a>
+			<a href="#servisler" class="nav_btn"><span class="nav-fa"><i class="fa fa-tags"></i></span><p>Servisler</p></a>
+			<a href="#lokasyon" class="nav_btn"><span class="nav-fa"><i class="fa fa-map-marker-alt"></i></span><p>Lokasyon</p></a>
+			<a href="#iletisim" class="nav_btn"><span class="nav-fa"><i class="fa fa-mobile-alt"></i></span><p>İletişim</p></a>
+			<a href="#sosyalmedya" class="nav_btn"><span class="nav-fa"><i class="fa fa-share-alt-square"></i></span><p>Sosyal Medya</p></a>
+			<a href="#mediaa" class="nav_btn"><span class="nav-fa"><i class="fa fa-image"></i></span><p>Medya</p></a>
 		</nav>
 	</div>
 
 
 	<form method="POST" action="">
-		<h1>Bize İhtiyacınızdan Bahsedin.</h1>
-		<p>Hayalinizdeki ev veya ofis için kolay, hızlı ve bütçenize uygun onlarca tasarım edinin.
-		</p>
+		<h1>Profesyonel misiniz? Profilinizi oluşturmaya hemen başlayın.</h1>
+		<p>Projeleriniz sergileyin ve yüzlerce müşteri size kolayca ulaşsın.</p>
 
-		<div class="form-box scrollspy" id="general">
+		<div class="form-box scrollspy" id="genel">
 			<div class="form-section">
-				<h3>PROJE ÖZETİ</h3>
-				<p>Projeniz hakkında vereceğiniz tüm detaylar, tasarımcıların beklentilerinizi karşılamasını kolaylaştıracaktır.</p>
+				<h3>GENEL</h3>
+				<p>Profil bilgilerinizi eksiksiz doldurarak müşterilerin sizi bulmasını kolaylaştırın.</p>
 				<div class="el">
-					<p>Proje İsmi</p>
-					<input type="text" name="" placeholder="Projenin adı">
+					<p>Profesyonel /Şirket Adı</p>
+					<input type="text" name="" placeholder="Kişi veya Şirket Adınızı giriniz">
 				</div>
 
 				<div class="el">
-					<p>Tür</p>
+					<p>Profesyonel Kategori</p>
 					<div class="select-box">
 						<select class="first" id="proje-tur">
 							<option>Mimari</option>
 							<option>İç Mimari</option>
-							<option>Peyzaj</option>
-							<option>Endüstriyel Tasarım</option>
+							<option>Peyzaj Mimarı</option>
+							<option>Endüstriyel Tasarımcı</option>
+							<option>Tasarımcı</option>
+							<option>Dekoratör</option>
 						</select>
 						<div class="down">
 							<i class="fa fa-chevron-down"></i>
@@ -104,148 +93,109 @@
 				</div>
 
 				<div class="el">
-					<p>Alt Başlık</p>
+					<p>İş Hakkında</p>
 
-					<div class="select-box" id="mimari">
-						<select class="first">
-							<option>mimari</option>
-							<option>mimari</option>
-						</select>
-						<div class="down">
-							<i class="fa fa-chevron-down"></i>
-						</div>
-					</div>
+					<div id="editor">
 
-
-					<div class="select-box ic-mimari" id="ic-mimari">
-						<select class="first">
-							<option>Mutfak</option>
-							<option>Oturma Odası</option>
-							<option>Salon</option>
-							<option>Yatak Odası</option>
-						</select>
-						<div class="down">
-							<i class="fa fa-chevron-down"></i>
-						</div>
-					</div>
-
-					<div class="select-box ic-mimari" id="peyzaj">
-						<select class="first">
-							<option>Bahçe</option>
-							<option>Park</option>
-							<option>Kampüs</option>
-						</select>
-						<div class="down">
-							<i class="fa fa-chevron-down"></i>
-						</div>
-					</div>
-
-					<div class="select-box ic-mimari" id="endustriyel">
-						<select class="first">
-							<option>Yemek Takımı</option>
-							<option>Oturma Grubu</option>
-							<option>Sandalye</option>
-							<option>Masa</option>
-						</select>
-						<div class="down">
-							<i class="fa fa-chevron-down"></i>
-						</div>
 					</div>
 				</div>
+			</div>
+		</div>
 
+
+		<div class="form-box scrollspy" id="egitim">	
+			<div class="form-section">
+				<h3>EĞİTİM</h3>
+				<p>Projenizi en iyi tanımlayacak etiketleri seçiniz.</p>
 				<div class="el">
-					<p>Alan</p>
+					<p>Eğitim Durumunuz</p>
 					<div class="select-box">
-						<select class="first">
-							<option>Modern</option>
-							<option>Geleneksel</option>
+						<select class="first" id="proje-tur">
+							<option>Öğrenci</option>
+							<option>Ön Lisans</option>
+							<option>Mezun</option>
+							<option>Yüksek Lisans</option>
+							<option>Doktora</option>
 						</select>
 						<div class="down">
 							<i class="fa fa-chevron-down"></i>
 						</div>
 					</div>
 				</div>
-
-
 				<div class="el">
-					<p>Proje Tanımı</p>
-					<textarea placeholder="Hayalinizdeki projeyi burada anlatın."></textarea>
+					<p>Üniversiteniz</p>
+					<input type="text" name="" placeholder="Üniversite adı">
 				</div>
 
-				<div class="el">
-					<p>Proje Hedefleriniz</p>
-					<textarea placeholder="Proje hedefleriniz.."></textarea>
-				</div>
-				
+
 
 			</div>
 		</div>
 
-		<div class="form-box scrollspy" id="highlights">	
+
+
+
+		<div class="form-box scrollspy" id="servisler">	
 			<div class="form-section">
-				<h3>ETİKETLER</h3>
-				<p>Projenizi en iyi tanımlayacak etiketleri seçiniz.</p>
+				<h3>SERVİSLER</h3>
+				<p>Yeteneklerinizi göstermek için sağladığınız servisleri seçiniz.</p>
 				<div class="hl-checkboxes">
 					
 					
-					<label class="hl-container">Modern
+					<label class="hl-container">3D Modelleme
 						<input type="checkbox" checked="checked">
 						<span class="hl-checkmark"></span>
 					</label>
-					<label class="hl-container">Geleneksel
+					<label class="hl-container">Render
 						<input type="checkbox">
 						<span class="hl-checkmark"></span>
 					</label>
-					<label class="hl-container">Minimal
+					<label class="hl-container">Mimari Plan
 						<input type="checkbox">
 						<span class="hl-checkmark"></span>
 					</label>
-					<label class="hl-container">Rustik
-						<input type="checkbox">
-						<span class="hl-checkmark"></span>
-					</label>
-
-					<label class="hl-container">İskandinav
-						<input type="checkbox">
-						<span class="hl-checkmark"></span>
-					</label>
-					<label class="hl-container">Endüstriyel
-						<input type="checkbox">
-						<span class="hl-checkmark"></span>
-					</label>
-					<label class="hl-container">Kırsal
-						<input type="checkbox">
-						<span class="hl-checkmark"></span>
-					</label>
-					<label class="hl-container">Eklektik
+					<label class="hl-container">Sürdürülebilir Tasarım
 						<input type="checkbox">
 						<span class="hl-checkmark"></span>
 					</label>
 
-
-
-
+					<label class="hl-container">Parametrik Tasarım
+						<input type="checkbox">
+						<span class="hl-checkmark"></span>
+					</label>
+					<label class="hl-container">Teknik Çizim
+						<input type="checkbox">
+						<span class="hl-checkmark"></span>
+					</label>
+					<label class="hl-container">Mimari Tasarım
+						<input type="checkbox">
+						<span class="hl-checkmark"></span>
+					</label>
+					<label class="hl-container">İç Mimari Tasarım
+						<input type="checkbox">
+						<span class="hl-checkmark"></span>
+					</label>
 				</div>
-
 			</div>
 		</div>
 
-		<div class="form-box scrollspy" id="location">	
+
+		<div class="form-box scrollspy" id="lokasyon">	
 			<div class="form-section">
 				<h3>LOKASYON</h3>
 				<div class="multiple-inputs">
 					<div class="el">
 						<p>Şehir</p>
-						<input type="text" name="" placeholder="Projenin adı">
+						<input type="text" name="" placeholder="Bulunuduğunuz ili giriniz">
 					</div>
 					<div class="el">
 						<p>Posta Kodu</p>
-						<input type="text" name="" placeholder="Proje bedeli">
+						<input type="text" name="" placeholder="Örn. 06800">
 					</div>
 				</div>
 				<div class="el">
-					<p>Posta Kodu</p>
-					<input type="text" name="" placeholder="Proje bedeli">
+					<p>Adres</p>
+					<input type="text" name="" placeholder="">
 				</div>
 
 				<div class="mapouter">
@@ -258,86 +208,73 @@
 		</div>
 
 
-		<div class="form-box scrollspy" id="contact">	
+		<div class="form-box scrollspy" id="iletisim">	
 			<div class="form-section">
 				<h3>İLETİŞİM</h3>
 
-				<div class="el">
-					<p>Email</p>
-					<input type="text" name="" placeholder="Email adresiniz">
-				</div>
+
 				<div class="el">
 					<p>Telefon</p>
 					<input type="text" name="" placeholder="Telefon numaranız">
 				</div>
 
+				<div class="el">
+					<p>Website</p>
+					<input type="text" name="" placeholder="https://">
+				</div>
+
 			</div>
 		</div>
 
 
-		<div class="form-box scrollspy" id="media">	
+
+
+		<div class="form-box scrollspy" id="sosyalmedya">	
 			<div class="form-section">
-				<h3>PROJE FOTOĞRAFLARI</h3>
-				<p>Projenize ait çizimleri, fotoğrafları vb. yükleyiniz.</p>
+				<h3>SOSYAL MEDYA</h3>
+				<p>Sosyal medya sayfalarını profilinize bağlayarak müşterilerin sizi daha iyi tanımasını sağlayın.</p>
+
+
+				<div class="el">
+					<p>Facebook</p>
+					<input type="text" name="" placeholder="Telefon numaranız">
+				</div>
+
+				<div class="el">
+					<p>Instagram</p>
+					<input type="text" name="" placeholder="https://">
+				</div>
+
+				<div class="el">
+					<p>Behance</p>
+					<input type="text" name="" placeholder="https://">
+				</div>
+
+				<div class="el">
+					<p>Linkedin</p>
+					<input type="text" name="" placeholder="https://">
+				</div>
+
+				<div class="el">
+					<p>YouTube</p>
+					<input type="text" name="" placeholder="https://">
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="form-box scrollspy" id="mediaa">	
+			<div class="form-section">
+				<h3>PROFİL FOTOĞRAFI</h3>
+				<p>Profil fotoğrafınız arama sonuçlarında ve profilinizde görünecektir. En iyisini seçmeye özen gösterin.</p>
 				<div class="el big-media">
-					<p><i class="fa fa-upload"></i></p>
+					<p><i class="fa fa-user"></i></p>
+					<span>Fotoğraf Yükle</span>
 					<input type="file" class="custom-input" multiple>
 				</div>
-
-				<h3>İLHAM VEREN FOTOĞRAFLAR</h3>
-				<p>Hoşunuza giden ve projenize yön vermesini istediğiniz tasarımları profesyoneller ile paylaşın.</p>
-				<div class="el big-media">
-					<p><i class="fa fa-upload"></i></p>
-					<input type="file" class="custom-input" multiple>
-				</div>
-
-				<div class="el">
-					<p>Video(opsiyonel)</p>
-					<input type="text" name="" placeholder="Video URL">
-				</div>
-
 			</div>
 		</div>
-
-
-		<div class="form-box scrollspy" id="davet">	
-			<div class="form-section">
-				<h3>DAVET</h3>
-				<p>Dizaynet'te gördüğünüz ve projenize davet etmek istediğiniz Profesyonellerin adını giriniz.</p>
-				
-				<div class="el">
-					<input id="invite-input" type="text" placeholder="Kullanıcının adını girin">
-					<a type="button" onclick="getInputValue()" class="add-people-btn">Ekle</a>
-				</div>
-				<div id="added-persons" class="added-persons">
-					<!-- eklenen isimler buraya geliyor -->
-				</div>
-			</div>
-		</div>
-
-
-		<div class="form-box scrollspy" id="odul">	
-			<div class="form-section">
-				<h3>PROJE ÖDÜLÜ</h3>
-				<p>Ödülünüz miktarı profesyonellerin projeye olan ilgisini doğrudan etkileyecektir.</p>
-				
-				<div class="el">
-					<p>Proje Ödülü (₺)</p>
-					<input id="invite-input" type="text" placeholder="Proje ödülü">
-				</div>
-				<div class="el">
-					<p>Proje Teslim Tarihi</p>
-					<input type="text" name="birthday" value=""/>
-				</div>
-				
-			</div>
-		</div>
-
-
-
-
-
-
 
 
 
@@ -468,44 +405,6 @@
 	</form>
 </div>
 
-<script>
-	$(function() {
-		$('input[name="birthday"]').daterangepicker({
-			"locale": {
-				"format": "DD/MM/YYYY",
-				"daysOfWeek": [
-				"Pa",
-				"Pt",
-				"Sa",
-				"Ça",
-				"Pe",
-				"Cu",
-				"Ct"
-				],
-				"monthNames": [
-				"Ocak",
-				"Şubat",
-				"Mart",
-				"Nisan",
-				"Mayıs",
-				"Haziran",
-				"Temmuz",
-				"Ağustos",
-				"Eylül",
-				"Ekim",
-				"Kasım",
-				"Aralık"
-				]
-			},
-			singleDatePicker: true,
-			showDropdowns: true,
-			minYear: 1901,
-			maxYear: parseInt(moment().format('YYYY'),10)
-		}, function(start, end, label) {
-			var years = moment().diff(start, 'years');
-		});
-	});
-</script>
 
 
 <script type="text/javascript">
@@ -533,47 +432,33 @@
 	})();
 
 
-	
-
-
-
-	/* proje ekleme sayfası kategoriler */
-	var proje_tur = document.getElementById('proje-tur');
-	var icmimar_altbaslik = document.getElementById('ic-mimari');
-	var mimari_altbaslik = document.getElementById('mimari');
-	var peyzaj_altbaslik = document.getElementById('peyzaj');
-	var endustriyel_altbaslik = document.getElementById('endustriyel');
-
-	proje_tur.addEventListener("change", function () {
-		if (this.selectedIndex == 1) {
-			icmimar_altbaslik.style.display = "block";
-			mimari.style.display = "none";
-			peyzaj_altbaslik.style.display = "none";
-			endustriyel_altbaslik.style.display = "none";
-			console.log(this);
-		} else if (this.selectedIndex == 0) {
-			peyzaj_altbaslik.style.display = "none";
-			endustriyel_altbaslik.style.display = "none";
-			icmimar_altbaslik.style.display = "none";
-			mimari.style.display = "block";
-		} else if (this.selectedIndex == 2) {
-			peyzaj_altbaslik.style.display = "block";
-			endustriyel_altbaslik.style.display = "none";
-			icmimar_altbaslik.style.display = "none";
-			mimari.style.display = "none";
-		} else if (this.selectedIndex == 3) {
-			peyzaj_altbaslik.style.display = "none";
-			endustriyel_altbaslik.style.display = "block";
-			icmimar_altbaslik.style.display = "none";
-			mimari.style.display = "none";
-		} 
-
-
-	});
-
 </script>
 
 
+<!-- Include the Quill library -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+<!-- Initialize Quill editor -->
+<script>
+
+
+
+
+	var toolbarOptions = [
+	['bold', 'italic', 'underline'],    
+	[{ 'list': 'ordered'}, { 'list': 'bullet' }],     
+	[{ 'indent': '-1'}, { 'indent': '+1' }],                     
+
+	[{ 'align': [] }],                                   
+	];
+
+	var quill = new Quill('#editor', {
+		theme: 'snow',
+		modules: {
+			toolbar: toolbarOptions
+		}
+	});
+</script>
 
 <script type="text/javascript" src="js/main.js"></script>
 

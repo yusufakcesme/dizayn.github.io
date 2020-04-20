@@ -1,0 +1,23 @@
+
+body {
+	font-family: 'sofiapro-light' !important;
+}
+
+
+.big-media span {
+	font-weight: bold;
+	color: #fff;
+	background-color: #D19E2C;
+	padding: 5px 15px;
+	border-radius: 15px;
+}
+
+.cropper-div {
+	overflow: hidden;
+	display: block;
+}
+
+
+#editor {
+	height: 200px;
+}

@@ -6,9 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/tasarim.css">
 	<link rel="stylesheet" type="text/css" href="css/yarisma-ekleme.css">
 	<link rel="stylesheet" type="text/css" href="css/proje-olustur.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.min.js" ></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.min.css">
+
+	<!-- Include stylesheet -->
+	<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+</head>
 </head>
 <body>
 	<header>
@@ -39,196 +51,84 @@
 	</header>
 
 
-<!--
-	<section class="hero-image">
-		<img src="images/yarismaekle.jpg">
-		<div class="image-overlay">
-			<h1>Bize İhtiyacınızdan Bahsedin</h1>
-			<p>Profesyonellerle hemen iletişime geçin. Profilleri, yorumları ve portföyleri <br> görüntüleyin. Teklifleri beğendiğiniz takdirde satın alın
-			</p>
+
+	<section class="yarisma-ekle">
+		<div class="form-nav">
+			<nav id="desktop-nav">
+				<a href="#general-form" class="active-nav nav_btn"><span class="nav-fa"><i class="fa fa-phone"></i></span><p>Genel Bilgiler</p></a>
+				<a href="#contact" class="nav_btn"><span class="nav-fa"><i class="fa fa-image"></i></span><p>Proje Detayları</p></a>
+			</nav>
+
 		</div>
-	</section>
--->
 
 
+		<form method="POST" action="" id="general-form">
+			<h1>Proje Oluşturun</h1>
+			<p>Projelerinizi sergileyin; tasarımlarınız yüzlerce kişi tarafından keşfedilsin.</p>
 
-<section class="yarisma-ekle">
-	<div class="form-nav">
-		<nav id="desktop-nav">
-			<a href="#general-form" class="active-nav nav_btn"><span class="nav-fa"><i class="fa fa-phone"></i></span><p>Genel Bilgiler</p></a>
-			<a href="#contact" class="nav_btn"><span class="nav-fa"><i class="fa fa-image"></i></span><p>Proje Detayları</p></a>
-		</nav>
+			<div class="form-box scrollspy" id="general">
+				<div class="form-section">
+					<h3>PROJE ÖZETİ</h3>
+					<p>Projeniz hakkında vereceğiniz tüm detaylar, tasarımlarınıza olan ilgiyi arttıracaktır.</p>
+					<div class="el">
+						<p>Proje Adı</p>
+						<input type="text" name="" placeholder="Projenin adı">
+					</div>
+					<div class="el">
+						<p>Proje Tanımı</p>
+						<div id="editor">
+
+						</div>
+					</div>
+
+					<div class="el">
+						<p>Lokasyon (şehir)</p>
+						<input type="text" name="" placeholder="Yalnızca şehir adı giriniz">
+					</div>
+
+					<div class="el">
+						<p>Alan (m2)</p>
+						<input type="text" name="" placeholder="m2 biriminde proje alanı">
+					</div>
+
+					<div class="el">
+						<p>Emeği Geçenler</p>
+						<input type="text" name="" placeholder="Projede emeği geçenler">
+					</div>
+
+					<div class="el">
+						<p>Link</p>
+						<input type="text" name="" placeholder="https://">
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="form-box" id="yeniresim">
+				<div class="form-section">
+					<h3>FOTOĞRAF YÜKLE</h3>
+					<p>Fotoğraflar yüklediğiniz sırayla sergilenecektir; kapak fotoğrafını yükleyerek başlayın.</p>
+
+					<span onclick="addNewImg()" class="yeni-resim"><i class="fa fa-plus"></i> Fotoğraf Ekle</span>
+				</div>
+			</div>
+
+
+			<div id="new-images">
+
+			</div>
+
+
+			<div class="submit-btn">
+				<button type="submit">GÖNDER</button>
+			</div>
+
+			<div class="asd" style="width: 100%;
+			height: 100%;margin-bottom: 150px;"></div>
+		</form>
 
 	</div>
-
-
-	<form method="POST" action="" id="general-form">
-		<h1>Proje Oluşturun</h1>
-		<p></p>
-
-		<div class="form-box scrollspy" id="general">
-			<div class="form-section">
-				<h3>GENERAL</h3>
-				<div class="el">
-					<p>Proje Adı</p>
-					<input type="text" name="" placeholder="Projenin adı">
-				</div>
-				<div class="el">
-					<p>Proje Tanımı</p>
-					<input type="text" name="" placeholder="Projenin Tanımı">
-				</div>
-				
-				<div class="el">
-					<p>Lokasyon (şehir)</p>
-					<input type="text" name="" placeholder="Yalnızca şehir adı giriniz">
-				</div>
-
-				<div class="el">
-					<p>Alan (m2)</p>
-					<input type="text" name="" placeholder="m2 biriminde proje alanı">
-				</div>
-
-				<div class="el">
-					<p>Emeği Geçenler</p>
-					<input type="text" name="" placeholder="Projede emeği geçenler">
-				</div>
-
-				<div class="el">
-					<p>Link</p>
-					<input type="text" name="" placeholder="https://">
-				</div>
-
-
-			</div>
-		</div>
-
-		<div class="form-box" id="yeniresim">
-			<div class="form-section">
-				<h3>PROJEYE YENİ RESİM EKLE</h3>
-				<br>
-				<span onclick="addNewImg()" class="yeni-resim"><i class="fa fa-plus"></i> Yeni Resim Ekle</span>
-			</div>
-		</div>
-
-
-		<div id="new-images">
-			
-		</div>
-
-		<div class="form-box img-form scrollspy" id="contact">	
-			<div class="form-section">
-				<h3>PROJE DETAYLARI</h3>
-				<div class="el">
-					<p>Proje Resimleri</p>
-					<input type="file" class="custom-file-input" multiple>
-				</div>
-				<div class="el">
-					<p>Anahtar Kelimeler</p>
-					<input type="text" name="" placeholder="Anahtar kelimeleri girin">
-				</div>
-
-				<div class="el">
-					<p>Tür</p>
-					<div class="select-box">
-						<select class="first" id="proje-tur">
-							<option>Mimari</option>
-							<option>İç Mimari</option>
-							<option>Peyzaj</option>
-							<option>Endüstriyel Tasarım</option>
-						</select>
-						<div class="down">
-							<i class="fa fa-chevron-down"></i>
-						</div>
-					</div>
-				</div>
-
-				<div class="el">
-					<p>Alt Başlık</p>
-
-					<div class="select-box" id="mimari">
-						<select class="first">
-							<option>mimari</option>
-							<option>mimari</option>
-						</select>
-						<div class="down">
-							<i class="fa fa-chevron-down"></i>
-						</div>
-					</div>
-
-
-					<div class="select-box ic-mimari" id="ic-mimari">
-						<select class="first">
-							<option>Mutfak</option>
-							<option>Oturma Odası</option>
-							<option>Salon</option>
-							<option>Yatak Odası</option>
-						</select>
-						<div class="down">
-							<i class="fa fa-chevron-down"></i>
-						</div>
-					</div>
-
-					<div class="select-box ic-mimari" id="peyzaj">
-						<select class="first">
-							<option>Bahçe</option>
-							<option>Park</option>
-							<option>Kampüs</option>
-						</select>
-						<div class="down">
-							<i class="fa fa-chevron-down"></i>
-						</div>
-					</div>
-
-					<div class="select-box ic-mimari" id="endustriyel">
-						<select class="first">
-							<option>Yemek Takımı</option>
-							<option>Oturma Grubu</option>
-							<option>Sandalye</option>
-							<option>Masa</option>
-						</select>
-						<div class="down">
-							<i class="fa fa-chevron-down"></i>
-						</div>
-					</div>
-				</div>
-
-				<div class="el">
-					<p>Stil</p>
-					<div class="select-box">
-						<select class="first">
-							<option>Modern</option>
-							<option>Geleneksel</option>
-						</select>
-						<div class="down">
-							<i class="fa fa-chevron-down"></i>
-						</div>
-					</div>
-				</div>
-
-				<div class="el">
-					<p>Malzeme</p>
-					<div class="select-box">
-						<select class="first">
-							<option>Ahşap</option>
-							<option>Metal</option>
-						</select>
-						<div class="down">
-							<i class="fa fa-chevron-down"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="submit-btn">
-			<button type="submit">GÖNDER</button>
-		</div>
-
-		<div class="asd" style="width: 100%;
-		height: 100%;margin-bottom: 150px;"></div>
-	</form>
-
-</div>
 
 </section>
 
@@ -278,6 +178,318 @@
 		<a href="yarisma-ekleme.html">Proje Başlat</a>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+<div class="filter-mobile" id="filter-mobile-black">
+</div>
+
+<div class="mobile-filter-content"  id="mobile-filter-1">
+	<div class="filter-content-item" id="item-1">
+		<div class="mobile-filter-title">
+			<p>Filtreler</p>
+			<a class="bitti-a" href="#">Bitti</a>
+		</div>
+		<div class="mobile-filter-item-main" onclick="openTur()">
+			<p>Tür</p>
+			<span><i class="fa fa-chevron-right"></i></span>
+		</div>
+		<div class="mobile-filter-item-main" onclick="openOdalar()">
+			<p>Alanlar</p>
+			<span><i class="fa fa-chevron-right"></i></span>
+		</div>
+		<div class="mobile-filter-item-main" onclick="openStiller()">
+			<p>Stil</p>
+			<span><i class="fa fa-chevron-right"></i></span>
+		</div>
+		<div class="mobile-filter-item-main" onclick="openMalzeme()">
+			<p>Malzeme</p>
+			<span><i class="fa fa-chevron-right"></i></span>
+		</div>
+		<div class="mobile-filter-item-main" onclick="openKonum()">
+			<p>Konum</p>
+			<span><i class="fa fa-chevron-right"></i></span>
+		</div>
+	</div>
+
+	<div class="filter-content-item" id="item-2">
+		<div class="mobile-filter-title">
+			<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+			<p>Tür</p>
+			<a class="bitti-a">Bitti</a>
+		</div>
+		<div class="mobile-filter-item">
+			<label class="container-mobil-check" onclick="alanMimariGosterMobile()">
+				<input type="checkbox">
+				<span class="checkmark-mobil"></span>
+				<p>Mimari</p>
+			</label>
+		</div>
+		<div class="mobile-filter-item">
+			<label class="container-mobil-check" onclick="alanIcMimariGosterMobile()">
+				<input type="checkbox">
+				<span class="checkmark-mobil"></span>
+				<p>İç Mimari</p>
+			</label>
+		</div>
+		<div class="mobile-filter-item">
+			<label class="container-mobil-check" onclick="alanPeyzajGosterMobile()">
+				<input type="checkbox">
+				<span class="checkmark-mobil"></span>
+				<p>Peyzaj</p>	
+			</label>
+		</div>
+		<div class="mobile-filter-item">
+			<label class="container-mobil-check" onclick="alanEndustriGosterMobile()">
+				<input type="checkbox">
+				<span class="checkmark-mobil"></span>
+				<p>Endüstriyel Tasarım</p>
+			</label>
+		</div>
+	</div>
+
+	<div class="filter-content-item" id="item-3">
+		<div class="mobile-filter-title">
+			<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+			<p>Alanlar</p>
+			<a class="bitti-a" href="#">Bitti</a>
+		</div>
+		<p id="alert-p">Önce Tür Seçmelisiniz!</p>
+		<div id="result-mimari-mobile">
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>mimari</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>2 + 1</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>1 + 1</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>1 + 0</p>
+				</label>
+			</div>
+		</div>
+
+		<div id="result-icmimari-mobile">
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>ic mimari</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>2 + 1</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>1 + 1</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>1 + 0</p>
+				</label>
+			</div>
+		</div>
+
+		<div id="result-peyzaj-mobile">
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>peyzaj</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>2 + 1</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>1 + 1</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>1 + 0</p>
+				</label>
+			</div>
+		</div>
+
+		<div id="result-endustri-mobile">
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>endusttri</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>2 + 1</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>1 + 1</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>1 + 0</p>
+				</label>
+			</div>
+		</div>
+
+
+
+
+
+
+
+	</div>
+
+
+	<div class="filter-content-item" id="item-4">
+		<div class="mobile-filter-title">
+			<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+			<p>Stil</p>
+			<a class="bitti-a" href="#">Bitti</a>
+		</div>
+		<div class="mobile-filter-item">
+			<label class="container-mobil-check">
+				<input type="checkbox">
+				<span class="checkmark-mobil"></span>
+				<p>Modern</p>
+			</label>
+		</div>
+		<div class="mobile-filter-item">
+			<label class="container-mobil-check">
+				<input type="checkbox">
+				<span class="checkmark-mobil"></span>
+				<p>Geleneksel</p>
+			</label>
+		</div>
+		<div class="mobile-filter-item">
+			<label class="container-mobil-check">
+				<input type="checkbox">
+				<span class="checkmark-mobil"></span>
+				<p>Minimal</p>
+			</label>
+		</div>
+		<div class="mobile-filter-item">
+			<label class="container-mobil-check">
+				<input type="checkbox">
+				<span class="checkmark-mobil"></span>
+				<p>Rustik</p>
+			</label>	
+		</div>
+	</div>
+
+
+	<div class="filter-content-item" id="item-6">
+		<div class="mobile-filter-title">
+			<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+			<p>Malzeme</p>
+			<a class="bitti-a" href="#">Bitti</a>
+		</div>
+		<div class="mobile-filter-item">
+			<label class="container-mobil-check">
+				<input type="checkbox">
+				<span class="checkmark-mobil"></span>
+				<p>Ahşap</p>
+			</label>
+		</div>
+		<div class="mobile-filter-item">
+			<label class="container-mobil-check">
+				<input type="checkbox">
+				<span class="checkmark-mobil"></span>
+				<p>Taş</p>
+			</label>
+		</div>
+		<div class="mobile-filter-item">
+			<label class="container-mobil-check">
+				<input type="checkbox">
+				<span class="checkmark-mobil"></span>
+				<p>Beton</p>
+			</label>
+		</div>
+		<div class="mobile-filter-item">
+			<label class="container-mobil-check">
+				<input type="checkbox">
+				<span class="checkmark-mobil"></span>
+				<p>Metal</p>
+			</label>	
+		</div>
+	</div>
+
+
+	<div class="filter-content-item" id="item-5">
+		<div class="mobile-filter-title">
+			<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+			<p>Konum</p>
+			<a class="bitti-a" href="#">Bitti</a>
+		</div>
+		<div class="konum-mobil">
+			<label>
+				<input type="text" name="" placeholder="Şehir adı giriniz">
+			</label>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -375,8 +587,7 @@
 
 
 
-
-	/* proje ekleme sayfası kategoriler */
+/*
 	var proje_tur = document.getElementById('proje-tur');
 	var icmimar_altbaslik = document.getElementById('ic-mimari');
 	var mimari_altbaslik = document.getElementById('mimari');
@@ -409,7 +620,7 @@
 
 
 	});
-
+	*/
 
 	var general_form = document.getElementById('new-images');
 	function addNewImg() {
@@ -419,104 +630,195 @@
 		form_section.innerHTML = `
 		
 		<h3>PROJE DETAYLARI</h3>
+		<p>Görselleri ayrı ayrı yükleyerek her birinin doğru kategoride sergilendiğinden emin olun.</p>
+		
+
+
+		<div class="filters">
+		<div class="filter-tools">
+		<button type="button" onclick="mobileFilterAll()" class="filter-button-primary"><i class="fa fa-sliders-h"></i> Filtreler</button>
+		</div>
+
+		<div class="filter-tools">
+		<button type="button" onclick="openSelfTur()" class="filter-button">Tür <span><i class="fa fa-sort-down" style="margin-top:-5px;"></i></span></button>
+		<div class="filter-pop">
+		<div class="results">
+		<label class="container-desk-check" onclick="alanMimariGoster()">
+		<input type="checkbox">
+		<span class="checkmark-desk" style="display: block !important;"></span>
+		<p>Mimari</p>
+		</label>
+		<label class="container-desk-check" onclick="alanIcMimariGoster()">
+		<input type="checkbox" id="ic-mimari-desk">
+		<span class="checkmark-desk" style="display: block !important;"></span>
+		<p>İç Mimari</p>
+		</label>
+		<label class="container-desk-check" onclick="alanPeyzajGoster()">
+		<input type="checkbox" id="peyzaj-desk">
+		<span class="checkmark-desk" style="display: block !important;"></span>
+		<p>Peyzaj</p>
+		</label>
+		<label class="container-desk-check" onclick="alanEndustriGoster()">
+		<input type="checkbox" id="endustri-desk">
+		<span class="checkmark-desk" style="display: block !important;"></span>
+		<p>Endüstriyel Tasarım</p>
+		</label>
+		</div>
+		</div>
+		</div>
+		<div class="filter-tools">
+		<button type="button" onclick="openSelfOdalar()" class="filter-button">Alanlar <span><i class="fa fa-sort-down" style="margin-top:-5px;"></i></span></button>
+		<div class="filter-pop">
+		<p id="alert-p-desk">Önce Tür Seçmelisiniz!</p>
+		<div class="results" id="result-mimari-desk">
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>mimari</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>mimari</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>mimari</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>mimari</p>
+		</label>
+		</div>
+		<div class="results" id="result-icmimari-desk">
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>salon</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>yatak odası</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>banyo</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>mutfak</p>
+		</label>
+		</div>
+		<div class="results" id="result-peyzaj-desk">
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>bahçe</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>kampüs</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>park</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>bahçe</p>
+		</label>
+		</div>
+		<div class="results" id="result-endustri-desk">
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>endustri</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>endustri</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>endustri</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>endustri</p>
+		</label>
+		</div>
+
+		</div>
+		</div>
+		<div class="filter-tools">
+		<button type="button" onclick="openSelfStiller()" class="filter-button">Stil <span><i class="fa fa-sort-down" style="margin-top:-5px;"></i></span></button>
+		<div class="filter-pop">
+		<div class="results">
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>Modern</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>Geleneksel</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>Minimal</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>Rustik</p>
+		</label>
+		</div>
+		</div>
+		</div>
+
+		<div class="filter-tools">
+		<button type="button" style="width: 105px;" onclick="openSelfMalzeme()" class="filter-button">Malzeme <span><i class="fa fa-sort-down" style="margin-top:-5px;"></i></span></button>
+		<div class="filter-pop">
+		<div class="results">
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>Ahşap</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>Taş</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>Beton</p>
+		</label>
+		<label class="container-desk-check">
+		<input type="checkbox">
+		<span class="checkmark-desk"></span>
+		<p>Metal</p>
+		</label>
+		</div>
+		</div>
+		</div>
+		</div>
 		<div class="el">
-		<p>Proje Resimleri</p>
 		<input type="file" class="custom-file-input" multiple>
-		</div>
-		<div class="el">
-		<p>Anahtar Kelimeler</p>
-		<input type="text" name="" placeholder="Anahtar kelimeleri girin">
-		</div>
-
-		<div class="el">
-		<p>Tür</p>
-		<div class="select-box">
-		<select class="first" id="proje-tur">
-		<option>Mimari</option>
-		<option>İç Mimari</option>
-		<option>Peyzaj</option>
-		<option>Endüstriyel Tasarım</option>
-		</select>
-		<div class="down">
-		<i class="fa fa-chevron-down"></i>
-		</div>
-		</div>
-		</div>
-
-		<div class="el">
-		<p>Alt Başlık</p>
-
-		<div class="select-box" id="mimari">
-		<select class="first">
-		<option>mimari</option>
-		<option>mimari</option>
-		</select>
-		<div class="down">
-		<i class="fa fa-chevron-down"></i>
-		</div>
-		</div>
-
-
-		<div class="select-box ic-mimari" id="ic-mimari">
-		<select class="first">
-		<option>Mutfak</option>
-		<option>Oturma Odası</option>
-		<option>Salon</option>
-		<option>Yatak Odası</option>
-		</select>
-		<div class="down">
-		<i class="fa fa-chevron-down"></i>
-		</div>
-		</div>
-
-		<div class="select-box ic-mimari" id="peyzaj">
-		<select class="first">
-		<option>Bahçe</option>
-		<option>Park</option>
-		<option>Kampüs</option>
-		</select>
-		<div class="down">
-		<i class="fa fa-chevron-down"></i>
-		</div>
-		</div>
-
-		<div class="select-box ic-mimari" id="endustriyel">
-		<select class="first">
-		<option>Yemek Takımı</option>
-		<option>Oturma Grubu</option>
-		<option>Sandalye</option>
-		<option>Masa</option>
-		</select>
-		<div class="down">
-		<i class="fa fa-chevron-down"></i>
-		</div>
-		</div>
-		</div>
-
-		<div class="el">
-		<p>Stil</p>
-		<div class="select-box">
-		<select class="first">
-		<option>Modern</option>
-		<option>Geleneksel</option>
-		</select>
-		<div class="down">
-		<i class="fa fa-chevron-down"></i>
-		</div>
-		</div>
-		</div>
-
-		<div class="el">
-		<p>Malzeme</p>
-		<div class="select-box">
-		<select class="first">
-		<option>Ahşap</option>
-		<option>Metal</option>
-		</select>
-		<div class="down">
-		<i class="fa fa-chevron-down"></i>
-		</div>
-		</div>
 		</div>
 
 
@@ -529,16 +831,37 @@
 		window.scrollTo(0,document.body.scrollHeight);
 	}
 
-
-
-
-
-
-
-
 </script>
+
+<!-- Include the Quill library -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+
+<!-- Initialize Quill editor -->
+<script>
+
+
+
+
+	var toolbarOptions = [
+	['bold', 'italic', 'underline'],    
+	[{ 'list': 'ordered'}, { 'list': 'bullet' }],     
+	[{ 'indent': '-1'}, { 'indent': '+1' }],                     
+
+	[{ 'align': [] }],                                   
+	];
+
+	var quill = new Quill('#editor', {
+		theme: 'snow',
+		modules: {
+			toolbar: toolbarOptions
+		}
+	});
+</script>
+
 
 <script type="text/javascript" src="js/main.js"></script>
 
+<script type="text/javascript" src="js/proje-olustur.js"></script>
 </body>
 </html>

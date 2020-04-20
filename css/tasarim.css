@@ -227,7 +227,7 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	width: 90px;
 	height: 36px;
 	border: 1px solid #504C43;
-	border-radius: 8px;
+	border-radius: 36px !important;
 	background: transparent;
 	margin-right: 20px;
 	display: flex;
@@ -250,7 +250,7 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	width: 100px;
 	height: 36px;
 	border: 0;
-	border-radius: 8px;
+	border-radius: 36px !important;
 	background-color: #D19E2C;
 	margin-right: 20px;
 	display: flex;
@@ -265,15 +265,14 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 
 .filter-pop {
 	width: 220px;
-	height: auto;
-	max-height: 400px;
+	min-height: 180px;
 	border-radius: 5px;
 	background-color: #fff;
 	position: absolute;
 	z-index: 9995;
 	box-shadow: 0px 0px 7px rgba(0,0,0,.16);
 	margin-top: 10px;
-	padding: 20px;
+	padding: 10px;
 	display: none;
 }
 
@@ -291,22 +290,18 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 
 .filter-tools .filter-pop p {
 	color: #767676;
-	font-size: 11px;
+	font-size: 13px;
 	font-weight: 800;
-	text-transform: uppercase;
 	margin-top: 10px;
 	width: 100%;
-	font-family: 'nunito-bold';
+	font-family: 'sofiapro-light';
 }
 
 .filter-tools .filter-pop .results {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	max-height: 350px;
 	height: auto;
-	overflow-y: auto;
-	overflow-x: hidden;
 	margin-top: 10px;
 }
 
@@ -361,7 +356,9 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	margin-top: 10px;
+	position: absolute;
+	bottom: 15px;
+	left: 40px;
 }
 
 .konum-buttons a {
@@ -382,79 +379,112 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 }
 
 
-
-
 /* The container */
 .container-desk-check {
-	display: block;
-	position: relative;
-	padding-left: 35px;
-	cursor: pointer;
-	font-size: 22px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	margin-bottom: 10px;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* Hide the browser's default checkbox */
 .container-desk-check input {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
-	height: 0;
-	width: 0;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 
 /* Create a custom checkbox */
 .checkmark-desk {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 25px;
-	width: 25px;
-	border-radius: 3px;
-	background-color: #fff;
-	margin-top: 16px;
-	border: 2px solid #ddd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  margin-top: 5px;
+  border: 2px solid #ddd;
+  border-radius: 3px;
 }
 
 /* On mouse-over, add a grey background color */
 .container-desk-check:hover input ~ .checkmark-desk {
-	background-color: #fff;
+  background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
 .container-desk-check input:checked ~ .checkmark-desk {
-	background-color: #D19E2C;
-	border: 2px solid #D19E2C;
+  background-color: #D19E2C;
+    border: 2px solid #D19E2C;
+
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark-desk:after {
-	content: "";
-	position: absolute;
-	display: none;
+  content: "";
+  position: absolute;
+  display: none;
 }
 
 /* Show the checkmark when checked */
 .container-desk-check input:checked ~ .checkmark-desk:after {
-	display: block;
+  display: block;
 }
 
 /* Style the checkmark/indicator */
 .container-desk-check .checkmark-desk:after {
-	left: 7px;
-	top: 3px;
-	width: 5px;
-	height: 10px;
-	border: solid white;
-	border-width: 0 3px 3px 0;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
+
+
+
+#result-mimari-desk,
+#result-icmimari-desk,
+#result-peyzaj-desk,
+#result-endustri-desk {
+	display: none;
+}
+
+#result-mimari-mobile,
+#result-icmimari-mobile,
+#result-peyzaj-mobile,
+#result-endustri-mobile {
+	display: none;
+}
+
+#alert-p, #alert-p-desk {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-top: 50px;
+	font-family: 'sofiapro-light';
+	font-weight: bolder;
+	color: #D19E2C;
+}
+
+
+
+
+
+
+
+
 
 
 
