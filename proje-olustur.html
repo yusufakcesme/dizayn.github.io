@@ -110,13 +110,24 @@
 					<h3>FOTOĞRAF YÜKLE</h3>
 					<p>Fotoğraflar yüklediğiniz sırayla sergilenecektir; kapak fotoğrafını yükleyerek başlayın.</p>
 
-					<span onclick="addNewImg()" class="yeni-resim"><i class="fa fa-plus"></i> Fotoğraf Ekle</span>
+					<span id="yeni-resim-button" class="yeni-resim"><i class="fa fa-plus"></i> Fotoğraf Ekle</span>
 				</div>
 			</div>
 
 
-			<div id="new-images">
+			<div class="form-box" id="yeniresim">
+				<div class="form-section" id="yeni-resimler">
+					<h3>PROJE DETAYLARI</h3>
+					<p>Görselleri ayrı ayrı yükleyerek her birinin doğru kategoride sergilendiğinden emin olun.</p>
 
+
+
+
+
+
+
+
+				</div>
 			</div>
 
 
@@ -141,358 +152,6 @@
 		<button><i class="fa fa-search"></i></button>
 	</form>
 </div>
-
-
-
-<div class="mobile-cont-filter" id="mobile-cont-filter">
-	
-</div>
-
-<div class="mobile-menu-cont" id="mobile-menu-cont">
-	<div class="mobil-login">
-		<div class="mobil-login-top">
-			<a onclick="openLogin()">Giriş Yap</a>
-			<a href="#">Profesyonel Ol</a>
-		</div>
-		<button onclick="closeMobileMenu()"><i class="fa fa-times"></i></button>
-	</div>
-
-	<div class="mobile-kesfedin" id="mobile-kesfedin">
-		<p onclick="openKesfedin()">Kesfedin <i class="fa fa-chevron-down"></i></p>
-		<div class="kesfedin-links">
-			<a href="#"> Mimari</a>
-			<a href="#">İç Mimari</a>
-			<a href="#">Peyzaj</a>
-			<a href="#">Endüstriyel Tasarım</a>
-		</div>
-	</div>
-
-	<div class="mobile-menu-nav">
-		<a href="tasarim.html"> Dizayn</a>
-		<a href="profesyoneller">Profesyoneller</a>
-		<a href="yarisma.html">Yarışmalar</a>
-		<a href="blog.html">Blog</a>
-	</div>
-
-	<div class="mobile-proje-baslat">
-		<a href="yarisma-ekleme.html">Proje Başlat</a>
-	</div>
-</div>
-
-
-
-
-
-
-
-
-<div class="filter-mobile" id="filter-mobile-black">
-</div>
-
-<div class="mobile-filter-content"  id="mobile-filter-1">
-	<div class="filter-content-item" id="item-1">
-		<div class="mobile-filter-title">
-			<p>Filtreler</p>
-			<a class="bitti-a" href="#">Bitti</a>
-		</div>
-		<div class="mobile-filter-item-main" onclick="openTur()">
-			<p>Tür</p>
-			<span><i class="fa fa-chevron-right"></i></span>
-		</div>
-		<div class="mobile-filter-item-main" onclick="openOdalar()">
-			<p>Alanlar</p>
-			<span><i class="fa fa-chevron-right"></i></span>
-		</div>
-		<div class="mobile-filter-item-main" onclick="openStiller()">
-			<p>Stil</p>
-			<span><i class="fa fa-chevron-right"></i></span>
-		</div>
-		<div class="mobile-filter-item-main" onclick="openMalzeme()">
-			<p>Malzeme</p>
-			<span><i class="fa fa-chevron-right"></i></span>
-		</div>
-		<div class="mobile-filter-item-main" onclick="openKonum()">
-			<p>Konum</p>
-			<span><i class="fa fa-chevron-right"></i></span>
-		</div>
-	</div>
-
-	<div class="filter-content-item" id="item-2">
-		<div class="mobile-filter-title">
-			<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
-			<p>Tür</p>
-			<a class="bitti-a">Bitti</a>
-		</div>
-		<div class="mobile-filter-item">
-			<label class="container-mobil-check" onclick="alanMimariGosterMobile()">
-				<input type="checkbox">
-				<span class="checkmark-mobil"></span>
-				<p>Mimari</p>
-			</label>
-		</div>
-		<div class="mobile-filter-item">
-			<label class="container-mobil-check" onclick="alanIcMimariGosterMobile()">
-				<input type="checkbox">
-				<span class="checkmark-mobil"></span>
-				<p>İç Mimari</p>
-			</label>
-		</div>
-		<div class="mobile-filter-item">
-			<label class="container-mobil-check" onclick="alanPeyzajGosterMobile()">
-				<input type="checkbox">
-				<span class="checkmark-mobil"></span>
-				<p>Peyzaj</p>	
-			</label>
-		</div>
-		<div class="mobile-filter-item">
-			<label class="container-mobil-check" onclick="alanEndustriGosterMobile()">
-				<input type="checkbox">
-				<span class="checkmark-mobil"></span>
-				<p>Endüstriyel Tasarım</p>
-			</label>
-		</div>
-	</div>
-
-	<div class="filter-content-item" id="item-3">
-		<div class="mobile-filter-title">
-			<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
-			<p>Alanlar</p>
-			<a class="bitti-a" href="#">Bitti</a>
-		</div>
-		<p id="alert-p">Önce Tür Seçmelisiniz!</p>
-		<div id="result-mimari-mobile">
-			<div class="mobile-filter-item">
-				<label class="container-mobil-check">
-					<input type="checkbox">
-					<span class="checkmark-mobil"></span>
-					<p>mimari</p>
-				</label>
-			</div>
-			<div class="mobile-filter-item">
-				<label class="container-mobil-check">
-					<input type="checkbox">
-					<span class="checkmark-mobil"></span>
-					<p>2 + 1</p>
-				</label>
-			</div>
-			<div class="mobile-filter-item">
-				<label class="container-mobil-check">
-					<input type="checkbox">
-					<span class="checkmark-mobil"></span>
-					<p>1 + 1</p>
-				</label>
-			</div>
-			<div class="mobile-filter-item">
-				<label class="container-mobil-check">
-					<input type="checkbox">
-					<span class="checkmark-mobil"></span>
-					<p>1 + 0</p>
-				</label>
-			</div>
-		</div>
-
-		<div id="result-icmimari-mobile">
-			<div class="mobile-filter-item">
-				<label class="container-mobil-check">
-					<input type="checkbox">
-					<span class="checkmark-mobil"></span>
-					<p>ic mimari</p>
-				</label>
-			</div>
-			<div class="mobile-filter-item">
-				<label class="container-mobil-check">
-					<input type="checkbox">
-					<span class="checkmark-mobil"></span>
-					<p>2 + 1</p>
-				</label>
-			</div>
-			<div class="mobile-filter-item">
-				<label class="container-mobil-check">
-					<input type="checkbox">
-					<span class="checkmark-mobil"></span>
-					<p>1 + 1</p>
-				</label>
-			</div>
-			<div class="mobile-filter-item">
-				<label class="container-mobil-check">
-					<input type="checkbox">
-					<span class="checkmark-mobil"></span>
-					<p>1 + 0</p>
-				</label>
-			</div>
-		</div>
-
-		<div id="result-peyzaj-mobile">
-			<div class="mobile-filter-item">
-				<label class="container-mobil-check">
-					<input type="checkbox">
-					<span class="checkmark-mobil"></span>
-					<p>peyzaj</p>
-				</label>
-			</div>
-			<div class="mobile-filter-item">
-				<label class="container-mobil-check">
-					<input type="checkbox">
-					<span class="checkmark-mobil"></span>
-					<p>2 + 1</p>
-				</label>
-			</div>
-			<div class="mobile-filter-item">
-				<label class="container-mobil-check">
-					<input type="checkbox">
-					<span class="checkmark-mobil"></span>
-					<p>1 + 1</p>
-				</label>
-			</div>
-			<div class="mobile-filter-item">
-				<label class="container-mobil-check">
-					<input type="checkbox">
-					<span class="checkmark-mobil"></span>
-					<p>1 + 0</p>
-				</label>
-			</div>
-		</div>
-
-		<div id="result-endustri-mobile">
-			<div class="mobile-filter-item">
-				<label class="container-mobil-check">
-					<input type="checkbox">
-					<span class="checkmark-mobil"></span>
-					<p>endusttri</p>
-				</label>
-			</div>
-			<div class="mobile-filter-item">
-				<label class="container-mobil-check">
-					<input type="checkbox">
-					<span class="checkmark-mobil"></span>
-					<p>2 + 1</p>
-				</label>
-			</div>
-			<div class="mobile-filter-item">
-				<label class="container-mobil-check">
-					<input type="checkbox">
-					<span class="checkmark-mobil"></span>
-					<p>1 + 1</p>
-				</label>
-			</div>
-			<div class="mobile-filter-item">
-				<label class="container-mobil-check">
-					<input type="checkbox">
-					<span class="checkmark-mobil"></span>
-					<p>1 + 0</p>
-				</label>
-			</div>
-		</div>
-
-
-
-
-
-
-
-	</div>
-
-
-	<div class="filter-content-item" id="item-4">
-		<div class="mobile-filter-title">
-			<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
-			<p>Stil</p>
-			<a class="bitti-a" href="#">Bitti</a>
-		</div>
-		<div class="mobile-filter-item">
-			<label class="container-mobil-check">
-				<input type="checkbox">
-				<span class="checkmark-mobil"></span>
-				<p>Modern</p>
-			</label>
-		</div>
-		<div class="mobile-filter-item">
-			<label class="container-mobil-check">
-				<input type="checkbox">
-				<span class="checkmark-mobil"></span>
-				<p>Geleneksel</p>
-			</label>
-		</div>
-		<div class="mobile-filter-item">
-			<label class="container-mobil-check">
-				<input type="checkbox">
-				<span class="checkmark-mobil"></span>
-				<p>Minimal</p>
-			</label>
-		</div>
-		<div class="mobile-filter-item">
-			<label class="container-mobil-check">
-				<input type="checkbox">
-				<span class="checkmark-mobil"></span>
-				<p>Rustik</p>
-			</label>	
-		</div>
-	</div>
-
-
-	<div class="filter-content-item" id="item-6">
-		<div class="mobile-filter-title">
-			<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
-			<p>Malzeme</p>
-			<a class="bitti-a" href="#">Bitti</a>
-		</div>
-		<div class="mobile-filter-item">
-			<label class="container-mobil-check">
-				<input type="checkbox">
-				<span class="checkmark-mobil"></span>
-				<p>Ahşap</p>
-			</label>
-		</div>
-		<div class="mobile-filter-item">
-			<label class="container-mobil-check">
-				<input type="checkbox">
-				<span class="checkmark-mobil"></span>
-				<p>Taş</p>
-			</label>
-		</div>
-		<div class="mobile-filter-item">
-			<label class="container-mobil-check">
-				<input type="checkbox">
-				<span class="checkmark-mobil"></span>
-				<p>Beton</p>
-			</label>
-		</div>
-		<div class="mobile-filter-item">
-			<label class="container-mobil-check">
-				<input type="checkbox">
-				<span class="checkmark-mobil"></span>
-				<p>Metal</p>
-			</label>	
-		</div>
-	</div>
-
-
-	<div class="filter-content-item" id="item-5">
-		<div class="mobile-filter-title">
-			<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
-			<p>Konum</p>
-			<a class="bitti-a" href="#">Bitti</a>
-		</div>
-		<div class="konum-mobil">
-			<label>
-				<input type="text" name="" placeholder="Şehir adı giriniz">
-			</label>
-		</div>
-	</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -557,11 +216,130 @@
 	</form>
 </div>
 
-
-
-
-
 <script type="text/javascript">
+
+	var i = 1;
+
+	$('#yeni-resim-button').on('click', function() {
+
+
+		var yeni_resim = $('<div class="el-resim"></div>').html(`
+			
+
+			<div class="input-img">
+			<img id="yuklenenresim${i}"/>
+			<input type="file" class="custom-file-input" onchange="document.getElementById('yuklenenresim${i}').src = window.URL.createObjectURL(this.files[0])"></input>
+			</div>
+
+			<div class="resim-filtreler">
+			<select name="resim-${i}-tur" class="tur-select">
+				<option>Tür: </option>
+				<option value="mimari">Mimari</option>
+				<option value="icmimari">İç Mimari</option>
+				<option value="peyzaj">Peyzaj</option>
+				<option value="endustri">Endüstriyel Tasarım</option>
+			</select>
+			<div class="alanlar">
+			<select name="resim-${i}-alan" class="alan-select mimari-alan">
+				<option>Apartman</option>
+				<option>Villa</option>
+				<option>Dubleks</option>
+			</select>
+			<select name="resim-${i}-alan" class="alan-select icmimari-alan">
+				<option>Banyo</option>
+				<option>Salon</option>
+				<option>Mutfak</option>
+			</select>
+			<select name="resim-${i}-alan" class="alan-select peyzaj-alan">
+				<option>Bahçe</option>
+				<option>Kampüs</option>
+				<option>Park</option>
+			</select>
+			<select name="resim-${i}-alan" class="alan-select endustri-alan">
+				<option>Koltuk</option>
+				<option>Masa</option>
+				<option>Sandalye</option>
+			</select>
+			</div>
+			<select name="resim-${i}-stil" class="stil-select">
+				<option>Stil: </option>
+				<option value="modern">Modern</option>
+				<option value="geleneksel">Geleneksel</option>
+				<option value="minimal">Minimal</option>
+				<option value="rustik">Rustik</option>
+			</select>	
+			<select name="resim-${i}-malzeme" class="malzeme-select">
+				<option>Malzeme: </option>
+				<option value="ahsap">Ahşap</option>
+				<option value="tas">Taş</option>
+				<option value="beton">Beton</option>
+				<option value="metal">Metal</option>
+			</select>	
+			</div>
+
+			`)
+
+
+		$('#yeni-resimler').append(yeni_resim)
+
+		$('.tur-select').on('change', function() {
+			var tur_option = $(this).val()
+			if (tur_option === "mimari") {
+				$('.alan-select').removeClass(`alan-select-active-${i}`)
+				$(this).parent().children().find('select.mimari-alan').addClass(`alan-select-active-${i}`)
+			} else if (tur_option === "icmimari") {
+				$('.alan-select').removeClass(`alan-select-active-${i}`)
+				$(this).parent().children().find('select.icmimari-alan').addClass(`alan-select-active-${i}`)
+			} else if (tur_option === "peyzaj") {
+				$('.alan-select').removeClass(`alan-select-active-${i}`)
+				$(this).parent().children().find('select.peyzaj-alan').addClass(`alan-select-active-${i}`)
+			} else if (tur_option === "endustri") {
+				$('.alan-select').removeClass(`alan-select-active-${i}`)
+				$(this).parent().children().find('select.endustri-alan').addClass(`alan-select-active-${i}`)
+			}
+		})
+
+
+		
+	/*	function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+
+				reader.onload = function(e) {
+					$('#blah'+i).attr('src', e.target.result);
+				}
+
+		    reader.readAsDataURL(input.files[0]); // convert to base64 string
+		}
+		}
+
+		$("#resim"+i).change(function() {
+			readURL(this);
+		});
+		*/
+
+
+
+
+
+
+		i++;
+	})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	(function() {
 		'use strict';
@@ -587,249 +365,15 @@
 
 
 
-/*
-	var proje_tur = document.getElementById('proje-tur');
-	var icmimar_altbaslik = document.getElementById('ic-mimari');
-	var mimari_altbaslik = document.getElementById('mimari');
-	var peyzaj_altbaslik = document.getElementById('peyzaj');
-	var endustriyel_altbaslik = document.getElementById('endustriyel');
-
-	proje_tur.addEventListener("change", function () {
-		if (this.selectedIndex == 1) {
-			icmimar_altbaslik.style.display = "block";
-			mimari.style.display = "none";
-			peyzaj_altbaslik.style.display = "none";
-			endustriyel_altbaslik.style.display = "none";
-			console.log(this);
-		} else if (this.selectedIndex == 0) {
-			peyzaj_altbaslik.style.display = "none";
-			endustriyel_altbaslik.style.display = "none";
-			icmimar_altbaslik.style.display = "none";
-			mimari.style.display = "block";
-		} else if (this.selectedIndex == 2) {
-			peyzaj_altbaslik.style.display = "block";
-			endustriyel_altbaslik.style.display = "none";
-			icmimar_altbaslik.style.display = "none";
-			mimari.style.display = "none";
-		} else if (this.selectedIndex == 3) {
-			peyzaj_altbaslik.style.display = "none";
-			endustriyel_altbaslik.style.display = "block";
-			icmimar_altbaslik.style.display = "none";
-			mimari.style.display = "none";
-		} 
 
 
-	});
-	*/
-
-	var general_form = document.getElementById('new-images');
-	function addNewImg() {
-		var yenidiv = document.createElement("DIV");
-		var form_section = document.createElement("DIV");
-		form_section.setAttribute("class", "form-section");
-		form_section.innerHTML = `
-		
-		<h3>PROJE DETAYLARI</h3>
-		<p>Görselleri ayrı ayrı yükleyerek her birinin doğru kategoride sergilendiğinden emin olun.</p>
-		
 
 
-		<div class="filters">
-		<div class="filter-tools">
-		<button type="button" onclick="mobileFilterAll()" class="filter-button-primary"><i class="fa fa-sliders-h"></i> Filtreler</button>
-		</div>
-
-		<div class="filter-tools">
-		<button type="button" onclick="openSelfTur()" class="filter-button">Tür <span><i class="fa fa-sort-down" style="margin-top:-5px;"></i></span></button>
-		<div class="filter-pop">
-		<div class="results">
-		<label class="container-desk-check" onclick="alanMimariGoster()">
-		<input type="checkbox">
-		<span class="checkmark-desk" style="display: block !important;"></span>
-		<p>Mimari</p>
-		</label>
-		<label class="container-desk-check" onclick="alanIcMimariGoster()">
-		<input type="checkbox" id="ic-mimari-desk">
-		<span class="checkmark-desk" style="display: block !important;"></span>
-		<p>İç Mimari</p>
-		</label>
-		<label class="container-desk-check" onclick="alanPeyzajGoster()">
-		<input type="checkbox" id="peyzaj-desk">
-		<span class="checkmark-desk" style="display: block !important;"></span>
-		<p>Peyzaj</p>
-		</label>
-		<label class="container-desk-check" onclick="alanEndustriGoster()">
-		<input type="checkbox" id="endustri-desk">
-		<span class="checkmark-desk" style="display: block !important;"></span>
-		<p>Endüstriyel Tasarım</p>
-		</label>
-		</div>
-		</div>
-		</div>
-		<div class="filter-tools">
-		<button type="button" onclick="openSelfOdalar()" class="filter-button">Alanlar <span><i class="fa fa-sort-down" style="margin-top:-5px;"></i></span></button>
-		<div class="filter-pop">
-		<p id="alert-p-desk">Önce Tür Seçmelisiniz!</p>
-		<div class="results" id="result-mimari-desk">
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>mimari</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>mimari</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>mimari</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>mimari</p>
-		</label>
-		</div>
-		<div class="results" id="result-icmimari-desk">
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>salon</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>yatak odası</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>banyo</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>mutfak</p>
-		</label>
-		</div>
-		<div class="results" id="result-peyzaj-desk">
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>bahçe</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>kampüs</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>park</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>bahçe</p>
-		</label>
-		</div>
-		<div class="results" id="result-endustri-desk">
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>endustri</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>endustri</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>endustri</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>endustri</p>
-		</label>
-		</div>
-
-		</div>
-		</div>
-		<div class="filter-tools">
-		<button type="button" onclick="openSelfStiller()" class="filter-button">Stil <span><i class="fa fa-sort-down" style="margin-top:-5px;"></i></span></button>
-		<div class="filter-pop">
-		<div class="results">
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>Modern</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>Geleneksel</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>Minimal</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>Rustik</p>
-		</label>
-		</div>
-		</div>
-		</div>
-
-		<div class="filter-tools">
-		<button type="button" style="width: 105px;" onclick="openSelfMalzeme()" class="filter-button">Malzeme <span><i class="fa fa-sort-down" style="margin-top:-5px;"></i></span></button>
-		<div class="filter-pop">
-		<div class="results">
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>Ahşap</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>Taş</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>Beton</p>
-		</label>
-		<label class="container-desk-check">
-		<input type="checkbox">
-		<span class="checkmark-desk"></span>
-		<p>Metal</p>
-		</label>
-		</div>
-		</div>
-		</div>
-		</div>
-		<div class="el">
-		<input type="file" class="custom-file-input" multiple>
-		</div>
 
 
-		`;
 
-		yenidiv.setAttribute("class", "form-box");
-		yenidiv.appendChild(form_section);
 
-		general_form.appendChild(yenidiv);
-		window.scrollTo(0,document.body.scrollHeight);
-	}
+
 
 </script>
 
