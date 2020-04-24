@@ -1,4 +1,8 @@
 
+* {
+	font-family: 'sofiapro-light' !important;
+}
+
 
 section.professionals {
 	width: 90%;
@@ -134,6 +138,7 @@ section.professionals .prof-box .prof-work-img .work-img-box img {
 
 .mobile-prof-detail {
 	display: none;
+	width: 100%;
 }
 
 

@@ -56,7 +56,7 @@
 		<div class="form-nav">
 			<nav id="desktop-nav">
 				<a href="#general-form" class="active-nav nav_btn"><span class="nav-fa"><i class="fa fa-phone"></i></span><p>Genel Bilgiler</p></a>
-				<a href="#contact" class="nav_btn"><span class="nav-fa"><i class="fa fa-image"></i></span><p>Proje Detayları</p></a>
+				<a href="#yeniresimbtn" class="nav_btn"><span class="nav-fa"><i class="fa fa-image"></i></span><p>Projeye Resim Ekle</p></a>
 			</nav>
 
 		</div>
@@ -105,7 +105,7 @@
 				</div>
 			</div>
 
-			<div class="form-box" id="yeniresim">
+			<div class="form-box scrollspy" id="yeniresimbtn">
 				<div class="form-section">
 					<h3>FOTOĞRAF YÜKLE</h3>
 					<p>Fotoğraflar yüklediğiniz sırayla sergilenecektir; kapak fotoğrafını yükleyerek başlayın.</p>
@@ -115,7 +115,7 @@
 			</div>
 
 
-			<div class="form-box" id="yeniresim">
+			<div class="form-box scrollspy" id="yeniresim">
 				<div class="form-section" id="yeni-resimler">
 					<h3>PROJE DETAYLARI</h3>
 					<p>Görselleri ayrı ayrı yükleyerek her birinin doğru kategoride sergilendiğinden emin olun.</p>
@@ -218,6 +218,12 @@
 
 <script type="text/javascript">
 
+	function fotoSilActive(foto) {
+		foto.parentNode.childNodes[5].style.display = "inline-block";
+	}
+
+
+
 	var i = 1;
 
 	$('#yeni-resim-button').on('click', function() {
@@ -227,53 +233,56 @@
 			
 
 			<div class="input-img">
+
 			<img id="yuklenenresim${i}"/>
-			<input type="file" class="custom-file-input" onchange="document.getElementById('yuklenenresim${i}').src = window.URL.createObjectURL(this.files[0])"></input>
+			<input type="file" class="custom-file-input" onchange="document.getElementById('yuklenenresim${i}').src = window.URL.createObjectURL(this.files[0]); fotoSilActive(this);"></input>
+			<span class="foto-sil" title="Bu Fotoğrafı Sil"><span><i class="fa fa-trash"></i></span> Fotoğrafı Sil</span>
 			</div>
+
 
 			<div class="resim-filtreler">
 			<select name="resim-${i}-tur" class="tur-select">
-				<option>Tür: </option>
-				<option value="mimari">Mimari</option>
-				<option value="icmimari">İç Mimari</option>
-				<option value="peyzaj">Peyzaj</option>
-				<option value="endustri">Endüstriyel Tasarım</option>
+			<option>Tür: </option>
+			<option value="mimari">Mimari</option>
+			<option value="icmimari">İç Mimari</option>
+			<option value="peyzaj">Peyzaj</option>
+			<option value="endustri">Endüstriyel Tasarım</option>
 			</select>
 			<div class="alanlar">
 			<select name="resim-${i}-alan" class="alan-select mimari-alan">
-				<option>Apartman</option>
-				<option>Villa</option>
-				<option>Dubleks</option>
+			<option>Apartman</option>
+			<option>Villa</option>
+			<option>Dubleks</option>
 			</select>
 			<select name="resim-${i}-alan" class="alan-select icmimari-alan">
-				<option>Banyo</option>
-				<option>Salon</option>
-				<option>Mutfak</option>
+			<option>Banyo</option>
+			<option>Salon</option>
+			<option>Mutfak</option>
 			</select>
 			<select name="resim-${i}-alan" class="alan-select peyzaj-alan">
-				<option>Bahçe</option>
-				<option>Kampüs</option>
-				<option>Park</option>
+			<option>Bahçe</option>
+			<option>Kampüs</option>
+			<option>Park</option>
 			</select>
 			<select name="resim-${i}-alan" class="alan-select endustri-alan">
-				<option>Koltuk</option>
-				<option>Masa</option>
-				<option>Sandalye</option>
+			<option>Koltuk</option>
+			<option>Masa</option>
+			<option>Sandalye</option>
 			</select>
 			</div>
 			<select name="resim-${i}-stil" class="stil-select">
-				<option>Stil: </option>
-				<option value="modern">Modern</option>
-				<option value="geleneksel">Geleneksel</option>
-				<option value="minimal">Minimal</option>
-				<option value="rustik">Rustik</option>
+			<option>Stil: </option>
+			<option value="modern">Modern</option>
+			<option value="geleneksel">Geleneksel</option>
+			<option value="minimal">Minimal</option>
+			<option value="rustik">Rustik</option>
 			</select>	
 			<select name="resim-${i}-malzeme" class="malzeme-select">
-				<option>Malzeme: </option>
-				<option value="ahsap">Ahşap</option>
-				<option value="tas">Taş</option>
-				<option value="beton">Beton</option>
-				<option value="metal">Metal</option>
+			<option>Malzeme: </option>
+			<option value="ahsap">Ahşap</option>
+			<option value="tas">Taş</option>
+			<option value="beton">Beton</option>
+			<option value="metal">Metal</option>
 			</select>	
 			</div>
 
@@ -300,77 +309,12 @@
 		})
 
 
-		
-	/*	function readURL(input) {
-			if (input.files && input.files[0]) {
-				var reader = new FileReader();
-
-				reader.onload = function(e) {
-					$('#blah'+i).attr('src', e.target.result);
-				}
-
-		    reader.readAsDataURL(input.files[0]); // convert to base64 string
-		}
-		}
-
-		$("#resim"+i).change(function() {
-			readURL(this);
-		});
-		*/
-
-
-
-
-
+		$('.foto-sil').on('click', function() {
+			$(this).parent().parent().remove()
+		})
 
 		i++;
 	})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	(function() {
-		'use strict';
-
-		var section = document.querySelectorAll(".scrollspy");
-		var sections = {};
-		var i = 0;
-
-		Array.prototype.forEach.call(section, function(e) {
-			sections[e.id] = e.offsetTop;
-		});
-
-		window.onscroll = function() {
-			var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-			for (i in sections) {
-				if (sections[i] <= (scrollPosition + 400)) {
-					document.querySelector('.active-nav').setAttribute('class', ' ');
-					document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active-nav');
-				}
-			}
-		};
-	})();
-
-
-
-
-
-
-
-
-
 
 
 
@@ -403,6 +347,34 @@
 	});
 </script>
 
+
+<script type="text/javascript">
+	(function() {
+		'use strict';
+
+		var section = document.querySelectorAll(".scrollspy");
+		var sections = {};
+		var i = 0;
+
+		Array.prototype.forEach.call(section, function(e) {
+			sections[e.id] = e.offsetTop;
+		});
+
+		window.onscroll = function() {
+			var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+			for (i in sections) {
+				if (sections[i] <= (scrollPosition + 500)) {
+					document.querySelector('.active-nav').setAttribute('class', ' ');
+					document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active-nav');
+				}
+			}
+		};
+	})();
+
+
+	
+
+</script>
 
 <script type="text/javascript" src="js/main.js"></script>
 

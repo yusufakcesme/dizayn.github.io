@@ -204,6 +204,24 @@ select.tur-select {
 }
 
 
+.foto-sil {
+	position: absolute;
+	bottom: 2px;
+	left: 2px;
+	cursor: pointer;
+	color: #D19E2C;
+	font-family: 'sofiapro-light';
+	font-weight: bold;
+	border-radius: 3px;
+	padding: 2px 5px;
+	background-color: rgba(255,255,255,.3);
+	display: none;
+}
+/*
+.foto-sil > span {
+	color: #000 !important;
+}
+*/
 
 
 .alan-select-active-1,
