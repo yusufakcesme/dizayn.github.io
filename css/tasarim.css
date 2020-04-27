@@ -130,13 +130,13 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	margin-left: 5px;
 }
 
-section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim p {
+section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim a {
 	font-size: 16px;
 	font-family: 'sofiapro-light';
 	color: #fff;
 }
 
-section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim p > b {
+section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim a > b {
 	font-size: 16px;
 	font-weight: var(--medium);
 	color: #FFD982;
@@ -145,7 +145,7 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	align-items: center;
 }
 
-section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim p > b > img {
+section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim a > b > img {
 	width: 15px;
 	height: 14px;
 	margin-right: 2px;
