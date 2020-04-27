@@ -149,14 +149,13 @@ $(document).on("click", function(event){
 	if($chosen_trigger !== event.target && !$chosen_trigger.has(event.target).length){
 		$(".chosen-one-pop").css("display", "none");
 	}    
-
-
-
 });
 
 
 
-/* mobile -kesfedin */
+
+
+/* mobil kesfedin dropdown açıp-kapatma */
 var mobile_kesfedin = document.getElementById('mobile-kesfedin');
 function openKesfedin() {
 
@@ -170,6 +169,7 @@ function openKesfedin() {
 
 
 
+/* profil sayfası açılır-kaparnır yazı */
 function openJobInfoText(spanText) {
 	var job_info_text = document.getElementById('job-info-text');
 
@@ -199,6 +199,7 @@ nav_btn.forEach(item => item.addEventListener('click', activeButton));
 
 
 
+/* modal açıp-kapatma kontrolleri */
 var modal = document.getElementById('id01');
 var modal2 = document.getElementById('id02');
 var modal_search = document.getElementById('id03');
@@ -260,8 +261,9 @@ function closeMobileMenu() {
 	mobile_cont_filter.style.transform = "translateX(-100%)";
 }
 
-/* read more comment */ 
 
+
+/* Yorumun devamını gör açıp-kapatma */ 
 function readMore(comment) {
 	var item = comment.parentNode.childNodes[3];
 	if (item.style.height === "auto") {
@@ -273,7 +275,7 @@ function readMore(comment) {
 
 
 
-/* read more comments */
+/* Yorumlar bölümü daha fazla gör açıp-kapatma */
 function moreComments() {
 	var section = document.getElementById('comment-section');
 
@@ -287,13 +289,9 @@ function moreComments() {
 
 
 
-function optionFunc() {
-	alert("aaaaaaaa");
-}
 
 
-
-/* open user info in profile page */
+/* Profil sayfası kullanıcı bilgisi yazısı açıp-kapatma*/
 
 var userInfo = document.getElementById('user-info');
 var userInfoP = document.getElementById('user-info-p');
@@ -313,8 +311,7 @@ function openUserInfo(span) {
 
 
 
-/* like blog post button in blog-detay page */
-
+/* Blog yazısı beğen butonu */
 var begen_btn = document.getElementById('begen-btn');
 
 function likeBlogPost() {
@@ -322,12 +319,11 @@ function likeBlogPost() {
 }
 
 
-/* 	resimler.html sayfası slider kodları */
+/* 	resimler.html sayfası slider kontrolleri */
 var thumb = document.querySelectorAll('.thumb');
 var thumbLength = thumb.length;
 
-
-slideNo = 0;
+slideNo = 0; // kaçıncı slide olduğunu belirleyeceğimiz slide numarası
 
 var sliderImg = document.getElementById('slider-img');
 function activeThumb() {
@@ -346,8 +342,7 @@ thumb.forEach(item => item.addEventListener('click', activeThumb));
 
 
 
-/* slider button navigators */
-
+/* slider ileri-geri butonları */
 function nextSlide(arti) {
 	slideNo += arti;
 	if (slideNo < thumbLength) {
@@ -373,7 +368,7 @@ function prevSlide(eksi) {
 
 
 
-/* resimler mobile user info açılır kapanır text*/
+/* resimler.html sayfası açılır-kapanır yazı kontrolleri*/
 
 var mobileUserText = document.getElementById('mobile-user-text');
 var chevronDown = document.getElementById('chevron-down');
