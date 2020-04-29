@@ -353,7 +353,7 @@ section.profile-container .profile-content .card-container-tasarim .card-tasarim
 
 section.profile-container .profile-content .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim .overlay-left span {
 	font-size: 11px;
-	font-family: 'coco-regular';
+	font-family: 'sofiapro-light';
 	color: #FFD982;
 	display: flex;
 	align-items: center;
@@ -363,13 +363,13 @@ section.profile-container .profile-content .card-container-tasarim .card-tasarim
 
 section.profile-container .profile-content .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim .overlay-left span > .begeni-span {
 	font-size: 11px;
-	font-family: 'nunito-bold';
+	font-family: 'sofiapro-light';
 	color: #fbfbfb;
 }
 
 section.profile-container .profile-content .card-container-tasarim .card-tasarim .card-img-tasarim .card-img-overlay-tasarim .overlay-left p {
 	font-size: 12px;
-	font-family: 'nunito-bold';
+	font-family: 'sofiapro-light';
 	color: #fff;
 	max-width: 110px;
 }

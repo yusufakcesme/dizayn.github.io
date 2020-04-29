@@ -359,11 +359,12 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 	position: absolute;
 	bottom: 15px;
 	left: 40px;
+	font-size: 15px;
 }
 
 .konum-buttons a {
 	color: #888;
-	margin-right: 15px;
+	margin-right: 14px;
 }
 
 .konum-buttons button {
