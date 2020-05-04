@@ -965,7 +965,8 @@ section.crew .profiles {
 
 .profile-box .overlay a {
   font-size: 23px;
-  font-weight: var(--bold);
+  font-weight: bold;
+  font-family: "sofiapro-light";
   color: #fff;
   margin-bottom: 5px;
 }
