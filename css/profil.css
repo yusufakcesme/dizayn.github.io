@@ -534,9 +534,6 @@ section.profile-container
   background-image: initial;
 }
 
-.comment-section .last-comments {
-}
-
 .comment-section .last-comments > p {
   font-family: "nunito-regular";
   font-size: 17px;
