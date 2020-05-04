@@ -1,3 +1,49 @@
+.hero-image .image-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+}
+
+.hero-image .image-overlay .fa-download {
+  color: #fff;
+  font-size: 40px;
+}
+
+.hero-image .image-overlay input {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  opacity: 0;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+.hero-image .image-overlay h3 {
+  font-size: 25px;
+  color: #fff;
+  font-family: "sofiapro-light";
+  margin: 5px auto;
+}
+
+#image_demo img {
+  border: 1px solid red;
+}
+
+.cr-boundary {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.hero-image .image-overlay p {
+  color: #fff;
+}
+
+.modal-content {
+  width: 90% !important;
+  overflow: hidden !important;
+}
+
 section.profile-container {
   width: 90%;
   height: auto;
