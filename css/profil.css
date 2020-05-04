@@ -276,12 +276,12 @@ section.profile-container
   .profile-content
   .card-container-tasarim
   .card-tasarim {
-  width: 300px;
+  width: 320px;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 section.profile-container
@@ -289,7 +289,7 @@ section.profile-container
   .card-container-tasarim
   .card-tasarim
   .card-img-tasarim {
-  width: 300px;
+  width: 320px;
   height: 240px;
   border-radius: 5px;
   overflow: hidden;
@@ -303,7 +303,7 @@ section.profile-container
   .card-tasarim
   .card-img-tasarim
   img {
-  width: 300px;
+  width: 320px;
   height: 240px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
   border-radius: 5px;
@@ -376,7 +376,7 @@ section.profile-container
   .card-img-tasarim:hover
   .card-img-overlay-tasarim {
   display: flex;
-  padding-left: 26px;
+  padding-left: 20px;
   padding-bottom: 16px;
 }
 
@@ -388,8 +388,9 @@ section.profile-container
   .card-img-overlay-tasarim
   span {
   font-size: 12px;
-  font-family: "coco-regular";
+  font-family: "sofiapro-light";
   color: #ffd982;
+  margin-left: 5px;
 }
 
 section.profile-container
@@ -399,9 +400,25 @@ section.profile-container
   .card-img-tasarim
   .card-img-overlay-tasarim
   p {
-  font-size: 16px;
-  font-family: "nunito-regular";
+  font-size: 15px;
+  font-family: "sofiapro-light";
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.profile-container
+  .profile-content
+  .card-container-tasarim
+  .card-tasarim
+  .card-img-tasarim
+  .card-img-overlay-tasarim
+  p
+  > b {
+  color: #fff !important;
+  font-size: 12px !important;
+  margin-left: auto;
 }
 
 section.profile-container
@@ -580,6 +597,7 @@ span.like-comment > i {
     flex-direction: column;
     margin-bottom: 200px;
     align-items: center;
+    overflow: hidden;
   }
 
   section.profile-container .profile-content {
