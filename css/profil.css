@@ -39,7 +39,7 @@
   color: #fff;
 }
 
-.modal-content {
+.modal-content.banner-crop {
   width: 90% !important;
   overflow: hidden !important;
 }
