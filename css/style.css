@@ -2380,7 +2380,12 @@ label.login-container {
     transform: translateX(-12%);
   }
   .modal-kayit {
-    height: 650px;
+    height: auto;
+    max-height: 95vh;
+  }
+  .register-radios {
+    width: 110%;
+    margin-left: -5%;
   }
 }
 
@@ -2478,5 +2483,23 @@ label.login-container {
   section.blog {
     width: 95%;
     height: auto;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .modal-content .container > button {
+    width: 100px;
+    height: 30px;
+    border-radius: 40px;
+    background-color: #d19e2c;
+    border: none;
+    margin-bottom: -10px;
+    color: #fff;
+    margin-top: 10px;
+    transform: translateX(-12%) !important;
+  }
+  .register-radios {
+    width: 110%;
+    margin-left: -5%;
   }
 }
