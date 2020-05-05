@@ -43,6 +43,17 @@
   width: 90% !important;
   overflow: hidden !important;
 }
+.modal-content.profile-crop {
+  width: 420px;
+  height: auto;
+}
+
+.modal-content.profile-crop .cr-boundary {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 30px auto;
+}
 
 section.profile-container {
   width: 90%;
@@ -74,12 +85,40 @@ section.profile-container .profile-card .img-box {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  overflow: hidden;
+  position: relative;
+}
+section.profile-container .profile-card .img-box span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #3a3a39;
+  background-color: #ffd982;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  z-index: 98;
+  cursor: pointer;
+}
+
+.custom-input2 {
+  z-index: 999;
+  width: 50px;
+  opacity: 0;
+  height: 50px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
 }
 
 section.profile-container .profile-card .img-box img {
-  width: 180px;
-  height: 180px;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
 }
 
 section.profile-container .profile-card span.title {
@@ -789,19 +828,49 @@ span.like-comment > i {
   section.profile-container .profile-card .img-box {
     width: 130px;
     height: 130px;
-    border: 3px solid #ffd982;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    overflow: hidden;
     margin-top: -20px;
     margin-bottom: 20px;
+    border: 3px solid #ffd982;
+    position: relative;
+  }
+
+  section.profile-container .profile-card .img-box span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #3a3a39;
+    background-color: #ffd982;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #fff;
+    z-index: 98;
+    cursor: pointer;
+  }
+
+  .modal-content.profile-crop {
+    width: 95%;
+    height: auto;
+  }
+
+  .modal-content.profile-crop .cr-boundary {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 30px auto;
   }
 
   section.profile-container .profile-card .img-box img {
-    width: 130px;
-    height: 130px;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
   }
   .comment-section {
     width: 90%;
