@@ -533,6 +533,48 @@ section.profile-container
   position: relative;
 }
 
+.star-rate {
+  width: 100%;
+  height: auto;
+  margin: 20px 0 10px 0;
+}
+
+/* Rating Star Widgets Style */
+.star-rate .rating-stars ul {
+  list-style-type: none;
+  padding: 0;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.star-rate .rating-stars ul > li.star {
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Idle State of the stars */
+.star-rate .rating-stars ul > li.star > .fa-star {
+  font-size: 20px; /* Change the size of the stars */
+  color: #3a3a39; /* Color on idle state */
+}
+
+/* Hover state of the stars */
+.star-rate .rating-stars ul > li.star.hover > .fa-star {
+  color: #aa7c13;
+}
+
+/* Selected state of the stars */
+.star-rate .rating-stars ul > li.star.selected > .fa-star {
+  color: #aa7c13;
+}
+
+#star-rate-input {
+  opacity: 0;
+  pointer-events: none;
+  height: 5px;
+}
+
+/******************/
 .comment-section .make-comment {
   display: flex;
   margin-bottom: 30px;
