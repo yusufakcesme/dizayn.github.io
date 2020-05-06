@@ -1,5 +1,11 @@
 .card-img-tasarim {
   height: 270px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-img-tasarim > img {
+  border: 1px solid red;
 }
 
 .card-img-overlay-tasarim {
