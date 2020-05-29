@@ -183,7 +183,7 @@ section.design-competition-tasarim .card-container-tasarim .card-tasarim .card-i
 
 .chosen-one p {
 	font-family: 'sofiapro-light';
-	font-size: 17px;
+	font-size: 15px;
 	color: #231F20;
 }
 
@@ -1117,20 +1117,24 @@ section.design-cate .cate-carousel .cate-item  p {
 
 
 	.filters button.filter-button-primary {
-		width: 100px;
-		height: 36px;
+		width: 120px;
+		height: 40px;
 		border: 0;
 		border-radius: 8px;
 		background-color: #D19E2C;
 		margin-right: 10px;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
 		padding: 0 10px;
 		font-family: 'sofiapro-light';
 		font-size: 15px;
 		color: #fff;
 		cursor: pointer;
+	}
+
+	.filters button.filter-button-primary .fa-sliders-h {
+		margin-right: 10px;
 	}
 
 

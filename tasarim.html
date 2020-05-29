@@ -714,7 +714,9 @@
 					</div>
 				</div>
 			</div>
-
+			<div class="loader-icon" id="loader">
+				<div class="loader"></div>
+			</div>
 
 
 
@@ -1158,6 +1160,28 @@
 
 	<script src="js/slick_/slick/slick.min.js"></script>
 	<script type="text/javascript">
+
+
+
+
+
+		$(window).scroll(function () {
+			if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+				$('.loader-icon').css("display", "flex")
+				$('.card-container-tasarim .card-tasarim:last').attr("id");
+				$.ajax({
+					type: "post",
+					url: "ajax.php",
+					data: { "id": id },
+					success: function (veri) {
+						$('.card-container-tasarim').append(veri)
+						$('.loader-icon').css("display", "none")
+					}
+				})
+			}
+		});
+
+
 
 
 
