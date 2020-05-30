@@ -1033,11 +1033,16 @@ section.design-cate .cate-carousel .cate-item  p {
 	justify-content: center;
 	height: 60px;
 	color: #999;
-	font-size: 24px;
+	font-size: 28px;
 }
 
-.mobile-bottom-menu ul li a.active-bottom-link {
-	color: #D19E2C;
+.mobile-bottom-menu ul li a img {
+	width: 28px;
+	height: auto;
+}
+
+.mobile-bottom-menu ul li a.active-bottom-link img {
+	fill: #D19E2C;
 }
 
 .go-down {
